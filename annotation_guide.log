@@ -1,0 +1,921 @@
+This is pdfTeX, Version 3.14159-14h-released-20010417 (Web2C 7.3.3.1) (format=pdflatex 2003.2.18)  11 MAY 2005 20:00
+**annotation_guide
+(./annotation_guide.tex{/usr/share/texmf/pdftex/config/pdftex.cfg}
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, i
+talian, nohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/book.cls
+Document Class: book 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/bk12.clo
+File: bk12.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2001/06/05 v1.94 Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2001/06/05 v1.94 Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 38.
+))
+(/usr/share/texmf/tex/latex/base/inputenc.sty
+Package: inputenc 2001/07/10 v0.99a Input encoding file 
+
+(/usr/share/texmf/tex/latex/base/latin1.def
+File: latin1.def 2001/07/10 v0.99a Input encoding file 
+))
+(/usr/share/texmf/tex/latex/misc/a4wide.sty
+Package: a4wide 1994/08/30
+
+(/usr/share/texmf/tex/latex/ntgclass/a4.sty
+Package: a4 1999/03/03 v1.2f A4 based page layout
+))
+(/usr/share/texmf/tex/latex/tools/array.sty
+Package: array 1998/05/13 v2.3m Tabular extension package (FMi)
+\col@sep=\dimen103
+\extrarowheight=\dimen104
+\NC@list=\toks14
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+(/usr/share/texmf/tex/latex/tools/longtable.sty
+Package: longtable 2000/10/22 v4.10 Multi-page Table package (DPC)
+\LTleft=\skip45
+\LTright=\skip46
+\LTpre=\skip47
+\LTpost=\skip48
+\LTchunksize=\count88
+\LTcapwidth=\dimen105
+\LT@head=\box26
+\LT@firsthead=\box27
+\LT@foot=\box28
+\LT@lastfoot=\box29
+\LT@cols=\count89
+\LT@rows=\count90
+\c@LT@tables=\count91
+\c@LT@chunks=\count92
+\LT@p@ftn=\toks15
+)
+(/usr/share/texmf/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write3
+\openout3 = `annotation_guide.idx'.
+
+
+Writing index file annotation_guide.idx
+(/usr/share/texmf/tex/latex/html/url.sty
+Package: url 1999/03/02  ver 1.4  Verb mode for urls, email addresses, and file
+ names
+)
+(/usr/share/texmf/tex/latex/natbib/natbib.sty
+Package: natbib 1999/05/28 7.0 (PWD)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 508.
+\c@NAT@ctr=\count93
+)
+(/usr/share/texmf/tex/latex/ae/ae.sty
+Package: ae 1998/11/17 1.0 Almost European Computer Modern
+
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2001/06/05 v1.94 Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2001/06/05 v1.94 Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 38.
+)
+LaTeX Font Info:    Try loading font information for T1+aer on input line 95.
+
+(/usr/share/texmf/tex/latex/ae/t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+)))
+(/usr/share/texmf/tex/latex/ae/aecompl.sty
+Package: aecompl 1998/07/23 0.9 T1 Complements for AE fonts (D. Roegel)
+)
+(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2002/08/04 v6.72v Hypertext links for LaTeX
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+\@linkdim=\dimen106
+\Hy@linkcounter=\count94
+\Hy@pagecounter=\count95
+
+(/usr/share/texmf/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2002/08/04 v6.72v Hyperref: PDFDocEncoding definition (HO)
+)
+Package hyperref Info: Option `plainpages' set `false' on input line 1739.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 1739.
+Package hyperref Info: Bookmarks ON on input line 1797.
+Package hyperref Info: Hyper figures OFF on input line 1816.
+Package hyperref Info: Link nesting OFF on input line 1821.
+Package hyperref Info: Hyper index ON on input line 1824.
+Package hyperref Info: Plain pages OFF on input line 1831.
+Package hyperref Info: Backreferencing OFF on input line 1836.
+
+Implicit mode ON; LaTeX internals redefined
+LaTeX Info: Redefining \url on input line 2048.
+\Fld@menulength=\count96
+\Field@Width=\dimen107
+\Fld@charsize=\dimen108
+\Choice@toks=\toks17
+\Field@toks=\toks18
+Package hyperref Info: Hyper figures OFF on input line 2506.
+Package hyperref Info: Link nesting OFF on input line 2511.
+Package hyperref Info: Hyper index ON on input line 2514.
+Package hyperref Info: backreferencing OFF on input line 2521.
+Package hyperref Info: Link coloring OFF on input line 2526.
+\Hy@abspage=\count97
+\c@Item=\count98
+\c@Hfootnote=\count99
+)
+*hyperref using default driver hpdftex*
+(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2002/08/04 v6.72v Hyperref driver for pdfTeX
+
+(/usr/share/texmf/tex/latex/psnfss/pifont.sty
+Package: pifont 2001/06/04 PSNFSS-v8.2 Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 62.
+
+(/usr/share/texmf/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 63.
+
+(/usr/share/texmf/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+\Fld@listcount=\count100
+\@outlinefile=\write4
+)
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/config/graphics.cfg)
+Package graphics Info: Driver file: pdftex.def on input line 80.
+
+(/usr/share/texmf/tex/latex/graphics/pdftex.def
+File: pdftex.def 2001/11/29 v0.03i graphics/color for pdftex
+\Gread@gobject=\count101
+))
+\Gin@req@height=\dimen109
+\Gin@req@width=\dimen110
+)
+(/usr/share/texmf/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(/usr/share/texmf/tex/latex/tipa/tipa.sty
+Package: tipa 2002/08/08 TIPA version 1.1
+
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2001/06/05 v1.94 Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+LaTeX Font Info:    Try loading font information for T1+aess on input line 357.
+
+
+(/usr/share/texmf/tex/latex/ae/t1aess.fd
+File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
+))
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2001/06/05 v1.94 Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 38.
+)))
+(/usr/share/texmf/tex/latex/tipa/tipx.sty
+Package: tipx 2003/01/01 TIPX version 1.2
+)
+(/usr/share/texmf/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen111
+)
+(/home/lennes/bin/tex/fihyph.tex) (/usr/share/texmf/tex/generic/babel/babel.sty
+Package: babel 2001/03/01 v3.7h The Babel package
+(/usr/share/texmf/tex/generic/babel/finnish.ldf
+Language: finnish 2001/03/12 v1.3o Finnish support from the babel system
+
+(/usr/share/texmf/tex/generic/babel/babel.def
+File: babel.def 2001/03/01 v3.7h Babel common definitions
+\babel@savecnt=\count102
+\U@D=\dimen112
+)
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `Finnish'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@finnish = a dialect from \language0
+Package babel Info: Making " an active character on input line 70.
+)) (./annotation_guide.aux)
+\openout1 = `annotation_guide.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 52.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 52.
+ (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 52.
+Package hyperref Info: Link coloring OFF on input line 52.
+
+(/usr/share/texmf/tex/latex/hyperref/nameref.sty
+Package: nameref 2001/01/27 v2.19 Cross-referencing by name of section
+\c@section@level=\count103
+)
+LaTeX Info: Redefining \ref on input line 52.
+LaTeX Info: Redefining \pageref on input line 52.
+ (./annotation_guide.out)
+(./annotation_guide.out)
+\openout4 = `annotation_guide.out'.
+
+ (/usr/share/texmf/tex/context/base/supp-pdf.tex
+(/usr/share/texmf/tex/context/base/supp-mis.tex
+loading : Context Support Macros / Missing
+\protectiondepth=\count104
+\scratchcounter=\count105
+\scratchtoks=\toks19
+\scratchdimen=\dimen113
+\scratchskip=\skip51
+\scratchmuskip=\muskip10
+\scratchbox=\box30
+\scratchread=\read1
+\scratchwrite=\write5
+\zeropoint=\dimen114
+\nextbox=\box31
+\nextdepth=\dimen115
+\everyline=\toks20
+\!!counta=\count106
+\!!countb=\count107
+\recursecounter=\count108
+)
+loading : Context Support Macros / PDF
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPtoPDFconversion=\toks21
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 65.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 65.
+ [1
+
+
+{/usr/share/texmf/dvips/config/pdftex.map}{/usr/share/texmf/dvips/config/tipa.m
+ap}] [2
+
+] (./annotation_guide.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
+ [3] [4])
+\tf@toc=\write6
+\openout6 = `annotation_guide.toc'.
+
+ [5] [6
+
+] [7] [8]
+Luku 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 83.
+[9
+
+]
+Overfull \hbox (5.35515pt too wide) in paragraph at lines 175--182
+/aer12/Mit-tauk-sia voidaan suorit-taa jopa täysin au-to-maat-ti-ses-ti (edel-l
+yt-täen et-tä puhe on nimikoitu
+ []
+
+[10]
+Overfull \hbox (3.80656pt too wide) in paragraph at lines 237--242
+/aer12/joi-ta voi hyö-dyn-tää myös nimikoin-nis-sa. Näitä ovat mm. spek-tro-gra
+m-mi, pe-rus-taa-ju-uskäyrä,
+ []
+
+
+Underfull \vbox (badness 1173) has occurred while \output is active []
+
+ [11]
+[12]
+Overfull \hbox (0.77971pt too wide) in paragraph at lines 333--338
+[]/aer12/Aaltomuotokäyrää voidaan käyt-tää esi-mer-kik-si ään-tei-den tarkkaan 
+seg-men-toin-ti-in spek-
+ []
+
+[13] [14]
+</home/lennes/annotation_guide/jpgfigs/conv_ann_example.jpg, id=630, 989.6975pt
+ x 663.47874pt>
+File: /home/lennes/annotation_guide/jpgfigs/conv_ann_example.jpg Graphic file (
+type jpg)
+
+<use /home/lennes/annotation_guide/jpgfigs/conv_ann_example.jpg>
+Overfull \hbox (4.96062pt too wide) in paragraph at lines 374--374
+ [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 26.41264pt on input line 381.
+
+[15 </home/lennes/annotation_guide/jpgfigs/conv_ann_example.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 387--395
+/aer12/kanssa. Puh-editori voidaan asen-taa ti-etokoneisi-in, jois-sa on Window
+s- tai
+ []
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 396.
+(/usr/share/texmf/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+
+Package natbib Warning: Author undefined for citation`Boersma' 
+(natbib)                on page 16 on input line 403.
+
+
+Overfull \hbox (3.1441pt too wide) in paragraph at lines 409--411
+[]/aer12/Praat-ohjelmalla tehdyt an-no-taa-ti-otiedos-tot (TextGrid) on mah-dol
+-lista muun-taa puheti-
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 421.
+
+(/usr/share/texmf/tex/latex/ae/omsaer.fd
+File: omsaer.fd 1999/12/27
+)
+LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 421.
+
+Underfull \hbox (badness 2237) in paragraph at lines 433--446
+[]/aer12/Jos jonkin an-no-taa-tiok-er-roksen A yk-siköille pitää määrit-tää lis
+äpi-irteitä tai
+ []
+
+[16
+
+
+] [17] [18
+
+] [19] [20]
+Underfull \hbox (badness 4181) in paragraph at lines 464--464
+[][][]/aer10/Tässä op-paas-sa ku-vatut yk-siköt ja ni-iden käyt-töo-hjeet vas-t
+aa-vat Kieli-pankin julkaise-man
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 464--464
+/aer10/RDF-skeeman []$/pcrr8t/http : / / www . csc . fi / kielipankki / puhe / 
+schemas / official / annotation /
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 464--464
+/pcrr8t/coreUnits . rdfs$[] /aer10/sisältämiä määrit-te-lyjä. Kieli-pankin tar-
+joa-ma Puh-editori tu-kee ky-seistä RDF-
+ []
+
+[21] [22
+
+]
+Luku 2.
+[23] [24]
+Overfull \hbox (4.97119pt too wide) in paragraph at lines 629--637
+/aer12/Uuden puhetal-len-teen an-no-toin-ti aloite-taan yleen-sä karkeim-mal-ta
+ tasol-ta, esi-mer-kik-si vuoro-
+ []
+
+[25] [26]
+Luku 3.
+[27
+
+] [28] [29]
+</home/lennes/annotation_guide/jpgfigs/VQ_1.jpg, id=739, 505.89pt x 441.65pt>
+File: /home/lennes/annotation_guide/jpgfigs/VQ_1.jpg Graphic file (type jpg)
+
+<use /home/lennes/annotation_guide/jpgfigs/VQ_1.jpg> [30] [31 </home/lennes/ann
+otation_guide/jpgfigs/VQ_1.jpg>] [32] [33] [34
+
+]
+Luku 4.
+[35] [36] [37] [38]
+Overfull \hbox (2.70248pt too wide) in paragraph at lines 1269--1281
+/aer12/takin au-tomaat-tista menetelmää mor-fol-o-gisen ana-lyysin tuot-tamisee
+n, voidaan mor-feemiyk-
+ []
+
+[39]
+Overfull \hbox (2.27109pt too wide) in paragraph at lines 1308--1313
+/aer12/kanssa, mi-kä-li nämä ovat ennestään ole-mas-sa. Ni-is-sä aineis-tois-sa
+, jois-sa virkkei-den nimikoin-
+ []
+
+
+Overfull \hbox (2.12735pt too wide) in paragraph at lines 1345--1353
+/aer12/lue-tun puheen virk-er-ak-en-teen hah-mot-tamises-sa aut-taa myös in-ton
+-aa-tio: virk-keen sävelkulku
+ []
+
+
+Overfull \hbox (3.7106pt too wide) in paragraph at lines 1345--1353
+/aer12/Tätä havain-nol-lis-taa ku-va []4.1[][], jon-ka virkeyk-siköt on ra-jat-
+tu Kieli-pankin tv-uutislähetyksistä
+ []
+
+[40] [41]
+</home/lennes/annotation_guide/jpgfigs/1DB-225586_kaksi_virketta.jpg, id=858, 1
+021.8175pt x 593.21625pt>
+File: /home/lennes/annotation_guide/jpgfigs/1DB-225586_kaksi_virketta.jpg Graph
+ic file (type jpg)
+
+<use /home/lennes/annotation_guide/jpgfigs/1DB-225586_kaksi_virketta.jpg>
+[42 </home/lennes/annotation_guide/jpgfigs/1DB-225586_kaksi_virketta.jpg>]
+[43
+
+
+] [44
+
+]
+Luku 5.
+
+Overfull \hbox (3.2311pt too wide) in paragraph at lines 1410--1420
+/aer12/koemielessä kerätä usei-den an-no-toi-jien sub-jek-ti-iviset ku-u-lon-va
+-raiset arviot saman puhenäyt-
+ []
+
+[45]
+</home/lennes/annotation_guide/jpgfigs/1DB-222809-2_prominenssia.jpg, id=883, 1
+021.8175pt x 593.21625pt>
+File: /home/lennes/annotation_guide/jpgfigs/1DB-222809-2_prominenssia.jpg Graph
+ic file (type jpg)
+
+<use /home/lennes/annotation_guide/jpgfigs/1DB-222809-2_prominenssia.jpg>
+[46 </home/lennes/annotation_guide/jpgfigs/1DB-222809-2_prominenssia.jpg>]
+Overfull \hbox (2.73889pt too wide) in paragraph at lines 1453--1461
+/aer12/de-gree-Of-Promi-nence ja tälle lista ha-lut-tu-ja ar-vo-ja. Samoin toim
+-i-taan, jos ha-lu-taan määritel-
+ []
+
+[47
+
+
+]
+Overfull \hbox (1.5745pt too wide) in paragraph at lines 1521--1526
+/aer12/tel-ty-jä in-ton-aa-tioku-vioi-ta), kan-nat-taa Puh-editorilla periyt-tä
+ä in-ton-aa-tioku-vi-o-lle uusi aliyk-
+ []
+
+
+Overfull \hbox (2.96774pt too wide) in paragraph at lines 1544--1550
+/aer12/Rajataan ku-u-lo-havain-non pe-rus-teel-la. Usein ää-nen sävyn muun-nok-
+sen alka-mi-nen on selvem-
+ []
+
+[48]
+Overfull \hbox (0.9507pt too wide) in paragraph at lines 1598--1606
+/aer12/yksikön nimik-keek-si mer-ki-tä tiedon sävelko-rkeusmuu-tok-sen tyyp-ist
+ä yk-sikön aikana. Tarvit-
+ []
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 1636--1644
+/aer12/Puh-editorissa on mah-dol-lista käyt-tää hyväk-si yk-sikön pi-ir-ret-tä
+ []
+
+
+Overfull \hbox (12.60242pt too wide) in paragraph at lines 1636--1644
+/aer12/IntervalTier-yksikön nimik-keek-si ti-eto voimakku-us-muu-tok-sen tyyp-i
+stä yk-sikön aikana. Tarvit-
+ []
+
+[50]
+Overfull \hbox (8.91914pt too wide) in paragraph at lines 1678--1686
+/aeti12/di-rec-tionOfTem-poChange /aer12/avul-la. Voit mer-ki-tä ky-seisen pi-i
+r-teen ar-vok-si /aeti12/slow-er /aer12/(ym-päristöään
+ []
+
+[51] [52
+
+]
+Luku 6.
+
+</home/lennes/annotation_guide/jpgfigs/1DB-220197_yksi_sana_lausuma_vuoro.jpg, 
+id=949, 505.89pt x 361.35pt>
+File: /home/lennes/annotation_guide/jpgfigs/1DB-220197_yksi_sana_lausuma_vuoro.
+jpg Graphic file (type jpg)
+
+<use /home/lennes/annotation_guide/jpgfigs/1DB-220197_yksi_sana_lausuma_vuoro.j
+pg>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[53] [54 </home/lennes/annotation_guide/jpgfigs/1DB-220197_yksi_sana_lausuma_vu
+oro.jpg>]
+</home/lennes/annotation_guide/jpgfigs/1DB-222809-1_vuoro_ja_tauot.jpg, id=977,
+ 867.24pt x 441.65pt>
+File: /home/lennes/annotation_guide/jpgfigs/1DB-222809-1_vuoro_ja_tauot.jpg Gra
+phic file (type jpg)
+
+<use /home/lennes/annotation_guide/jpgfigs/1DB-222809-1_vuoro_ja_tauot.jpg>
+Overfull \hbox (72.79295pt too wide) in paragraph at lines 1760--1760
+ [] 
+ []
+
+[55 </home/lennes/annotation_guide/jpgfigs/1DB-222809-1_vuoro_ja_tauot.jpg>]
+</home/lennes/annotation_guide/jpgfigs/1DB-222809-1_vuorot_ja_tauot.jpg, id=984
+, 1021.8175pt x 593.21625pt>
+File: /home/lennes/annotation_guide/jpgfigs/1DB-222809-1_vuorot_ja_tauot.jpg Gr
+aphic file (type jpg)
+
+<use /home/lennes/annotation_guide/jpgfigs/1DB-222809-1_vuorot_ja_tauot.jpg>
+[56 </home/lennes/annotation_guide/jpgfigs/1DB-222809-1_vuorot_ja_tauot.jpg>]
+[57
+
+
+
+
+]
+</home/lennes/annotation_guide/jpgfigs/1DB-222809-1_vuorottelu.jpg, id=996, 102
+1.8175pt x 593.21625pt>
+File: /home/lennes/annotation_guide/jpgfigs/1DB-222809-1_vuorottelu.jpg Graphic
+ file (type jpg)
+
+<use /home/lennes/annotation_guide/jpgfigs/1DB-222809-1_vuorottelu.jpg>
+[58 </home/lennes/annotation_guide/jpgfigs/1DB-222809-1_vuorottelu.jpg>]
+</home/lennes/annotation_guide/jpgfigs/1DB-220197_kaksi_lausumaa.jpg, id=1002, 
+578.16pt x 361.35pt>
+File: /home/lennes/annotation_guide/jpgfigs/1DB-220197_kaksi_lausumaa.jpg Graph
+ic file (type jpg)
+
+<use /home/lennes/annotation_guide/jpgfigs/1DB-220197_kaksi_lausumaa.jpg>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[59
+
+
+] [60 </home/lennes/annotation_guide/jpgfigs/1DB-220197_kaksi_lausumaa.jpg>]
+</home/lennes/annotation_guide/jpgfigs/1DB-222809-2_rynt.jpg, id=1031, 1021.817
+5pt x 593.21625pt>
+File: /home/lennes/annotation_guide/jpgfigs/1DB-222809-2_rynt.jpg Graphic file 
+(type jpg)
+
+<use /home/lennes/annotation_guide/jpgfigs/1DB-222809-2_rynt.jpg>
+
+LaTeX Warning: Float too large for page by 8.21126pt on input line 1889.
+
+[61 </home/lennes/annotation_guide/jpgfigs/1DB-222809-2_rynt.jpg>]
+Overfull \hbox (2.85867pt too wide) in paragraph at lines 1924--1933
+/aer12/alue. Esi-mer-kik-si par-al-ingvis-tisiä pi-irteitä voidaan myös jät-tää
+ tauko-jen ulkop-uolelle. Joskus
+ []
+
+
+Overfull \hbox (2.0905pt too wide) in paragraph at lines 1937--1942
+/aer12/nok-set, []3[][]), minkä jäl-keen taukoyk-siköt voidaan ra-ja-ta täysin 
+au-to-maat-ti-ses-ti. Mi-kä-li tauoille
+ []
+
+[62
+
+
+] [63] [64
+
+]
+Luku 7.
+[65] [66]
+Overfull \hbox (1.7186pt too wide) in paragraph at lines 2119--2122
+/aer12/Cough-yksiköille ei Puh-editorissa mer-ki-tä er-il-listä ku-vaus-ta. Pra
+atis-sa yskimistä ku-vaavaan
+ []
+
+[67]
+Overfull \hbox (4.95871pt too wide) in paragraph at lines 2159--2162
+/aer12/Nielaisuyksiköille ei Puh-editorissa mer-ki-tä er-il-listä ku-vaus-ta. P
+raatis-sa nielaisu-ja ku-vaavaan
+ []
+
+[68] [69] [70]
+Underfull \hbox (badness 10000) in paragraph at lines 2319--2322
+/aer12/Lipsmack-yksiköille ei Puh-editorissa mer-ki-tä er-il-listä ku-vaus-ta. 
+Praatis-sa
+ []
+
+[71] [72
+
+]
+Luku 8.
+[73] [74
+
+]
+Luku 9.
+[75] [76]
+Overfull \hbox (3.31569pt too wide) in paragraph at lines 2507--2518
+/aer12/seisen henkilön kat-seen su-un-ta muut-tuu. Mi-kä-li kah-den puhu-jan /a
+eti12/Gaze/aer12/-annotaatiokerroksissa
+ []
+
+[77] [78]
+Luku 10.
+[79
+
+]
+Overfull \hbox (4.45448pt too wide) in paragraph at lines 2643--2648
+/aer12/tää Puh-editorissa /aebx12/Hes-i-ta-tion/aer12/-yksiköstä aliyk-sikkö, j
+ol-la on ha-lu-tut om-i-naisu-udet ja määrä-
+ []
+
+[80] [81] [82
+
+] [83] [84]
+Liite A.
+
+Overfull \hbox (17.03021pt too wide) in paragraph at lines 2670--2675
+/aer12/Eniten käytet-ty foneet-ti-nen tran-skrip-tio-jär-jestelmä on /aebx12/ka
+n-sain-vä-li-nen foneet-ti-nen aakkos-
+ []
+
+[85
+
+]
+</home/lennes/annotation_guide/jpgfigs/vowels.jpg, id=1258, 518.1759pt x 352.43
+67pt>
+File: /home/lennes/annotation_guide/jpgfigs/vowels.jpg Graphic file (type jpg)
+ <use /home/lennes/annotation_guide/jpgfigs/vowels.jpg>
+Overfull \hbox (22.9756pt too wide) in paragraph at lines 2725--2725
+ [] 
+ []
+
+[86 </home/lennes/annotation_guide/jpgfigs/vowels.jpg>]
+</home/lennes/annotation_guide/jpgfigs/consonants.jpg, id=1264, 527.571pt x 365
+.6862pt>
+File: /home/lennes/annotation_guide/jpgfigs/consonants.jpg Graphic file (type j
+pg)
+ <use /home/lennes/annotation_guide/jpgfigs/consonants.jpg>
+
+LaTeX Warning: Float too large for page by 8.44235pt on input line 2745.
+
+[87 </home/lennes/annotation_guide/jpgfigs/consonants.jpg>]
+</home/lennes/annotation_guide/jpgfigs/diacritics.jpg, id=1270, 398.9304pt x 54
+7.8066pt>
+File: /home/lennes/annotation_guide/jpgfigs/diacritics.jpg Graphic file (type j
+pg)
+ <use /home/lennes/annotation_guide/jpgfigs/diacritics.jpg> [88
+
+
+]
+[89 </home/lennes/annotation_guide/jpgfigs/diacritics.jpg>] [90
+
+]
+Liite B.
+
+Underfull \hbox (badness 1371) in paragraph at lines 2771--2783
+/aer12/op-paas-sa ku-vat-tu-ja an-no-taa-tioyk-siköitä ja -periaatteita. Ku-vas
+-sa []B.1[][] on es-imerk-ki
+ []
+
+
+</home/lennes/annotation_guide/jpgfigs/KA-litteraatti.jpg, id=1284, 180.675pt x
+ 163.3302pt>
+File: /home/lennes/annotation_guide/jpgfigs/KA-litteraatti.jpg Graphic file (ty
+pe jpg)
+ <use /home/lennes/annotation_guide/jpgfigs/KA-litteraatti.jpg>
+Overfull \hbox (3.03647pt too wide) in paragraph at lines 2808--2808
+[]|/aebx12/Merkintä
+ []
+
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 2868.
+
+Underfull \vbox (badness 10000) detected at line 2887
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2892--2892
+[]|/pcrr8t@12.0pt/$joo$,
+ []
+
+
+LaTeX Warning: Float too large for page by 29.44118pt on input line 2938.
+
+
+Overfull \hbox (1.22339pt too wide) in paragraph at lines 2954--2961
+[]/aer12/Joidenkin keskustelu-n-ana-lyyt-ti-sis-sa lit-ter-aateis-sa käytet-ty-
+jen yk-siköi-den ajal-lisen vaiku-
+ []
+
+[91] [92 </home/lennes/annotation_guide/jpgfigs/KA-litteraatti.jpg>] [93]
+[94]
+</home/lennes/annotation_guide/jpgfigs/CA-puh-editori.jpg, id=1324, 770.88pt x 
+578.16pt>
+File: /home/lennes/annotation_guide/jpgfigs/CA-puh-editori.jpg Graphic file (ty
+pe jpg)
+ <use /home/lennes/annotation_guide/jpgfigs/CA-puh-editori.jpg>
+
+LaTeX Warning: Float too large for page by 20.39734pt on input line 2978.
+
+[95 </home/lennes/annotation_guide/jpgfigs/CA-puh-editori.jpg>]
+</home/lennes/annotation_guide/jpgfigs/CA-praat.jpg, id=1329, 770.88pt x 578.16
+pt>
+File: /home/lennes/annotation_guide/jpgfigs/CA-praat.jpg Graphic file (type jpg
+)
+ <use /home/lennes/annotation_guide/jpgfigs/CA-praat.jpg>
+
+LaTeX Warning: Float too large for page by 20.39734pt on input line 2995.
+
+[96 </home/lennes/annotation_guide/jpgfigs/CA-praat.jpg>]
+Liite C.
+<jpgfigs/Phone_BEGtita.jpg, id=1334, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_BEGtita.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_BEGtita.jpg>
+<jpgfigs/Phone_tk.jpg, id=1335, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_tk.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_tk.jpg>
+<jpgfigs/Phone_asta.jpg, id=1336, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_asta.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_asta.jpg>
+<jpgfigs/Phone_ks.jpg, id=1337, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_ks.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_ks.jpg>
+<jpgfigs/Phone_nidio.jpg, id=1338, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_nidio.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_nidio.jpg>
+<jpgfigs/Phone_muude.jpg, id=1339, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_muude.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_muude.jpg>
+<jpgfigs/Phone_lebaN.jpg, id=1340, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_lebaN.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_lebaN.jpg> [97
+
+
+
+
+
+] [98 <./jpgfigs/Phone_BEGtita.jpg>]
+<jpgfigs/Phone_us.jpg, id=1377, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_us.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_us.jpg>
+<jpgfigs/Phone_yzym.jpg, id=1378, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_yzym.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_yzym.jpg>
+<jpgfigs/Phone_thyv.jpg, id=1379, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_thyv.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_thyv.jpg>
+<jpgfigs/Phone_puhum.jpg, id=1380, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_puhum.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_puhum.jpg>
+<jpgfigs/Phone_vauvaa.jpg, id=1381, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_vauvaa.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_vauvaa.jpg>
+<jpgfigs/Phone_BEGvan.jpg, id=1382, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_BEGvan.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_BEGvan.jpg>
+Overfull \hbox (1.07065pt too wide) in paragraph at lines 3249--3256
+/aer12/ero-tu spek-tro-gram-mis-sa viereis-es-tä vokaal-ista ju-uri muuten kuin
+ for-mant-tisi-ir-tyminä. Likvi-
+ []
+
+[99 <./jpgfigs/Phone_tk.jpg>] [100 <./jpgfigs/Phone_asta.jpg>]
+<jpgfigs/Phone_oleell.jpg, id=1402, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_oleell.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_oleell.jpg>
+<jpgfigs/Phone_VlV.jpg, id=1403, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_VlV.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_VlV.jpg>
+<jpgfigs/Phone_nl_wclicks.jpg, id=1404, 505.89pt x 397.485pt>
+File: jpgfigs/Phone_nl_wclicks.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_nl_wclicks.jpg> [101 <./jpgfigs/Phone_ks.jpg>] [102 <./jpgfi
+gs/Phone_nidio.jpg>] [103 <./jpgfigs/Phone_muude.jpg>] [104 <./jpgfigs/Phone_le
+baN.jpg>] <jpgfigs/Phone_mi.jpg, id=1428, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_mi.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_mi.jpg>
+<jpgfigs/Phone_Nk.jpg, id=1429, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_Nk.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_Nk.jpg>
+<jpgfigs/Phone_arvoa.jpg, id=1430, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_arvoa.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_arvoa.jpg>
+<jpgfigs/Phone_r_btw_vowels.jpg, id=1431, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_r_btw_vowels.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_r_btw_vowels.jpg>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[105 <./jpgfigs/Phone_us.jpg>] [106 <./jpgfigs/Phone_yzym.jpg>]
+<jpgfigs/Phone_sijas.jpg, id=1450, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_sijas.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_sijas.jpg> [107 <./jpgfigs/Phone_thyv.jpg>] [108 <./jpgfigs/
+Phone_puhum.jpg>] [109 <./jpgfigs/Phone_vauvaa.jpg>] [110 <./jpgfigs/Phone_BEGv
+an.jpg>] [111 <./jpgfigs/Phone_oleell.jpg>] [112 <./jpgfigs/Phone_VlV.jpg>]
+[113 <./jpgfigs/Phone_nl_wclicks.jpg>] [114 <./jpgfigs/Phone_mi.jpg> <./jpgfigs
+/Phone_Nk.jpg>] [115 <./jpgfigs/Phone_arvoa.jpg>]
+<jpgfigs/Phone_BEGasi.jpg, id=1494, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_BEGasi.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_BEGasi.jpg>
+<jpgfigs/Phone_miaeis.jpg, id=1495, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_miaeis.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_miaeis.jpg> [116 <./jpgfigs/Phone_r_btw_vowels.jpg>]
+<jpgfigs/Phone_loukk.jpg, id=1502, 505.89pt x 361.35pt>
+File: jpgfigs/Phone_loukk.jpg Graphic file (type jpg)
+
+<use jpgfigs/Phone_loukk.jpg> [117 <./jpgfigs/Phone_sijas.jpg>] [118 <./jpgfigs
+/Phone_BEGasi.jpg>] [119 <./jpgfigs/Phone_miaeis.jpg>] [120 <./jpgfigs/Phone_lo
+ukk.jpg>] (./annotation_guide.bbl
+Underfull \hbox (badness 1509) in paragraph at lines 16--18
+[]/aeti12/EAGLES/ISLE overview of meta-da-ta ini-tia-tives and cor-pus meta-da-
+ta in lan-
+ []
+
+[121
+
+
+]
+Underfull \hbox (badness 1320) in paragraph at lines 68--70
+[][]/aer12/, /aeti12/Vuorot-telu-jäsen-nys/aer12/, Keskustelu-n-ana-lyysin pe-r
+us-teet (Li-isa Tainio, ed.),
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 72--75
+[]/aer12/Auli Haku-li-nen, Maria Vilku-na, Ri-it-ta Ko-rho-nen, Vesa Koivis-to,
+ Tar-ja Ri-it-ta
+ []
+
+) (./annotation_guide.ind [122] [123
+
+] [124] [125
+
+]) (./annotation_guide.aux) ) 
+Here is how much of TeX's memory you used:
+ 5531 strings out of 50453
+ 76167 string characters out of 688420
+ 131286 words of memory out of 1500001
+ 7786 multiletter control sequences out of 10000+25000
+ 53840 words of font info for 100 fonts, out of 400000 for 1000
+ 111 hyphenation exceptions out of 10000
+ 34i,10n,37p,890b,507s stack positions out of 3000i,500n,3000p,50000b,5000s
+</usr/share/texmf/fonts/type1/bluesky/cm/cmbxti10.
+pfb>{/usr/share/texmf/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/bluesky/c
+m/cmsy8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/tex
+mf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/c
+mti10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/
+fonts/type1/bluesky/cm/cmr7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi12
+.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf/font
+s/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsl12.pfb
+></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/ty
+pe1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
+Output written on annotation_guide.pdf (125 pages, 2947647 bytes).

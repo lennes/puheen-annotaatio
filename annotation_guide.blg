@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99c (Web2C 7.3.1)
+The top-level auxiliary file: annotation_guide.aux
+The style file: amsplain.bst
+Database file #1: /home/lennes/annotation_guide/annotation_guide.bib
+Warning--I'm ignoring Schiel04's extra "note" field
+--line 316 of file /home/lennes/annotation_guide/annotation_guide.bib
+Warning--to sort, need author or key in ISLEmultimodal02
+Warning--to sort, need author or key in Sampa
+Warning--missing booktitle in Hieronymus93
+Warning--missing journal name in Perakyla04
+Warning--missing pages in Perakyla04
+Warning--missing publisher in Vainio01
+You've used 25 entries,
+            2213 wiz_defined-function locations,
+            658 strings with 7550 characters,
+and the built_in function-call counts, 6666 in all, are:
+= -- 532
+> -- 278
+< -- 3
++ -- 111
+- -- 84
+* -- 482
+:= -- 1071
+add.period$ -- 25
+call.type$ -- 25
+change.case$ -- 114
+chr.to.int$ -- 0
+cite$ -- 31
+duplicate$ -- 331
+empty$ -- 668
+format.name$ -- 84
+if$ -- 1413
+int.to.chr$ -- 0
+int.to.str$ -- 25
+missing$ -- 54
+newline$ -- 85
+num.names$ -- 55
+pop$ -- 213
+preamble$ -- 1
+purify$ -- 90
+quote$ -- 0
+skip$ -- 176
+stack$ -- 0
+substring$ -- 275
+swap$ -- 44
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 80
+warning$ -- 6
+while$ -- 62
+width$ -- 27
+write$ -- 218
+(There were 7 warnings)

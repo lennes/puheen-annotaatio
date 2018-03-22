@@ -1,0 +1,154 @@
+\indexentry{annotoida|hyperpage}{9}
+\indexentry{nimikointi|hyperpage}{9}
+\indexentry{nimike|hyperpage}{9}
+\indexentry{annotaatio|hyperpage}{9}
+\indexentry{signaali|hyperpage}{9}
+\indexentry{segmentoida|hyperpage}{9}
+\indexentry{segmentti|hyperpage}{9}
+\indexentry{ankkuri|hyperpage}{9}
+\indexentry{anchor|hyperpage}{9}
+\indexentry{litteraatio|hyperpage}{10}
+\indexentry{transliteration|hyperpage}{10}
+\indexentry{transcript|hyperpage}{10}
+\indexentry{leve\"akaistainen spektrogrammi|hyperpage}{12}
+\indexentry{kapeakaistainen spektrogrammi|hyperpage}{12}
+\indexentry{perustaajuus|hyperpage}{12}
+\indexentry{F0|hyperpage}{12}
+\indexentry{periodi|hyperpage}{12}
+\indexentry{periodisuus|hyperpage}{12}
+\indexentry{hertsi|hyperpage}{13}
+\indexentry{taustatiedot|hyperpage}{14}
+\indexentry{metatiedot|hyperpage}{14}
+\indexentry{metadata|hyperpage}{14}
+\indexentry{dialogin annotaatio, esimerkki|hyperpage}{15}
+\indexentry{periytt\"aminen|hyperpage}{23}
+\indexentry{aliyksikk\"o|hyperpage}{23}
+\indexentry{\"a\"anil\"ahde|hyperpage}{24}
+\indexentry{soundSource|hyperpage}{24}
+\indexentry{kieli|hyperpage}{25}
+\indexentry{yksik\"on kieli|hyperpage}{25}
+\indexentry{language|hyperpage}{25}
+\indexentry{comment|hyperpage}{25}
+\indexentry{yksik\"on tila|hyperpage}{25}
+\indexentry{yksik\"on ty\"ovaihe|hyperpage}{25}
+\indexentry{status|hyperpage}{25}
+\indexentry{virheellinen annotaatio|hyperpage}{25}
+\indexentry{keskener\"aisyys|hyperpage}{25}
+\indexentry{nimikoinnin hyv\"aksyminen|hyperpage}{25}
+\indexentry{annotaation hyv\"aksyminen|hyperpage}{25}
+\indexentry{kelluva yksikk\"o|hyperpage}{25}
+\indexentry{kelluva yksikk\"o|hyperpage}{25}
+\indexentry{floating unit|hyperpage}{25}
+\indexentry{PhoneticUtterance|hyperpage}{27}
+\indexentry{puhunnos|hyperpage}{27}
+\indexentry{Phone|hyperpage}{28}
+\indexentry{fooni|hyperpage}{28}
+\indexentry{\"a\"anne|hyperpage}{28}
+\indexentry{IPA|hyperpage}{28}
+\indexentry{VoiceQuality|hyperpage}{30}
+\indexentry{\"a\"anenlaatu|hyperpage}{30}
+\indexentry{Whisper|hyperpage}{32}
+\indexentry{kuiskaus|hyperpage}{32}
+\indexentry{BreathyVoice|hyperpage}{32}
+\indexentry{henk\"ayssointi|hyperpage}{32}
+\indexentry{CreakyVoice|hyperpage}{33}
+\indexentry{narina\"a\"ani|hyperpage}{33}
+\indexentry{FalsettoVoice|hyperpage}{33}
+\indexentry{falsetti\"a\"ani|hyperpage}{33}
+\indexentry{Phoneme|hyperpage}{35}
+\indexentry{foneemi|hyperpage}{35}
+\indexentry{Word|hyperpage}{36}
+\indexentry{Sana|hyperpage}{36}
+\indexentry{kelluva yksikk\"o|hyperpage}{36}
+\indexentry{floating unit|hyperpage}{36}
+\indexentry{Syllable|hyperpage}{38}
+\indexentry{tavu|hyperpage}{38}
+\indexentry{Morpheme|hyperpage}{38}
+\indexentry{morfeemi|hyperpage}{38}
+\indexentry{sanavartalo|hyperpage}{39}
+\indexentry{vartalo, sana-|hyperpage}{39}
+\indexentry{johdin|hyperpage}{39}
+\indexentry{tunnus|hyperpage}{39}
+\indexentry{p\"a\"ate|hyperpage}{39}
+\indexentry{omistusliite|hyperpage}{39}
+\indexentry{liitepartikkeli|hyperpage}{39}
+\indexentry{morfeemiyhdistelm\"a|hyperpage}{39}
+\indexentry{nipputunnus|hyperpage}{39}
+\indexentry{Clause|hyperpage}{39}
+\indexentry{Sentence|hyperpage}{40}
+\indexentry{virke|hyperpage}{40}
+\indexentry{Prominence|hyperpage}{45}
+\indexentry{prominenssi|hyperpage}{45}
+\indexentry{Stress|hyperpage}{47}
+\indexentry{sanapaino|hyperpage}{47}
+\indexentry{IntonationPattern|hyperpage}{48}
+\indexentry{intonaatiokuvio|hyperpage}{48}
+\indexentry{ChangeInTone|hyperpage}{48}
+\indexentry{\"a\"anens\"avy|hyperpage}{48}
+\indexentry{ChangeInPitch|hyperpage}{49}
+\indexentry{s\"avelkorkeus|hyperpage}{49}
+\indexentry{ChangeInLoudness|hyperpage}{50}
+\indexentry{voimakkuus|hyperpage}{50}
+\indexentry{ChangeInTempo|hyperpage}{50}
+\indexentry{tempo|hyperpage}{50}
+\indexentry{puhenopeus|hyperpage}{50}
+\indexentry{nopeus|hyperpage}{50}
+\indexentry{Turn|hyperpage}{53}
+\indexentry{vuoro|hyperpage}{53}
+\indexentry{ProsodicUtterance|hyperpage}{59}
+\indexentry{lausuma|hyperpage}{59}
+\indexentry{Pause|hyperpage}{62}
+\indexentry{tauko|hyperpage}{62}
+\indexentry{Breathing|hyperpage}{65}
+\indexentry{hengitys|hyperpage}{65}
+\indexentry{Sigh|hyperpage}{66}
+\indexentry{huokaus|hyperpage}{66}
+\indexentry{Yawn|hyperpage}{66}
+\indexentry{haukotus|hyperpage}{66}
+\indexentry{Sniff|hyperpage}{67}
+\indexentry{niiskutus|hyperpage}{67}
+\indexentry{ClearThroat|hyperpage}{67}
+\indexentry{ryk\"aisy|hyperpage}{67}
+\indexentry{Cough|hyperpage}{67}
+\indexentry{yskiminen|hyperpage}{67}
+\indexentry{Sneeze|hyperpage}{68}
+\indexentry{aivastus|hyperpage}{68}
+\indexentry{Swallow|hyperpage}{68}
+\indexentry{nielaisu|hyperpage}{68}
+\indexentry{Laughter|hyperpage}{68}
+\indexentry{nauru|hyperpage}{68}
+\indexentry{Smile|hyperpage}{69}
+\indexentry{hymyily|hyperpage}{69}
+\indexentry{Weep|hyperpage}{69}
+\indexentry{itku|hyperpage}{69}
+\indexentry{Sob|hyperpage}{70}
+\indexentry{nyyhkytys|hyperpage}{70}
+\indexentry{TongueClick|hyperpage}{70}
+\indexentry{kielen naksahdus|hyperpage}{70}
+\indexentry{maiskautus, kielen|hyperpage}{70}
+\indexentry{Lipsmack|hyperpage}{71}
+\indexentry{maiskautus, huulten|hyperpage}{71}
+\indexentry{Noise|hyperpage}{73}
+\indexentry{h\"aly|hyperpage}{73}
+\indexentry{funktio, kineettiset yksik\"ot|hyperpage}{75}
+\indexentry{Gesture|hyperpage}{76}
+\indexentry{ele|hyperpage}{76}
+\indexentry{Mimic|hyperpage}{77}
+\indexentry{ilme|hyperpage}{77}
+\indexentry{Gaze|hyperpage}{77}
+\indexentry{katse|hyperpage}{77}
+\indexentry{Posture|hyperpage}{78}
+\indexentry{asento|hyperpage}{78}
+\indexentry{Topic|hyperpage}{79}
+\indexentry{topiikki|hyperpage}{79}
+\indexentry{Sequence|hyperpage}{79}
+\indexentry{sekvenssi|hyperpage}{79}
+\indexentry{SpeechFunction|hyperpage}{80}
+\indexentry{puhefunktio|hyperpage}{80}
+\indexentry{Hesitation|hyperpage}{80}
+\indexentry{ep\"ar\"ointi|hyperpage}{80}
+\indexentry{Chunk|hyperpage}{81}
+\indexentry{jakso|hyperpage}{81}
+\indexentry{IPA|hyperpage}{85}
+\indexentry{tarkemerkki|hyperpage}{89}
+\indexentry{diakriitti|hyperpage}{89}

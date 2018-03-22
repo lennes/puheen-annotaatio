@@ -1,0 +1,102 @@
+\BOOKMARK [-1][-]{part.1}{I Puheen annotaatio}{}
+\BOOKMARK [0][-]{chapter.1}{Mit\344 on annotaatio?}{part.1}
+\BOOKMARK [1][-]{section*.2}{Miksi puhetta nimikoidaan eli annotoidaan?}{chapter.1}
+\BOOKMARK [2][-]{section*.3}{Johdonmukainen annotaatio}{section*.2}
+\BOOKMARK [1][-]{section*.4}{Akustisten analyysien hy\366dynt\344minen nimikoinnissa}{chapter.1}
+\BOOKMARK [2][-]{section*.5}{Spektrogrammi}{section*.4}
+\BOOKMARK [2][-]{section*.6}{Intensiteettik\344yr\344}{section*.4}
+\BOOKMARK [2][-]{section*.7}{Perustaajuusk\344yr\344}{section*.4}
+\BOOKMARK [2][-]{section*.8}{Aaltomuoto}{section*.4}
+\BOOKMARK [1][-]{section*.9}{Aineiston luomat rajoitukset}{chapter.1}
+\BOOKMARK [1][-]{section*.10}{Annotointity\366kalut}{chapter.1}
+\BOOKMARK [2][-]{section*.11}{Annotointi Puh-editorilla}{section*.10}
+\BOOKMARK [2][-]{section*.12}{Annotointi Praat-ohjelmalla}{section*.10}
+\BOOKMARK [-1][-]{part.2}{II Annotaatioyksik\366t}{}
+\BOOKMARK [0][-]{chapter.2}{Kuinka annotaatioyksik\366it\344 k\344ytet\344\344n?}{part.2}
+\BOOKMARK [1][-]{section*.13}{Annotaatioyksik\366iden k\344ytt\366}{chapter.2}
+\BOOKMARK [1][-]{section*.14}{Uuden annotaatioyksik\366n m\344\344ritteleminen}{chapter.2}
+\BOOKMARK [2][-]{section*.15}{Milloin tarvitaan uusi annotaatiokerros?}{section*.14}
+\BOOKMARK [2][-]{section*.16}{Sama vai eri yksikk\366?}{section*.14}
+\BOOKMARK [2][-]{section*.17}{Annotaatioyksik\366n piirteiden m\344\344ritteleminen}{section*.14}
+\BOOKMARK [1][-]{section*.19}{Suositeltava annotointij\344rjestys}{chapter.2}
+\BOOKMARK [1][-]{section*.20}{Perusyksik\366iden kuvaukset}{chapter.2}
+\BOOKMARK [0][-]{chapter.3}{Foneettiset yksik\366t}{part.2}
+\BOOKMARK [1][-]{section*.21}{PhoneticUtterance -- puhunnos}{chapter.3}
+\BOOKMARK [1][-]{section*.26}{Phone -- fooni, \344\344nne}{chapter.3}
+\BOOKMARK [1][-]{section*.32}{VoiceQuality -- \344\344nenlaatu}{chapter.3}
+\BOOKMARK [2][-]{section*.35}{Whisper -- kuiskaus}{section*.32}
+\BOOKMARK [2][-]{section*.39}{BreathyVoice -- henk\344yssointi}{section*.32}
+\BOOKMARK [2][-]{section*.43}{CreakyVoice -- narina\344\344ni}{section*.32}
+\BOOKMARK [2][-]{section*.47}{FalsettoVoice -- falsetti\344\344ni}{section*.32}
+\BOOKMARK [0][-]{chapter.4}{Lingvistiset yksik\366t}{part.2}
+\BOOKMARK [1][-]{section*.51}{Phoneme -- foneemi}{chapter.4}
+\BOOKMARK [1][-]{section*.56}{Word -- sana}{chapter.4}
+\BOOKMARK [1][-]{section*.64}{Syllable -- tavu}{chapter.4}
+\BOOKMARK [1][-]{section*.69}{Morpheme -- morfeemi}{chapter.4}
+\BOOKMARK [1][-]{section*.74}{Clause -- lause}{chapter.4}
+\BOOKMARK [1][-]{section*.79}{Sentence -- virke}{chapter.4}
+\BOOKMARK [0][-]{chapter.5}{Prosodiset yksik\366t}{part.2}
+\BOOKMARK [1][-]{section*.84}{Prominence -- prominenssi}{chapter.5}
+\BOOKMARK [2][-]{section*.89}{Stress -- sanapaino}{section*.84}
+\BOOKMARK [1][-]{section*.94}{IntonationPattern -- intonaatiokuvio}{chapter.5}
+\BOOKMARK [1][-]{section*.99}{ChangeInTone -- \344\344nens\344vyn muutos}{chapter.5}
+\BOOKMARK [1][-]{section*.104}{ChangeInPitch -- s\344velkorkeuden muutos}{chapter.5}
+\BOOKMARK [1][-]{section*.109}{ChangeInLoudness -- voimakkuuden muutos}{chapter.5}
+\BOOKMARK [1][-]{section*.114}{ChangeInTempo -- puhenopeuden muutos}{chapter.5}
+\BOOKMARK [0][-]{chapter.6}{Vuorovaikutusyksik\366t}{part.2}
+\BOOKMARK [1][-]{section*.119}{Turn -- vuoro}{chapter.6}
+\BOOKMARK [1][-]{section*.124}{ProsodicUtterance -- lausuma}{chapter.6}
+\BOOKMARK [1][-]{section*.129}{Pause -- tauko}{chapter.6}
+\BOOKMARK [0][-]{chapter.7}{Paralingvistiset yksik\366t}{part.2}
+\BOOKMARK [1][-]{section*.134}{Riippuvuudet muista yksik\366ist\344}{chapter.7}
+\BOOKMARK [1][-]{section*.135}{Fysiologista tilaa ilmaisevat}{chapter.7}
+\BOOKMARK [2][-]{section*.136}{Breathing -- hengitys}{section*.135}
+\BOOKMARK [2][-]{section*.140}{Sigh -- huokaus}{section*.135}
+\BOOKMARK [2][-]{section*.144}{Yawn -- haukotus}{section*.135}
+\BOOKMARK [2][-]{section*.148}{Sniff -- niiskautus}{section*.135}
+\BOOKMARK [2][-]{section*.152}{ClearThroat -- ryk\344isy}{section*.135}
+\BOOKMARK [2][-]{section*.156}{Cough -- yskiminen}{section*.135}
+\BOOKMARK [2][-]{section*.160}{Sneeze -- aivastus}{section*.135}
+\BOOKMARK [2][-]{section*.164}{Swallow -- nielaisu}{section*.135}
+\BOOKMARK [1][-]{section*.168}{Tunnetilaa ilmaisevat}{chapter.7}
+\BOOKMARK [2][-]{section*.169}{Laughter -- nauru}{section*.168}
+\BOOKMARK [2][-]{section*.173}{Smile -- hymyily}{section*.168}
+\BOOKMARK [2][-]{section*.177}{Weep -- itku}{section*.168}
+\BOOKMARK [2][-]{section*.181}{Sob -- nyyhkytys}{section*.168}
+\BOOKMARK [1][-]{section*.185}{Muut}{chapter.7}
+\BOOKMARK [2][-]{section*.186}{TongueClick -- kielen naksahdus}{section*.185}
+\BOOKMARK [2][-]{section*.190}{Lipsmack -- huulten maiskautus}{section*.185}
+\BOOKMARK [0][-]{chapter.8}{Ulkopuoliset \344\344net}{part.2}
+\BOOKMARK [1][-]{section*.194}{Noise -- h\344ly}{chapter.8}
+\BOOKMARK [0][-]{chapter.9}{Kineettiset yksik\366t}{part.2}
+\BOOKMARK [1][-]{section*.198}{Kineettisten yksik\366iden annotointi}{chapter.9}
+\BOOKMARK [1][-]{section*.200}{Gesture -- ele}{chapter.9}
+\BOOKMARK [1][-]{section*.203}{Mimic -- ilme}{chapter.9}
+\BOOKMARK [2][-]{section*.207}{Gaze -- katse}{section*.203}
+\BOOKMARK [1][-]{section*.211}{Posture -- asento}{chapter.9}
+\BOOKMARK [0][-]{chapter.10}{Apuyksik\366t}{part.2}
+\BOOKMARK [1][-]{section*.215}{Topic -- topiikki}{chapter.10}
+\BOOKMARK [1][-]{section*.218}{Sequence -- sekvenssi}{chapter.10}
+\BOOKMARK [1][-]{section*.222}{SpeechFunction -- puhetoiminto}{chapter.10}
+\BOOKMARK [1][-]{section*.225}{Hesitation -- ep\344r\366inti}{chapter.10}
+\BOOKMARK [1][-]{section*.229}{Chunk -- jakso}{chapter.10}
+\BOOKMARK [-1][-]{part.3}{III Liitteet}{}
+\BOOKMARK [0][-]{appendix.A}{Foneettiset merkit}{part.3}
+\BOOKMARK [1][-]{section*.232}{Worldbet-symbolit}{appendix.A}
+\BOOKMARK [2][-]{section*.233}{Vokaalimerkit}{section*.232}
+\BOOKMARK [2][-]{section*.234}{Konsonanttimerkit}{section*.232}
+\BOOKMARK [2][-]{section*.235}{Tarkkeet eli diakriitit}{section*.232}
+\BOOKMARK [0][-]{appendix.B}{Keskustelunanalyysin litterointimerkit}{part.3}
+\BOOKMARK [1][-]{section*.236}{Litteraatin muuntaminen monikerroksiseksi annotaatioksi}{appendix.B}
+\BOOKMARK [0][-]{appendix.C}{\304\344nteiden segmentointiesimerkkej\344}{part.3}
+\BOOKMARK [1][-]{section*.237}{Konsonantit}{appendix.C}
+\BOOKMARK [2][-]{section*.238}{Klusiilit}{section*.237}
+\BOOKMARK [2][-]{section*.239}{Frikatiivit}{section*.237}
+\BOOKMARK [2][-]{section*.240}{Likvidat}{section*.237}
+\BOOKMARK [2][-]{section*.241}{Nasaalit}{section*.237}
+\BOOKMARK [2][-]{section*.242}{Tremulantit}{section*.237}
+\BOOKMARK [2][-]{section*.243}{Approksimantit eli puolivokaalit}{section*.237}
+\BOOKMARK [1][-]{section*.244}{Vokaalit}{appendix.C}
+\BOOKMARK [2][-]{section*.245}{Yksin\344isvokaalit eli monoftongit}{section*.244}
+\BOOKMARK [2][-]{section*.246}{Diftongien segmentointi}{section*.244}
+\BOOKMARK [0][-]{figure.C.24}{Kirjallisuutta}{part.3}

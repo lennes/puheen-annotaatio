@@ -1,0 +1,3508 @@
+%% LyX 1.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,finnish]{book}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{a4wide}
+\setcounter{secnumdepth}{0}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{makeidx}
+\makeindex
+\IfFileExists{url.sty}{\usepackage{url}}
+                      {\newcommand{\url}{\texttt}}
+\usepackage[numbers]{natbib}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Bold symbol macro for standard LaTeX users
+\newcommand{\boldsymbol}[1]{\mbox{\boldmath $#1$}}
+
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{ae,aecompl}
+\usepackage[plainpages=false,pdfpagelabels]{hyperref}
+\usepackage[pdftex]{graphicx}
+\usepackage{lscape}
+
+% Change this if using latex instead of pdflatex:
+\graphicspath{{jpgfigs/}}
+\DeclareGraphicsExtensions{.jpg,.eps}
+
+\usepackage{makeidx}
+\usepackage[T1]{tipa}
+\usepackage{tipx}
+\usepackage{longtable}
+\usepackage{multirow}
+
+\input{/home/lennes/bin/tex/fihyph}
+
+\renewcommand\ttdefault{pcr}
+
+\AtBeginDocument{
+  \renewcommand{\labelitemiii}{\normalfont\bfseries{--}}
+  \renewcommand{\labelitemiv}{\normalfont\bfseries{--}}
+}
+
+\usepackage{babel}
+\makeatother
+\begin{document}
+
+\title{Puheaineiston annotaatio eli nimikointi}
+
+
+\author{Mietta Lennes\\
+Sanna Ahjoniemi}
+
+
+\date{Versio 1.01\\
+\today}
+
+\maketitle
+\tableofcontents{}
+
+
+\part{\label{par:Puheen-annotaatio}Puheen annotaatio}
+
+
+\chapter{\label{sec:Mita-on-annotaatio?}Mit‰ on annotaatio?}
+
+\textbf{Annotointi\index{annotoida} eli nimikointi\index{nimikointi}
+on puhe- tai muun aineiston kuvaamista, luokittelua ja j‰sentely‰
+systemaattisella tavalla.} Digitaalisesti tallennettu puhen‰yte nimikoidaan
+yleens‰ jollakin t‰h‰n tarkoitukseen kehitetyll‰ tietokoneohjelmalla
+(esim. Praat, Puh-editori, CLAN, Anvil). T‰m‰ annotaatio-oppaan osa
+kannattaa lukea ensin, jos ei ole aikaisemmin nimikoinut l. annotoinut
+puheaineistoa.%
+\footnote{Lis‰tietoa puhekorpusten tuottamisesta ja eri korpuksissa k‰ytetyist‰
+annotaatiotavoista lˆytyy esim. teoksesta \emph{The Production of
+Speech Corpora} \citep{Schiel04}.%
+}
+
+Nimikoinnilla (engl. \emph{labeling}) eli annotoinnilla (\emph{annotation}
+> \emph{to annotate}) tarkoitetaan sit‰, ett‰ digitaalisesti tallennettuun
+puhen‰ytteeseen liitet‰‰n systemaattisesti nimikkeit‰\index{nimike}
+(\emph{labels}) eli annotaatioita\index{annotaatio} (\emph{annotations})
+eli symbolisia kuvauksia n‰ytteen sis‰llˆst‰. Nimikoitavan ‰‰ni- tai
+videon‰ytteen on oltava digitaalisessa muodossa ts. yhten‰ tai useampana
+tiedostona esim. tietokoneen kovalevyll‰ tai erityyppisill‰ levykkeill‰.%
+\footnote{Myˆs erilaiset \textbf{kirjoitetun tekstin} joukkoon lis‰tyt tagit
+(\emph{tag}) ovat annotaatioita. T‰llˆin aikaulottuvuutta vastaa tekstin
+lineaarinen rakenne (merkkien sijainti tekstin alkuun n‰hden) ja ‰‰nin‰ytteen
+segmentti‰ vastaa jokin tekstin osa, jonka ymp‰rille tagit on merkitty.
+T‰ss‰ oppaassa k‰sitell‰‰n kuitenkin ainoastaan puheaineiston annotaatiota.%
+} Alkuper‰ist‰ tallennetta, esim. ‰‰ni- tai videotiedostoa, jota annotaation
+avulla kuvataan, kutsutaan t‰ss‰ yhteydess‰ \emph{signaaliksi}\index{signaali}.
+Jos kuvataan ‰‰neen luettua, kirjoitettua teksti‰, annotoitava signaali
+on aina puhesignaali. 
+
+\textbf{Nimikoinnissa annotaatiot on sidottava ‰‰ni- tai videon‰ytteen
+aikaulottuvuuteen.} T‰m‰n tavoitteen saavuttamiseksi n‰ytett‰ kuunnellaan
+ja/tai katsellaan ja siit‰ piirrettyj‰ analyysikuvia tarkastellaan
+nimikointiin tarkoitetulla ohjelmalla. Kuuntelun ja katselun perusteella
+luodaan ‰‰ni- ja/tai videon‰ytteen \char`\"{}pariksi\char`\"{} tai
+laajennukseksi nimikointitiedosto, joka sis‰lt‰‰ n‰ytteen kuvaukset.
+T‰t‰ varten n‰yte yleens‰ \emph{segmentoidaan}\index{segmentoida}:
+siit‰ rajataan halutulla tarkkuudella \emph{segmenttej‰}\index{segmentti}
+(‰‰ni- tai videop‰tki‰, joilla on m‰‰r‰tty alku- ja loppupiste sek‰
+ajallinen kesto; engl. \emph{segment}). Segmenteille voidaan sitten
+antaa nimi‰ eli \emph{nimikoida} ne. Myˆs n‰ytteen tietyille yksitt‰isille
+ajanhetkille (aikapisteille, engl. \emph{time point}) voidaan antaa
+nimi‰ (n‰in syntyy ns. \emph{ankkureita}\index{ankkuri}, engl. \emph{anchor}\index{anchor}).
+Nimikoinnin tarkoituksena on muodostaa \char`\"{}maamerkkej‰\char`\"{},
+joiden perusteella alkuper‰isest‰ puhesignaalista voidaan lˆyt‰‰ halutut
+osat ja kohdistaa niihin vaikkapa akustisia analyyseja tai muita toimenpiteit‰.
+\textbf{Nimikointi on v‰ltt‰m‰tˆnt‰, jos halutaan hallita ja hyˆdynt‰‰
+suurta m‰‰r‰‰ puheaineistoa.}
+
+Pelkk‰ ‰‰nin‰ytteen litterointi esimerkiksi tekstitiedostoon ei siis
+viel‰ ole nimikoimista, koska siin‰ litteraatin eri osia ei kytket‰
+‰‰nin‰ytteen vastaaviin ajallisiin kohtiin. Kannattaa huomata, ett‰
+litteraatti tai mik‰ tahansa muu transkriptio on aina tulkinta alkuper‰isest‰
+aineistosta. Siksi pelk‰n litteraatin avulla ei pit‰isi koskaan tutkia
+puhetta --- vaarana on, ett‰ tulee pikemminkin tutkineeksi litteroijan
+n‰kemyst‰, joka on viel‰p‰ kuvattu kirjoitetulla kielell‰! K‰ytt‰m‰ll‰
+nimikointia aineiston kuvausmenetelm‰n‰ varmistetaan mahdollisimman
+suora ja tarkka yhteys alkuper‰iseen puhetallenteeseen, jolloin tutkijalla
+ja tutkimuksen arvioijalla on mahdollisuus tarkistaa ja korjailla
+puheesta luotuja kuvauksia.
+
+Annotaatiotyylej‰ on erilaisia ja tutkija voi kehitt‰‰ oman annotaatiotavan
+sen mukaan, mink‰laisista puheen ilmiˆist‰ on kiinnostunut. Annotaatio
+voi olla esimerkiksi ortografinen ts. oikeinkirjoitusta noudattava
+litteraatti\index{litteraatio} (engl. yl. \emph{transliteration\index{transliteration},
+transcript}\index{transcript})\emph{}%
+\footnote{Huom. suomessa k‰site \emph{translitteraatio} tarkoittaa l‰hinn‰ tietyn
+kielen kirjoitusasun muuntamista merkkij‰rjestelm‰st‰ toiseen, esim.
+ven‰j‰nkielisen kirjoituksen kyrillisten aakkosten muuntamista latinalaiselle
+aakkostolle. Translitteraatio ei siis ole aivan sama asia kuin litteraatio,
+jossa puhetta ''kirjainnetaan''.%
+}, morfologisten yksikˆiden kuvaus, prosodisten piirteiden kuvaus tai
+vaikkapa foneettinen transkriptio puheesta. Ensin mainitussa tapauksessa
+segmenttirajat voivat olla vaikkapa yksitt‰isten sanojen tai lauseiden
+v‰lill‰, kun taas foneettista tutkimusta varten rajataan usein yksitt‰isi‰
+‰‰nteit‰.
+
+Jos erilaisia puheen yksikˆit‰ halutaan k‰ytt‰‰ hyˆdyksi yhdess‰,
+voidaan luoda useita annotaatio- tai nimikointikerroksia tai -tasoja:
+yhdelle merkit‰‰n esimerkiksi ‰‰nteiden rajat, toiselle sanojen rajat,
+kolmannelle lauserajat jne. Samalla tallenteella voi myˆs olla useita
+rinnakkaisia annotaatioita: eri tutkijat voivat annotoida saman aineiston
+kukin oman n‰kemyksens‰ mukaisesti.
+
+Automaattisia segmentointi- ja nimikointimenetelmi‰ yritet‰‰n jatkuvasti
+kehitt‰‰ eri puolilla maailmaa. Toistaiseksi tarkimman nimikoinnin
+saa kuitenkin aikaan ihminen, sill‰ puheen nimikointi vaatii monenlaisten
+kielellisten tulkintojen tekemist‰. Samasta syyst‰ voidaan todeta
+myˆs, ett‰ sek‰ puheen litterointi, transkriptio ett‰ nimikointi ovat
+aina jossakin m‰‰rin subjektiivisia tuotoksia: niiden tarkkuus ja
+johdonmukaisuus riippuvat nimikoijan intresseist‰, tiedoista, taidoista
+ja teoreettisesta n‰kemyksest‰.
+
+
+\section{\label{sec:Miksi-puhetta-nimikoidaan}Miksi puhetta nimikoidaan eli
+annotoidaan?}
+
+Nimikointityˆkalua k‰ytt‰m‰ll‰ puhen‰ytteest‰ on helppo nopeasti ja
+tarkasti etsi‰, rajata ja kuunnella eri pituisia osia. T‰m‰ helpottaa,
+nopeuttaa ja tarkentaa merkitt‰v‰sti litterointia ja transkriptiota.
+Esimerkiksi intonaatiotranskription tekeminen helpottuu, kun kuulohavaintoa
+voidaan heti verrata ‰‰nisignaalista laskettuun perustaajuusk‰yr‰‰n.
+
+Nimikoidusta ‰‰nitiedostosta voidaan mitata tarkasti puheen eri yksikˆiden
+kestoja. Mittauksia voidaan suorittaa jopa t‰ysin automaattisesti
+(edellytt‰en ett‰ puhe on nimikoitu mittausten kannalta j‰rkeviin
+yksikˆihin). Erilaiset akustiset analyysit voidaan automaattisesti
+kohdistaa vain tarvittaviin osiin n‰ytett‰. Nimikoinnin perusteella
+tehdyt mittaukset voidaan milloin tahansa toistaa t‰ysin identtisin‰.
+Tutkimustuloksiin on siten helppo myˆhemmin palata. 
+
+Digitaalinen ‰‰nin‰yte s‰ilyy tarvittaessa t‰ysin muuttumattomana
+pitki‰kin aikoja ja siit‰ voidaan tehd‰ identtisi‰ kopioita. Alkuper‰ist‰
+digitoitua ‰‰nin‰ytett‰ (esim. keskustelu‰‰nite) ei tarvitse v‰ltt‰m‰tt‰
+pilkkoa pienempiin osiin jokaista tutkimusta tai demoa varten, vaan
+se voidaan s‰ilytt‰‰ kokonaisena esimerkiksi CD- tai DVD-levyill‰,
+eik‰ t‰llˆin menetet‰ informaatiota esimerkiksi taukojen kestoista. 
+
+Digitaalista, systemaattisesti nimikoitua puheaineistoa on helppo
+jakaa muidenkin tutkijoiden kanssa. Muut tutkijat voivat nopeasti
+tutustua nimikoituun puhen‰ytteeseen ja k‰ytt‰‰ sit‰ soveltuvin osin.
+Nimikointeihin voidaan tehd‰ muutoksia ja lis‰yksi‰ oman tarpeen mukaan.
+T‰m‰n oppaan periaatteiden mukaisesti nimikoitu ‰‰nitiedosto voidaan
+liitt‰‰ osaksi kaikkien tutkijoiden k‰ytt‰m‰‰ puhetietokantaa, eik‰
+tutkijoiden tarvitse aina itse ker‰t‰ ja nimikoida uusia aineistoja.
+
+Annotaation tekeminen on usein pitk‰veteist‰ puurtamista. Jokaisen
+puheentutkijan olisi kuitenkin hyˆdyllist‰ yritt‰‰ annotoida itse
+ainakin koemieless‰ pieni osa k‰ytt‰m‰st‰‰n aineistosta, sill‰ n‰in
+oppii ymm‰rt‰m‰‰n annotaatioprosessia ja sen vaikutuksia tutkimukseen.
+Usein annotoidessa lˆyt‰‰ myˆs mielenkiintoisia uusia tutkimuskohteita.
+
+
+\subsection{\label{sub:Johdonmukainen-annotaatio}Johdonmukainen annotaatio}
+
+Puheen kuvauksessa tulee pyrki‰ noudattamaan yhten‰isi‰ periaatteita,
+jotta aineiston annotaatio pysyisi kauttaaltaan mahdollisimman tasalaatuisena
+ja jotta se olisi kenen tahansa tutkijan k‰ytett‰viss‰ ja ymm‰rrett‰viss‰.
+Annotoijalle pit‰‰ olla aina t‰ysin selv‰‰, mit‰ ilmiˆt‰, yksikkˆ‰
+tai k‰sitett‰ ollaan annotoimassa, ja tietyntyyppiset yksikˆt pit‰‰
+rajata ja merkit‰ johdonmukaisesti aina samalla tavalla. 
+
+K‰yt‰nnˆss‰ ihmiset ovat usein eri mielt‰ annotoitavien yksikˆiden
+rajauksesta ja nimikkeist‰. Yhdess‰ sovitut annotointiperiaatteet
+on helppo unohtaa, ja tyypillisesti annotoija muuttaa yhdenkin annotaatioprojektin
+aikana n‰kemyst‰‰n ''hyv‰st‰ annotaatiosta'' useita kertoja. T‰m‰
+on aivan luonnollinen ilmiˆ, sill‰ monet teoreettiselta kannalta hyˆdylliset
+puheen yksikˆt eiv‰t olekaan selke‰sti erotettavissa ja rajattavissa
+todellisesta puhesignaalista. Puheessa ei esimerkiksi normaalisti
+ole taukoja sanojen v‰lill‰, ja puheentuoton aikana ihmisen ‰‰ntˆelimistˆ
+on k‰yt‰nnˆllisesti katsoen jatkuvassa liikkeess‰, joten ‰‰nteiden
+rajatkin ovat ''sumeita''. Annotointi perustuu siis aina annotoijan
+tulkintaan puheaineistosta.
+
+T‰m‰n oppaan tarkoituksena on antaa yleisi‰ ohjeita erilaisten yksikˆiden
+annotointia varten. Tavoitteena on, ett‰ jokainen tutkija k‰ytt‰‰
+annotoidessaan t‰ss‰ oppaassa m‰‰riteltyj‰ yksikˆit‰ niin pitk‰lle
+kuin se on mahdollista. Mik‰li tutkija haluaa tarkentaa m‰‰ritelmi‰
+tai k‰ytt‰‰ kokonaan uusia yksikˆit‰, ne tulisi m‰‰ritell‰ ja julkaista
+virallisesti Puh-editorin avulla (ks. \ref{sec:Uuden-annotaatioyksikon-maaritteleminen}).
+
+
+\section{\label{sec:Akustisten-analyysien-hyodyntaminen}Akustisten analyysien
+hyˆdynt‰minen nimikoinnissa}
+
+Puhetta voidaan nimikoida sek‰ akustisin ett‰ auditiivisin perustein.
+Digitaalisen puheen analysointiin luodut tietokoneohjelmat tuottavat
+puheesta erilaisia akustisia analyyseja, joita voi hyˆdynt‰‰ myˆs
+nimikoinnissa. N‰it‰ ovat mm. spektrogrammi, perustaajuusk‰yr‰, intensiteettik‰yr‰,
+aaltomuoto ja spektrianalyysi.
+
+
+\subsection{\label{sub:Spektrogrammi}Spektrogrammi}
+
+ƒ‰nteiden nimikoinnissa erityisesti \emph{\label{sub:leveakaistainen-spektrogrammi}leve‰kaistainen
+spektrogrammi\index{leve\"akaistainen spektrogrammi}} (laskentaikkunan
+koko n. 4,3 ms) on usein hyˆdyllinen, sill‰ siin‰ erottuvat selv‰sti
+‰‰nen spektrirakenteen nopeat ajalliset muutokset, jotka liittyv‰t
+puhujan artikulaatioliikkeisiin. \emph{\label{sub:kapeakaistainen-spektrogrammi}Kapeakaistaisesta
+spektrogrammista\index{kapeakaistainen spektrogrammi}} (laskentaikkunan
+koko n. 29--35 ms) n‰kyv‰t puolestaan parhaiten puheen soinnillisten
+osien perustaajuuden ja osas‰velten liikkeet, joten sit‰ voidaan hyˆdynt‰‰
+prosodisten piirteiden, erityisesti intonaation kuvauksessa.
+
+
+\subsection{\label{sub:Intensiteettikayra}Intensiteettik‰yr‰}
+
+Intensiteetti (joka on ep‰suorassa yhteydess‰ havaittuun ‰‰nekkyyteen)
+on riippuvainen ‰‰nteen laadusta: esim. vokaalit ovat luonnostaan
+‰‰nekk‰‰mpi‰ kuin konsonantit, sill‰ ‰‰ntˆv‰yl‰ on vokaalien aikana
+avoimempi. Intensiteettik‰yr‰ voi siksi auttaa joidenkin ‰‰nnerajojen
+havaitsemisessa. Laajemmin tarkasteltuna intensiteettik‰yr‰ voi myˆs
+antaa informaatiota puhujan aiheuttamasta puhe‰‰nen voimakkuuden lis‰yksest‰
+ja liittyy siten myˆs prosodisiin ilmiˆihin. Intensiteettik‰yr‰ on
+kuitenkin herkk‰ puhujan ja mikrofonin v‰liselle et‰isyydelle: jos
+puhuja liikahtaa v‰h‰nkin suhteessa mikrofoniin, esim. k‰‰nt‰‰ p‰‰t‰‰n
+kun mikrofoni on pˆyd‰ll‰, t‰m‰ vaikuttaa ‰‰nisignaalista laskettuun
+intensiteettiin. \char`\"{}Headsettiin\char`\"{} kiinnitetty mikrofoni
+pysyy paremmin paikallaan puhujan suun vieress‰, joten intensiteettik‰yr‰ss‰
+n‰kyv‰t heilahdukset johtuvat t‰ss‰ tapauksessa todenn‰kˆisemmin puheentuoton
+muutoksista. Huomaa, ett‰ intensiteettik‰yr‰st‰ saadut desibeliarvot
+eiv‰t tarkoita sin‰ns‰ mit‰‰n, jollei alkuper‰ist‰ ‰‰nitett‰ ole kalibroitu
+(ts. suhteutettu tiettyyn referenssi‰‰neen jo ‰‰nityshetkell‰)!
+
+
+\subsection{\label{sub:Perustaajuuskayra}Perustaajuusk‰yr‰}
+
+\emph{Puheen perustaajuus\index{perustaajuus}} eli \emph{F0\index{F0}}
+viittaa soinnillisissa ‰‰nteiss‰ siihen taajuuteen, jolla ‰‰nihuulet
+''v‰r‰htelev‰t'' tai paukahtelevat toisiaan vasten. Yksitt‰ist‰
+jaksoa, jonka aikana ‰‰nihuulet erkaantuvat toisistaan ja palaavat
+takaisin yhteen, kutsutaan \emph{periodiksi}%
+\footnote{Kapeakaistaisessa spektrogrammissa (ks. \ref{sub:kapeakaistainen-spektrogrammi})
+soinnillisten ‰‰nteiden osas‰velet (\emph{harmonics}) erottuvat aaltoilevina
+raitoina, joista alimmainen kuvaa perustaajuutta. Leve‰kaistaisessa
+spektrogrammissa (\ref{sub:leveakaistainen-spektrogrammi}) puolestaan
+erottuvat yksitt‰iset ‰‰nihuuliperiodit pystysuorina raitoina. Periodit
+voi erottaa myˆs ‰‰nen aaltomuodosta toistuvina aaltokuvioina, kun
+aaltomuotoa tarkastellaan suurennettuna.%
+}\index{periodi}\index{periodisuus}. Periodeja esiintyy siis vain
+soinnillisissa ‰‰nteiss‰, ja samasta syyst‰ laskennallisessa perustaajuusk‰yr‰ss‰
+n‰kyy katkos soinnittomien ‰‰nteiden kohdalla, vaikka puheen melodia
+havaitaankin jatkuvana.
+
+Perustaajuus ilmoitetaan yleens‰ hertsein‰\index{hertsi}: esimerkiksi
+miespuhujille tyypillinen sadan hertsin perustaajuus siis tarkoittaa
+sataa ‰‰nihuulten v‰r‰hdyst‰ sekunnissa. Perustaajuusk‰yr‰n muoto
+voi oikein tulkittuna hyvin nopeasti ja tarkasti vahvistaa tai kumota
+kuulonvaraisen ja subjektiivisen havainnon puheen s‰velkulussa tapahtuvasta
+noususta tai laskusta. Joskus se voi auttaa myˆs ‰‰nteiden nimikoinnissa:
+pienikin perustaajuuden muutos voi olla syyn‰ kuulonvaraisesti lˆytyneeseen
+rajakohtaan.
+
+Laskennallinen perustaajuus ei kuitenkaan ole sama asia kuin havaittu
+intonaatio tai s‰velkulku. Perustaajuusk‰yr‰‰n ei kannata luottaa
+sokeasti, sill‰ siin‰ voi laskennallisista syist‰ esiinty‰ ‰killisi‰
+hypp‰yksi‰ ja toisaalta perustaajuusk‰yr‰‰n vaikuttavat myˆs ‰‰nnekohtaiset
+seikat. Prosodiikasta kiinnostuneen kannattaa katsella l‰hemp‰‰ myˆs
+‰‰nen aaltomuotoa (\ref{sub:Aaltomuoto}) ja spektrogrammeja (\ref{sub:Spektrogrammi}),
+sill‰ ne voivat paljastaa perustaajuusanalyysin virhel‰hteit‰ (esim.
+narinaan liittyv‰t ep‰s‰‰nnˆlliset ‰‰nihuuliperiodit).
+
+
+\subsection{\label{sub:Aaltomuoto}Aaltomuoto}
+
+Aaltomuoto eli oskillogrammi kuvaa ‰‰niaaltoa eli alkuper‰iseen ‰‰neen
+liittyvi‰ ilmanpaineen ajallisia vaihteluita, jotka on rekisterˆity
+tietyst‰ paikasta mikrofonin avulla. Tietokoneen n‰ytˆll‰ olevan aaltomuotok‰yr‰n
+yksikkˆ on kuitenkin tavallisesti voltti (V), sill‰ mikrofoni on muuntanut
+ilmanpaineen vaihtelut s‰hkˆiseen muotoon, joka on sitten n‰ytteistetty
+digitaaliseksi ‰‰nisignaaliksi. 
+
+Aaltomuotok‰yr‰n vaaka-akseli kuvaa siis aikaa, joka etenee vasemmalta
+oikealle. Pystyakseli kuvaa ‰‰niaaltojen laajuutta eli amplitudia.
+Mit‰ suurempi ‰‰niaallon amplitudi on tarkasteltavalla ajanjaksolla,
+sit‰ suurempi on vastaavasti ollut ilmanpaineen muutos ja sit‰ voimakkaampi
+‰‰ni on ko. ajanjaksolla ollut. ƒ‰nen amplitudi ei kuitenkaan vastaa
+suoraan ts. lineaarisesti havaittua ‰‰nenvoimakkuutta eli ‰‰nekkyytt‰.
+ƒ‰nekkyyshavaintoon vaikuttavat ihmisen kuuloj‰rjestelm‰n ominaisuudet
+(psykoakustiikka) ja muutkin seikat.
+
+Aaltomuotok‰yr‰‰ voidaan k‰ytt‰‰ esimerkiksi ‰‰nteiden tarkkaan segmentointiin
+spektrogrammin ohella, sill‰ siit‰ n‰kyv‰t ‰‰ness‰ tapahtuneet pienimm‰tkin
+muutokset. Aaltomuoto voi paljastaa myˆs ‰‰nenlaadussa tapahtuneita
+muutoksia, jotka voivat selitt‰‰ esimerkiksi perustaajuusk‰yr‰n odottamattomia
+katkoksia tai hyp‰htelyj‰.
+
+
+\section{\label{sec:Aineiston-luomat-rajoitukset}Aineiston luomat rajoitukset}
+
+Mit‰ enemm‰n taustah‰ly‰ annotoitavassa signaalissa on, sit‰ ep‰tarkempaa
+annotointi on. Hyvin h‰lyisest‰ aineistosta ei kannata yritt‰‰ etsi‰
+kovin hienojakoisia piirteit‰, sill‰ lopputuloksesta voi tulla heikkotasoinen.
+Jos esim. puhe‰‰nitteess‰ on tasainen mutta melko vaimea taustakohina,
+‰‰nteiden rajat pystyy yleens‰ akustisen signaalin kuvauksia katsomalla
+m‰‰ritt‰m‰‰n riitt‰v‰n tarkasti esimerkiksi ‰‰nnekestojen mittaamista
+varten. 
+
+Erilaiset h‰lyn l‰hteet ja taustah‰lyn tyypit on syyt‰ kuvata mahdollisimman
+tarkasti jo tallenteen (Recording) taustatiedoissa.%
+\footnote{Tallenteen taustatiedot\index{taustatiedot} eli ns. \emph{metatiedot\index{metatiedot}}
+tai \emph{metadata\index{metadata}} on kuvattava Puh-editorin avulla
+aina, kun aloitetaan kokonaan uuden puheaineiston annotaatio.%
+} Jos h‰ly ei jatku koko tallenteessa, tallenteen k‰yttˆkelpoisuutta
+lis‰‰ huomattavasti, jos h‰lyn ajallinen levinneisyys on merkitty
+omaan annotaatiokerrokseensa (ks. \emph{Noise}-annotaatioyksikkˆ,
+\ref{sub:Noise-haly}).
+
+
+\section{\label{sec:Annotointityokalut}Annotointityˆkalut}
+
+Puheen annotointiin on olemassa monia tyˆkaluja, joilla on erilaisia
+ominaisuuksia. T‰m‰ ohjeistus soveltuu parhaiten annotointiin Puh-editori-nimisell‰
+ohjelmalla. Annotaatiota voi kuitenkin tehd‰ myˆs muilla ohjelmilla,
+kunhan pit‰‰ mieless‰‰n t‰ss‰ dokumentissa annetut ohjeet (ks. esim
+kuva \ref{fig:Esimerkki-dialogin-annotaatiosta}). T‰llˆin annotaatiotiedostot
+voidaan automaattisesti muuntaa puhetietokantaj‰rjestelm‰‰n sopiviksi.
+
+\begin{landscape}%
+\begin{figure}
+\begin{center}\includegraphics[%
+  width=22cm,
+  keepaspectratio]{/home/lennes/annotation_guide/jpgfigs/conv_ann_example.jpg}\end{center}
+
+
+\caption{\label{fig:Esimerkki-dialogin-annotaatiosta}Esimerkki dialogin annotaatiosta\index{dialogin annotaatio, esimerkki}
+Praat-ohjelmalla. Puhujien S1 ja S2 puheeseen liittyv‰t annotaatioyksikˆt
+on merkitty eri kerroksiin. Topic-kerroksessa on vapaamuotoinen englanninkielinen
+kuvaus puheenaiheesta: t‰ss‰ on menossa keskustelu vanhoista elokuvista.}
+\end{figure}
+\end{landscape}
+
+
+\subsection{\label{sub:Annotointi-Puh-editorilla}Annotointi Puh-editorilla}
+
+Puh-editori ohjaa k‰ytt‰j‰‰ noudattamaan ohjeita ja m‰‰rittelem‰‰n
+k‰ytt‰m‰ns‰ annotaatioyksikˆt tarkasti. Puh-editorissa voidaan annotoida
+lukuisia annotaatiokerroksia samanaikaisesti. Puh-editoria k‰ytt‰m‰ll‰
+kaikki annotaatiot ovat suoraan yhteensopivia liitett‰v‰ksi puhetietokantaan,
+ja niit‰ voidaan myˆs helposti jakaa muiden tutkijoiden kanssa. Puh-editori
+voidaan asentaa tietokoneisiin, joissa on Windows- tai \linebreak
+Linux-k‰yttˆj‰rjestelm‰. Editorin voi ladata ilmaiseksi omalle koneelleen
+www-osoitteesta
+
+\url{http://www.csc.fi/kielipankki/puhe/index.phtml}
+
+Samassa paikassa on myˆs ohjelman k‰yttˆopas.
+
+
+\subsection{\label{sub:Annotointi-Praat-ohjelmalla}Annotointi Praat-ohjelmalla}
+
+Jos k‰yt‰t annotointiin Praat-ohjelmaa (\citealt{Boersma}), kaikki
+tekem‰si annotaatiokerrokset (Tier) ovat fyysisesti t‰ysin erillisi‰.
+Eri kerroksissa olevien yksikˆiden v‰lisi‰ suhteita voi kuitenkin
+kuvata niiden mahdollisen ajallisen p‰‰llekk‰isyyden avulla. T‰t‰
+tietoa voi Praatin sis‰ll‰ hyˆdynt‰‰ vain skripteiss‰. 
+
+Praat-ohjelmalla tehdyt annotaatiotiedostot (TextGrid) on mahdollista
+muuntaa puhetietokannan k‰ytt‰m‰‰n muotoon. Osoitteessa
+
+\url{http://www.csc.fi/kielipankki/puhe/index.phtml} 
+
+on linkki ohjattuun konvertointi- ja julkaisutyˆkaluun (\emph{Publish
+TextGrid Web Wizard}), joka muuntaa Kielipankin puheaineistoista tehdyt
+annotaatiotiedostot Puh-editorin ymm‰rt‰m‰‰n muotoon ja julkaisee
+annotaatiokerrokset. T‰m‰ mahdollisuus kannattaa huomioida jo Praatilla
+annotoitaessa. 
+
+\begin{itemize}
+\item Varmista, ett‰ sellaisilla eri kerroksissa olevilla annotaatioyksikˆill‰,
+joilla on kesken‰‰n esimerkiksi osa-kokonaisuussuhde, on t‰sm‰lleen
+p‰‰llekk‰iset alku- ja loppurajat. Esim. jos annotoit Praatilla sanakerroksen
+ja tavukerroksen, varmista, ett‰ sanan alkuraja on t‰sm‰lleen samalla
+kohdalla kuin sanan ensimm‰isen tavun alkuraja, ja ett‰ sanan loppuraja
+on t‰sm‰lleen samassa kohdassa kuin sanan viimeisen tavun loppuraja
+(ks. esimerkkej‰ sanakerroksesta kuvassa \ref{fig:Esimerkki-dialogin-annotaatiosta}).
+Tietyss‰ kerroksessa oleva rajaviiva voidaan kohdistaa toisessa kerroksessa
+olevan rajan kanssa ''tarttumalla'' rajaan hiirell‰, vet‰m‰ll‰ se
+toisessa kerroksessa olevan rajan p‰‰lle ja vapauttamalla sitten hiiren
+painike. Kohdistettujen rajojen perusteella voidaan haku- ja analyysivaiheessa
+yhdist‰‰ tavuyksikˆt vastaaviin sanayksikˆihin. 
+\item \label{ite:piirteiden-annotointi-Praatilla}Jos jonkin annotaatiokerroksen
+A yksikˆille pit‰‰ m‰‰ritt‰‰ lis‰piirteit‰ tai \linebreak -ominaisuuksia
+niin, ett‰ kutakin segmentti‰ tms. yksikkˆ‰ vastaa aina maksimissaan
+yksi toisen tason B yksikkˆ tai piirre, pid‰ huolta, ett‰ kerros A
+on tyyppi‰ IntervalTier ja kerros B tyyppi‰ PointTier. Merkitse kerrokseen
+B piste tai ankkuri (point) silm‰m‰‰r‰isesti suunnilleen A-kerroksen
+vastaavan yksikˆn puoliv‰liin. Anna tarvittaessa B-tason pisteille
+nimet, jotka kuvaavat piirteen arvoja tai sis‰ltˆj‰. \\
+T‰ss‰ tapauksessa PointTieri‰ kannattaa k‰ytt‰‰, koska segmenttirajoja
+joutuu merkitsem‰‰n v‰hemm‰n, eik‰ B-tason rajojen kohtia yleens‰
+tarvitse korjata, vaikka A-tason segmenttien rajat hieman muuttuisivatkin.
+PointTierin sis‰lt‰m‰t piirrearvot on Puh-editorissa helppo muuntaa
+A-tasolle merkittyjen yksikˆiden piirteiksi.
+\end{itemize}
+
+\part{\label{par:Annotaatioyksikot}Annotaatioyksikˆt}
+
+Tutkijan ja annotoijan on hyv‰ huomata, ett‰ seuraavat yleisluonteiset
+annotaatioyksikˆt on muodostettu ensisijaisesti niiden laajaa k‰yttˆ‰
+ajatellen. Tarkoitus ei siis ole ollut juuttua lujasti mihink‰‰n tiettyyn
+teoreettiseen viitekehykseen vaan antaa ohjeet siit‰, kuinka puheaineistosta
+voidaan rajata usein k‰ytettyj‰ yksikˆit‰ ja piirteit‰ mahdollisimman
+yksiselitteisesti siten, ett‰ yksikˆt soveltuvat tietokantaj‰rjestelm‰‰n.
+On myˆs itsest‰‰n selv‰‰, ett‰ kaikki yksikˆt eiv‰t sellaisenaan sovellu
+kaikkien aineistojen nimikointiin.%
+\footnote{T‰ss‰ oppaassa kuvatut yksikˆt ja niiden k‰yttˆohjeet vastaavat Kielipankin
+julkaiseman RDF-skeeman \url{http://www.csc.fi/kielipankki/puhe/schemas/official/annotation/coreUnits.rdfs}
+sis‰lt‰mi‰ m‰‰rittelyj‰. Kielipankin tarjoama Puh-editori tukee kyseist‰
+RDF-skeemaa ja ohjaa annotoijaa k‰ytt‰m‰‰n oikein valmiiksi m‰‰riteltyj‰
+perusyksikˆit‰. T‰t‰ ohjeistoa ja annotaatioyksikˆit‰ kannattaa kuitenkin
+soveltaa myˆs muilla ohjelmilla annotoitaessa.%
+}
+
+Tutkijalle j‰‰ lopullinen vastuu siit‰, ovatko n‰in syntyneest‰ tietokannasta
+tehdyt haut mielekk‰it‰ ja siit‰, kuinka h‰n itse yhdistelee erilaisia
+yksikˆit‰ niin, ett‰ saa haluamansa tiedon esille. Mik‰‰n alla kuvatuista
+yksikˆist‰ ei yksin‰‰n tuota kovin hyˆdyllist‰ tietokantaa, mutta
+kun samasta aineistosta on olemassa useita erityyppisi‰ annotaatiokerroksia
+--- mahdollisesti jopa monen eri annotoijan tekemin‰ --- on tietokannan
+rakenteessa paljon implisiittist‰ informaatiota, joka voidaan oikein
+rakennetuilla hakukriteereill‰ houkutella p‰iv‰nvaloon. N‰in myˆs
+eri alojen tutkijat voivat toimia paremmin yhteistyˆss‰ ja hyˆdynt‰‰
+toistensa tiet‰myst‰.
+
+
+\chapter{\label{cha:Yksikoiden-kaytto}Kuinka annotaatioyksikˆit‰ k‰ytet‰‰n?}
+
+
+\section{\label{sec:Annotaatioyksikoiden-kaytto}Annotaatioyksikˆiden k‰yttˆ}
+
+T‰ss‰ oppaassa esitelt‰v‰t annotaatioyksikˆt ovat perusyksikˆit‰,
+jotka on pyritty m‰‰rittelem‰‰n selke‰sti mutta vain yleisell‰ tasolla,
+jotta eri tutkijat voisivat soveltaa niit‰ mahdollisimman laajasti.
+N‰ihin yksikˆihin ei kuitenkaan ole pakko tyyty‰. Mik‰li tutkija tai
+annotoija p‰‰tyy systemaattisesti k‰ytt‰m‰‰n tietyst‰ perusannotaatioyksikˆst‰
+tarkempaa tai hienojakoisempaa kuvaustapaa, tai mik‰li h‰n p‰‰tyy
+annotoimaan t‰ysin uudenlaista piirrett‰ puheaineistosta, on tarpeen
+m‰‰ritell‰ uusi annotaatioyksikkˆ. Uusia yksikˆit‰ voidaan m‰‰ritell‰
+Puh-editorilla, jolla m‰‰ritelm‰t voidaan myˆs julkaista muille tutkijoille.%
+\footnote{Puh-editoria ei silti ole v‰ltt‰m‰tˆnt‰ k‰ytt‰‰ varsinaiseen puheaineiston
+nimikointiin, kunhan yksikˆiden m‰‰ritelmi‰ noudatetaan. Uudet yksikˆt
+tulisi kuitenkin aina m‰‰ritell‰ Puh-editorin avulla, jotta niiden
+k‰yttˆtapa selkiytyy muille annotoijille.%
+} 
+
+
+\section{\label{sec:Uuden-annotaatioyksikon-maaritteleminen}Uuden annotaatioyksikˆn
+m‰‰ritteleminen}
+
+Perusannotaatioyksikˆist‰ voidaan tarvittaessa \emph{periytt‰‰\index{periytt‰minen}}
+aliyksikˆit‰\index{aliyksikkˆ}, joilla on samat ominaisuudet kuin
+emoyksikˆll‰‰n, mutta sen lis‰ksi joitakin uusia ominaisuuksia. T‰llˆin
+on huomattava, ett‰ \emph{uusi aliyksikkˆ perii v‰ltt‰m‰tt‰ kaikki
+ne ominaisuudet ja piirteet, jotka sen emoyksikˆll‰ on}, eik‰ aliyksikkˆ
+siis saa olla ristiriidassa emoyksikˆn m‰‰ritelm‰n kanssa.%
+\footnote{T‰m‰ ehto on seurausta yksikˆiden m‰‰ritelmien tallennukseen k‰ytett‰v‰st‰
+standardoidusta RDF-dokumenttiformaatista, joka mahdollistaa m‰‰ritelmien
+perusteella tapahtuvan koneellisen p‰‰ttelyn. Esimerkiksi Puh-editori
+voi RDF-muotoisten m‰‰ritelmien perusteella valvoa, ett‰ annotoija
+todella noudattaa m‰‰ritelm‰ss‰ mainittuja rajoituksia.%
+} Jotta uusien aliyksikˆiden luominen olisi mahdollisimman joustavaa,
+on useimpien t‰m‰n oppaan yksikˆiden kuvauksen tarkka muoto j‰tetty
+annotoijan p‰‰tett‰v‰ksi.
+
+Kuvitellaan, ett‰ esimerkiksi annotaatioyksikˆlle \emph{MyBasicUnit}
+on m‰‰ritelty ominaisuus \emph{label} (nimike tai tekstikuvaus), jolle
+on m‰‰ritelty tietty joukko mahdollisia arvoja, esimerkiksi ''tyyppi1,
+tyyppi2, tyyppi3''. Jos t‰lle yksikˆlle m‰‰ritell‰‰n uusi aliyksikkˆ,
+niin myˆs aliyksikˆll‰ on v‰ltt‰m‰tt‰ ominaisuus \emph{label} joka
+voi saada (ainakin) samat kolme arvoa. Aliyksikˆlle voidaan kyll‰
+lis‰t‰ uusia ominaisuuksia mutta ei poistaa perittyj‰. 
+
+Sellaisia kokonaan uusia yksikˆit‰, jotka eiv‰t voi olla mink‰‰n aikaisemmin
+m‰‰ritellyn varsinaisen annotaatioyksikˆn aliyksikˆit‰, voidaan periytt‰‰
+esimerkiksi apuyksikˆst‰ \textbf{Chunk} (\ref{sec:Chunk-jakso}),
+jolla ei ole etuk‰teen annettuja ominaisuuksia ja jonka ''perilliset''
+voivat siksi kuvata mit‰ tahansa tallenteen tapahtumaa tai piirrett‰.
+
+
+\subsection{\label{sub:Milloin-tarvitaan-uusi}Milloin tarvitaan uusi annotaatiokerros?}
+
+\emph{Periaatteena on, ett‰ kaikille sellaisille annotoitaville ilmiˆille,
+jotka voivat esiinty‰ tallenteessa p‰‰llekk‰isin‰, tulisi luoda erilliset
+annotaatiokerrokset. }
+
+Samassa annotaatiokerroksessa voidaan siis kuvata vain yhdentyyppisi‰
+taikka useammantyyppisi‰ mutta toisensa poissulkevia yksikˆit‰. Esimerkiksi
+tietyn puhujan sis‰‰n- ja uloshengitykset (ks. \ref{sub:Breathing-hengitys})
+kannattaa merkit‰ omaan kerrokseensa, koska puhuja pystyy periaatteessa
+tuottamaan puhetta (ja tekem‰‰n kaikenlaista muutakin) sek‰ sis‰‰n-
+ett‰ uloshengitt‰ess‰‰n. Toisaalta sek‰ sis‰‰n- ett‰ uloshengitykset
+voidaan taloudellisimmin kuvata samassa kerroksessa, koska puhuja
+ei voi tehd‰ molempia yht‰ aikaa.
+
+
+\subsection{\label{sub:Sama-vai-eri}Sama vai eri yksikkˆ?}
+
+Jos yksikˆiden rajat eri annotaatiokerroksissa \emph{poikkeuksetta
+yhtenev‰t}, kyseess‰ on saman yksikˆn kaksi eri piirrett‰. T‰llˆin
+toisen annotaatiokerroksen rajaukset ovat redundantteja, ja turhan
+lis‰tyˆn sek‰ virheiden v‰ltt‰miseksi kannattaisi annotaatiok‰sitteistˆˆn
+m‰‰ritell‰ vain yksi yksikkˆ, jolla on kaksi piirrett‰.
+
+
+\subsection{\label{sub:piirteiden-maarittely}Annotaatioyksikˆn piirteiden m‰‰ritteleminen}
+
+Puh-editorissa annotaatioyksikˆille voi lis‰t‰ haluttuja ominaisuuksia
+tai piirteit‰, joille voi tarvittaessa m‰‰ritell‰ rajatun joukon sallittuja
+arvoja. Puh-editorilla voi esimerkiksi lis‰t‰ jollekin yksikˆlle piirteen
+''painoaste'' ja luetella t‰lle vaikkapa arvot ''0,1,2,3'', joilla
+haluaa kuvata havaitun painollisuuden m‰‰r‰‰. Jos joku jatkossa k‰ytt‰‰
+samaa m‰‰ritelm‰‰, h‰n voi Puh-editorissa antaa ko. yksikˆille ainoastaan
+painoasteita nollasta kolmeen. T‰m‰ helpottaa ja yhten‰ist‰‰ kuvauksen
+valintaa. Piirteille voitaisiin yht‰ hyvin antaa muuntyyppisi‰kin
+arvoja, esim. ''painollinen, painoton''. Koska valittujen piirrearvojen
+joukko on periaatteessa mielivaltainen ja riippuu k‰ytt‰j‰n tarpeista,
+on useimpien piirteiden m‰‰rittely j‰tetty k‰ytt‰jien teht‰v‰ksi.
+
+
+\subsubsection{\label{sub:yksikoiden-yhteiset-ominaisuudet}Kaikkien yksikˆiden
+yhteiset ominaisuudet}
+
+Kaikilla annotaatioyksikˆill‰ on myˆs joukko valmiiksi esim‰‰riteltyj‰
+piirteit‰. Annotoija voi tarvittaessa m‰‰ritell‰ kullekin yksikˆlle
+erikseen \emph{\label{yksikon-aanilahde}‰‰nil‰hteen\index{‰‰nil‰hde}}
+(\emph{soundSource}\index{soundSource}), mik‰li esimerkiksi puhuja
+vaihtuu keskell‰ annotaatiokerrosta. Myˆs kunkin yksikˆn \emph{\label{yksikon-kieli}kielen\index{kieli}\index{yksikˆn kieli}}
+(\emph{language}\index{language}) voi m‰‰ritell‰ erikseen, mik‰li
+halutaan osoittaa, et‰ puhuja k‰ytt‰‰ kesken kaiken vieraskielisi‰
+sanoja. ƒ‰nil‰hteell‰ ja kielell‰ on oletusarvot, jotka on m‰‰ritelty
+kyseisen tallenteen metatiedoissa. Oletusten mukaisia piirrearvoja
+ei siis tarvitse erikseen annotoida. Kuhunkin yksikkˆˆn voi lis‰t‰
+vapaamuotoisen \emph{\label{yksikon-kommentti}kommentin} (\emph{comment}\index{comment}),
+jossa voi vaikkapa kuvailla yksikˆn rajaamisessa esiintyneit‰ vaikeuksia
+tai erikseen m‰‰rittelem‰ttˆmi‰ lis‰ominaisuuksia. Yksikˆn \emph{\label{yksikon-tila}tilaa\index{yksikˆn tila}}
+tai \emph{tyˆvaihetta\index{yksikˆn tyˆvaihe}} (\emph{status}\index{status})
+voi kuvata jollakin seuraavista piirteist‰: 
+
+\begin{quote}
+0 ei m‰‰ritelty
+
+1 virheellinen\index{virheellinen annotaatio}
+
+2 tekeill‰ (kesken\index{keskener‰isyys})
+
+3 OK (valmis, hyv‰ksytty\index{nimikoinnin hyv‰ksyminen}\index{annotaation hyv‰ksyminen})
+
+4 kelluva (ei aikaan sidottu)\index{kelluva yksikkˆ}
+\end{quote}
+\textbf{Yksikˆn saa merkit‰ valmiiksi (status = 3) ainoastaan siin‰
+tapauksessa, ett‰ on itse tarkastanut ja hyv‰ksynyt yksikˆn kaikkine
+nimikkeineen ja todennut, ett‰ se noudattaa annotaatioyksikˆn m‰‰ritelm‰ss‰
+ja t‰ss‰ oppaassa annettuja suosituksia.}
+
+\emph{\label{Kelluva-yksikko}Kelluva yksikkˆ}\index{kelluva yksikk\"o}
+(\emph{floating unit}\index{floating unit}; status = 4) tarkoittaa
+sellaista annotaatioyksikkˆ‰, jonka halutaan olevan mukana annotaatiossa,
+mutta jolle ei voida m‰‰ritt‰‰ alkamis- ja p‰‰ttymisaikaa. Kelluvina
+yksikˆin‰ voidaan kuvata esimerkiksi erilaisia abstrakteja lingvistisi‰
+yksikˆit‰, joille ei n‰hd‰ olevan suoraa vastinetta puhesignaalissa.
+Samassa annotaatiokerroksessa olevilla kelluvilla yksikˆill‰ on tietty
+keskin‰inen j‰rjestys, muttei siis esimerkiksi ajallista kestoa.
+
+Jokaisella yksikˆll‰ on myˆs ominaisuudet \emph{alkupiste} ja \emph{loppupiste}
+(vaikka n‰m‰ olisivatkin t‰sm‰lleen samassa aikapisteess‰ tai vaikka
+yksikkˆ olisi kelluvassa tilassa). Alku ja loppu tallentuvat yksikˆn
+piirtein‰ automaattisesti, kun yksikˆn rajoja siirret‰‰n jollakin
+annotaatioeditoriohjelmalla. Lis‰ksi Puh-editori tallentaa jokaiselle
+yksikˆlle automaattisesti \emph{luontiajan} ja viimeisimm‰n \emph{muokkausajankohdan}.
+
+Mik‰li k‰yt‰t nimikointiin Praat-ohjelmaa, lue ohje piirteiden annotoinnista
+Praatilla (\ref{ite:piirteiden-annotointi-Praatilla}).
+
+
+\section{Suositeltava annotointij‰rjestys}
+
+Uuden puhetallenteen annotointi aloitetaan yleens‰ karkeimmalta tasolta,
+esimerkiksi vuorojen (\emph{Turn}, ks. \ref{sub:Turn-vuoro}) tai
+puhunnosten (\emph{PhoneticUtterance}, ks. \ref{sub:PhoneticUtterance-puhunnos})
+annotaatiosta. Samalla aineisto litteroidaan (puheen kielellinen sis‰ltˆ
+saatetaan kirjoitettuun muotoon), jollei aineiston tekstisis‰ltˆ ole
+ennalta tiedossa (esim. ‰‰neen luettu puhe). Annotointij‰rjestys riippuu
+kuitenkin ennen kaikkea siit‰, mink‰laiset piirteet aineistosta aiotaan
+nimikoida.
+
+Jos tallenteesta on olemassa aiemmin julkaistu annotaatiokerros, josta
+aiot julkaista oman version, on suositeltavaa, ett‰ k‰yt‰t pohjana
+aiemmin julkaistua annotaatiokerrosta. N‰in on mahdollista hakuvaiheessa
+hyˆdynt‰‰ tietoa siit‰, mit‰ kohtia olet muuttanut. Toisen tekem‰‰
+annotaatiokerrosta on myˆs paljon helpompi muuttaa kuin nimikoida
+itse kokonaan uusi alusta asti.
+
+Jotkut annotaatioyksikˆt eiv‰t oikeastaan kuvaa signaalia sellaisenaan,
+vaan ovat jonkinasteisia abstraktioita. T‰llˆin ne ovat myˆs riippuvaisia
+jostakin toisesta, yleens‰ konkreettisemmin signaalia kuvaavasta yksikˆst‰.
+Esimerkiksi tavuja (ks. \ref{sub:Syllable-tavu}) ei lingvistisess‰
+mieless‰ esiinny puheessa sellaisenaan, vaan ne voidaan tunnistaa
+tai analysoida vasta, kun puhutut saneet (ks. sanayksikkˆ, \ref{sub:Word-Sana})
+on tunnistettu. T‰m‰n vuoksi tavuyksikˆit‰ ei pit‰isi annotoida sellaisenaan
+vaan yhdess‰ sanekerroksen kanssa tai vasta sanekerroksen annotoinnin
+j‰lkeen, jolloin tavujen yhteys saneyksikˆihin voidaan ilmaista. Myˆs
+prominenssi on aina riippuvainen jostakin toisesta nimikointikerroksesta,
+esim. tavu- tai sanakerroksesta. J‰ljemp‰n‰ mainitaan jokaisen yksikˆn
+kohdalla, onko yksikkˆ riippuvainen joistakin muista annotaatioyksikˆist‰.
+
+
+\section{Perusyksikˆiden kuvaukset}
+
+Jokaisen alempana esitetyn perusannotaatioyksikˆn kuvaus on jaettu
+nelj‰‰n osaan. Ensimm‰inen osa sis‰lt‰‰ yksikˆn m‰‰ritelm‰n. Toisessa
+osassa on ohjeita ja vinkkej‰ yksikˆn paikantamiseen ja rajaamiseen.
+Kolmannessa osassa k‰yd‰‰n l‰pi yksikˆn suhteet muihin yksikˆihin
+eli annetaan ohjeita siit‰, mink‰ annotaatiokerroksen yksikˆiden rajojen
+kanssa yksikˆn rajat pit‰isi tarpeen tullen kohdistaa. Nelj‰nness‰
+osassa esitet‰‰n, mink‰laisia symbolisia kuvauksia tai luokituksia
+(nimikkeit‰ tai piirrearvoja) kyseisen nimikointikerroksen yksikˆille
+on mahdollista antaa.
+
+
+\chapter{\label{cha:Foneettiset-yksikot}Foneettiset yksikˆt}
+
+
+\section{\label{sub:PhoneticUtterance-puhunnos}PhoneticUtterance\index{PhoneticUtterance}
+\--- puhunnos\index{puhunnos}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Puhunnos on jakso, jonka aikana sama puhuja yht‰jaksoisesti artikuloi.
+Puhunnoksen voi p‰‰tt‰‰ tauko, hengitys (jonka aikana ei artikuloida),
+t‰ytetty tauko, tms.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Rajataan mahdollisimman tarkasti signaalin ja kuulohavainnon perusteella.
+Mik‰li samassa signaalissa esiintyy p‰‰llekk‰in useita puhujia, rajaamisessa
+kannattaa k‰ytt‰‰ apuna signaalin visualisointeja, jotka auttavat
+lˆyt‰m‰‰n puhunnoksen alun ja lopun. 
+
+Jos aineisto on laaja, puhunnosten rajaamisessa voidaan k‰ytt‰‰ apuna
+automaattisia menetelmi‰ ts. puhunnokset (tai tauot) voidaan alustavasti
+rajata ‰‰nisignaalin intensiteetin perusteella. Rajaus on kuitenkin
+tarkistettava k‰sin.%
+\footnote{Ohje t‰m‰n teht‰v‰n suorittamiseksi Praat-ohjelmalla lˆytyy www-osoitteesta
+
+\url{http://www.helsinki.fi/\~{}lennes/praat-scripts/howto/pilkkominen.html}%
+}
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Puhunnokset liittyv‰t suoraan signaaliin/signaaleihin, jossa/joissa
+ko. puhuja esiintyy. Mik‰li sane- ja foonikerrokset ovat olemassa,
+puhunnoksen rajojen pit‰isi noudattaa ao. sane- ja ‰‰nnerajoja silloin
+kun mahdollista.
+
+
+\subsection*{Kuvauksen valinta}
+
+Noudatetaan (suomen) ortografiaa ilman v‰limerkkej‰ tai isoja alkukirjaimia,
+mutta puhe kuvataan siin‰ muodossa kuin se on lausuttu, ts. puhunnoksen
+sis‰ltˆ‰ ei muunneta esimerkiksi kirjoitetun kielen mukaiseen asuun.
+
+Jos puheen kielellinen sis‰ltˆ on ainakin suurelta osin ennalta tiedossa
+(esim. luettu teksti) ja teksti on olemassa s‰hkˆisess‰ muodossa,
+puhunnosten nimikkeiden lis‰ys voidaan tehd‰ puoliautomaattisesti. 
+
+
+\section{\label{sub:Phone-fooni-aanne}Phone\index{Phone} \--- fooni\index{fooni},
+‰‰nne\index{‰‰nne}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Puhe‰‰nne eli fooni on tietyntyyppisen artikulaatioliikkeen abstraktio.
+Yleens‰ ‰‰nteiden luokittelussa k‰ytet‰‰n jotakin yleisesti tunnettua
+transkriptioj‰rjestelm‰‰, esimerkiksi kansainv‰list‰ foneettista aakkostoa
+(\emph{International Phonetic Alphabet} eli \emph{IPA}\index{IPA}),
+joka m‰‰rittelee, mink‰laiset artikulatoriset piirteet ovat t‰rkeit‰
+ja voivat esiinty‰ maailman kieliss‰ ja kuinka n‰it‰ tulisi merkit‰.
+ƒ‰nteiden segmentointi ja foneettisen transkription tekeminen vaatii
+runsaasti harjoittelua ja perehtymist‰ artikulaatiofonetiikkaan.
+
+ƒ‰nteit‰ voidaan luokitella ja kuvata k‰yttˆtarkoituksesta riippuen
+eri tarkkuuksilla. ƒ‰nteiden nimikointi perustuu ensisijaisesti havaintoon,
+mutta akustisia kuvauksia on aina syyt‰ k‰ytt‰‰ apuna erityisesti
+‰‰nnerajojen paikantamisessa.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Tunnistetaan ensin sek‰ kuulonvaraisesti ett‰ akustisten kuvausten
+perusteella ‰‰nne ja sen naapuri‰‰nteet. \char`\"{}Zoomaa\char`\"{}
+‰‰nen visualisointia niin, ett‰ ruudulla on n‰kyviss‰ vain 3\--10
+‰‰nteen mittainen p‰tk‰ ja aaltomuotokuvaajan pienemm‰tkin \char`\"{}ripellykset\char`\"{}
+erottuvat selv‰sti. Kuuntele eri mittaisia p‰tki‰ n‰kyviss‰ olevalta
+alueelta, jotta lˆyd‰t ‰‰nteet paremmin. ƒ‰nne pit‰‰ aina tunnistaa
+kuuntelemalla sit‰ kontekstissaan. Jos segmentti‰ kuuntelee yksin‰‰n,
+sen tarkkaa laatua ei useinkaan voi havaita oikein, ja segmentin alussa
+ja lopussa voi kuulua h‰iritsevi‰ naksahduksia, jolleiv‰t segmenttirajat
+ole tarkasti amplitudin nollakohdissa.
+
+T‰m‰n j‰lkeen asetetaan alku- ja loppurajat ‰‰nteen tyypin mukaisesti
+(ks. esimerkit liitteess‰ \ref{cha:Aanteiden-segmentointiesimerkkeja}). 
+
+Jos ‰‰nneyksikˆit‰ tuntuu lˆytyv‰n odotetusta poikkeava lukum‰‰r‰,
+on parasta uskoa havaintoaan ja valita n‰ille yksikˆille parhaiten
+sopivat symbolit. On huonompi ratkaisu sijoittaa ‰‰nteiden rajat mielivaltaiselta
+tuntuviin paikkoihin ja k‰ytt‰‰ niille huonosti sopivia symboleita.
+
+Mik‰li ‰‰nne tuntuu olevan esimerkiksi vain yhden ‰‰nihuuliperiodin
+mittainen tai eritt‰in lyhytkestoinen (esim. alle 10 ms), sit‰ ei
+normaalitapauksessa kannata rajata erillisen‰ ‰‰nteen‰ vaan jommankumman
+naapurinsa osana.
+
+Mik‰li vokaali‰‰nne on selv‰sti diftongi (tavunsis‰inen vokaalijono),
+rajataan sen alku- ja loppuosa erillisin‰ ‰‰ntein‰. Huomaa kuitenkin,
+ett‰ joskus fonologisessa mieless‰ odottamasi diftongi saatetaan tuottaa
+monoftongina \-- ‰l‰ silloin pakota segmentti‰ kahteen osaan. Samat
+neuvot koskevat tavurajan ylitt‰vi‰ vokaaliyhtymi‰.
+
+Pitki‰ foneemeja edustavat ‰‰nteet rajataan vain yhten‰ ‰‰nnesegmenttin‰.
+Esim. pitk‰ /k:/-konsonantti rajataan samalla tavalla kuin lyhyt /k/,
+sill‰ ‰‰nnekerroksessa n‰ill‰ ei v‰ltt‰m‰tt‰ ole selv‰‰ foneettista
+eroa. (Huom: Vain yksi {[}k{]} segmentoidaan myˆs, vaikka lˆyt‰isit
+aaltomuotokuvasta pitk‰hkˆn {[}k{]}-‰‰nteen keskelt‰ useita laukeaman
+n‰kˆisi‰ ''sykkyrˆit‰''! On hyvin tavallista, ett‰ {[}k{]}-klusiilin
+laukeama on ep‰m‰‰r‰inen, sill‰ kielen selk‰ on pinta-alaltaan suuri
+ja sen liikuttelu artikuloidessa on luonnostaan v‰hemm‰n tarkkaa kuin
+esimerkiksi kielen k‰rjen.)
+
+
+\paragraph*{Tee rajaus seuraavien periaatteiden mukaisesti:}
+
+\begin{enumerate}
+\item Sijoita raja auditiivisin perustein kohtaan, jossa rajan vasemmalla
+puolella olevaa osiota kuunnellessa rajaa seuraava ‰‰nne ei viel‰
+erotu kuulohavainnon perusteella ja rajan oikealla puolella olevaa
+osiota kuunnellessa et erota mik‰ edellinen ‰‰nne on.
+\item Tarkenna auditiivisin perustein tekem‰‰si rajausta siirt‰m‰ll‰ rajaa
+akustisin perustein lˆytyneeseen muutoskohtaan, jos t‰m‰ on tarpeen
+eik‰ aiheuta kovin suurta muutosta rajan paikkaan.
+\item Kun rajan paikka on suunnilleen lˆytynyt, noudata lis‰ksi seuraavia
+s‰‰ntˆj‰ aina, kun se on tarkoituksenmukaista (ts. kun raja ei edelliseen
+kohtaan n‰hden siirry kohtuuttomasti):
+
+\begin{enumerate}
+\item Jos ‰‰nne on soinnillinen, sijoita raja ‰‰nihuuliperiodin alkuun.
+Soinnillisuuden tunnistat siit‰, ett‰ aaltomuodossa n‰kyy l‰hes samanlaisina
+toistuvia kuvioita
+\item Sijoita raja ‰‰nisignaalin nollakohtaan, ts. kohtaan, jossa aaltomuotok‰yr‰
+ylitt‰‰ vaakasuoran nollarajan.
+\item Sijoita raja kohtaan, jossa aaltomuotok‰yr‰ nousee ylˆsp‰in.
+\item Sijoita raja jonkin oheisen esimerkin mukaisesti.
+\end{enumerate}
+\end{enumerate}
+Esimerkkej‰ eri ‰‰nteiden v‰listen rajojen sijoittamisesta on liitteess‰
+\ref{cha:Aanteiden-segmentointiesimerkkeja}.
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+ƒ‰nnesegmentti liittyy suoraan signaaliin tai kaikkiin signaaleihin,
+joissa ‰‰nne esiintyy samalla hetkell‰ saman puhujan tuottamana. Mik‰li
+puhunnos-, tavu- ja sanekerrokset ovat ennest‰‰n olemassa, tulisi
+puhunnosten, tavujen ja saneiden alku- ja loppurajat soveltuvin osin
+kohdistaa vastaavien ‰‰nnerajojen kanssa. Huomaa kuitenkin, ett‰ usein
+esiintyy myˆs ‰‰nteit‰, jotka ylitt‰v‰t tavu- tai sanarajan ja joita
+ei siksi voida perustellusti sitoa vain yhteen tavu- tai saneyksikkˆˆn
+(esim. suomen kielen geminaatta tai sanojen rajalla esiintyv‰ vokaali‰‰nne,
+johon edellinen sana loppuu ja jolla seuraava sana saumattomasti alkaa).
+
+
+\subsection*{Kuvauksen valinta}
+
+Ensisijaisesti kuulonvaraisin, mutta osittain akustisin kriteerein
+valitaan kyseist‰ ‰‰nnett‰ kuvaava symboli ja tarkkeet kansainv‰lisen
+foneettisen aakkoston (IPA, \citealp{IPAHandbook}) k‰ytt‰mien foneettisten
+piirteiden mukaisesti. 
+
+Sama ‰‰nne voidaan kuvata foneettisesti joko ASCII-muotoisena (Worldbet-
+ja X-SAMPA-aakkostot) tai mahdollisesti IPA-kirjasimella, mik‰li k‰ytett‰v‰
+annotointiohjelma sen sallii. ASCII-muotoisia aakkostoja tulisi suosia,
+koska ne ovat koneluettavia ja koska niiden siirto j‰rjestelm‰st‰
+toiseen aiheuttaa v‰hiten muunnosongelmia. Jos annotaatioista halutaan
+myˆhemmin luoda esitysgrafiikkaa, ASCII-muodossa kuvatut ‰‰nteet voidaan
+muuntaa IPA-kirjasimelle. Worldbet-aakkoston merkit on kuvattu liitteess‰
+\ref{sec:Worldbet-symbolit}.
+
+Pyri lˆyt‰m‰‰n ‰‰nnett‰ parhaiten kuvaava foneettinen perussymboli.
+Lis‰‰ t‰m‰n j‰lkeen tarvittavat tarkemerkit. Jokaiselle ‰‰nnesegmentille
+saa antaa vain yhden foneettisen perussymbolin tarkkeineen. Jos tunnet
+tarvitsevasi useamman perussymbolin, rajaa jokaiselle oma segmenttins‰.
+
+Foneettisen transkription pit‰isi kuvata mahdollisimman tarkasti ‰‰nteest‰
+syntyv‰‰ kuulohavaintoa. Pyri siis v‰ltt‰m‰‰n tietoista tai tiedostamatonta
+tukeutumista esimerkiksi foneemiseen kuvaukseen. Kun mietit, mik‰
+transkriptio ts. nimike ‰‰nteelle sopisi, ajattele ‰‰ntˆv‰yl‰n asentoa
+ja sit‰, mihin suuntiin artikulaatioelimet ovat matkalla. T‰m‰ voi
+helpottaa ep‰selvien ‰‰nteiden nimikointia.
+
+
+\section{\label{sec:VoiceQuality-aanenlaatu}VoiceQuality\index{VoiceQuality}
+\--- ‰‰nenlaatu\index{‰‰nenlaatu}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+ƒ‰nenlaatukerrokseen merkit‰‰n puhujan ‰‰nenlaadun muutokset, esim.
+kuiskaus/ soinnittomuus, narina tai henk‰yssointi. Modaali‰‰nt‰ (\char`\"{}tavallista
+‰‰nenlaatua\char`\"{}) ei tarvitse merkit‰ erikseen --- jos ‰‰nenlaatukerroksessa
+ei ole tietyll‰ ajanhetkell‰ merkint‰‰, se tarkoittaa, ett‰ puhe on
+normaalisti soinnillista tai soinnitonta sen mukaan, mik‰ ‰‰nne (sll/ston)
+foonitasolle on ko. ajanhetken kohdalle merkitty (ks. kuva \ref{fig:aanenlaatu_1}).
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.9]{/home/lennes/annotation_guide/jpgfigs/VQ_1.jpg}\end{center}
+
+
+\caption{\label{fig:aanenlaatu_1}Kuvassa alimpana n‰kyy nimikointikerros,
+johon on merkitty ‰‰nenlaatu. Kysymysmerkki \textbf{?} tarkoittaa
+narisevaa ‰‰nt‰, \textbf{Hv} henk‰yssointia ja \textbf{0} soinnitonta
+‰‰nenlaatua eli kuiskausta. N‰ytteen alussa olevat soinnilliset osat
+on tuotettu tavallisella ns. modaalifonaatiolla. Puhunnoksen lopussa
+esiintyv‰ soinnittomuus on suomessa ja monissa muissakin kieliss‰
+tavallinen ilmiˆ. N‰ytteess‰ on ‰‰nnetty sanat \emph{mink‰‰nlaisia
+perusteita} lauseessa \emph{siihen taas poliisi ei n‰hnyt mink‰‰nlaisia
+perusteita}. Narina‰‰ni alkaa sanan \emph{mink‰‰nlaisia} loppupuoliskolla
+ja puhujan ‰‰ni muuttuu soinnittomaksi \emph{perusteita}-sanan {[}s{]}-‰‰nteest‰
+alkaen.}
+\end{figure}
+
+
+ƒ‰nenlaatuilmiˆiden luokittelu on vaikeaa, sill‰ ‰‰nenlaatua kuvaavat,
+usein impressionistiset termit ymm‰rret‰‰n eri tavoin. Tutkimuksissa
+onkin todettu, ett‰ ihmiset kykenev‰t tunnistamaan melko johdonmukaisesti
+l‰hinn‰ jonkinlaisen narina‰‰nen \cite{Gerratt01}. Siksi t‰ss‰k‰‰n
+oppaassa ei ole valmiiksi m‰‰ritelty kovin monia ‰‰nenlaatutyyppej‰.
+Oikeastaan ‰‰nenlaadun tarkka tutkiminen vaatisikin tarkkoja fysiologisia
+ja akustisia mittauksia, joita annotoija ei k‰yt‰nnˆss‰ voi soveltaa
+jo tallennettuun puhesignaaliin.
+
+
+\subsection*{ƒ‰nenlaatuyksikˆiden riippuvuudet muista yksikˆist‰}
+
+ƒ‰nenlaatu ei v‰ltt‰m‰tt‰ ole riippuvainen mist‰‰n muusta yksikˆst‰
+vaan ‰‰nenlaatu voi ainakin teoriassa muuttua hyvinkin hienojakoisesti
+vaikkapa keskell‰ ‰‰nneyksikkˆ‰. T‰st‰ syyst‰ eri ‰‰nenlaatukerrokset
+voidaan periaatteessa nimikoida ilman muita annotaatiokerroksia. K‰yt‰nnˆss‰
+‰‰nenlaadun annotointi on kuitenkin helpompaa, jos aineistosta on
+tarjolla vaikkapa puhunnoskerros litteraatteineen.
+
+
+\subsection{\label{sub:Whisper-kuiskaus}Whisper\index{Whisper} \--- kuiskaus\index{kuiskaus}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Kuiskaus‰‰ni on useiden ‰‰nteiden yli jatkuvaa soinnitonta puhetta,
+jossa ei ole n‰ht‰viss‰ yksitt‰isi‰ ‰‰nihuuliperiodeja. Yksikkˆ‰ voidaan
+kuitenkin k‰ytt‰‰ myˆs, jos vain yksi ‰‰nne on soinniton (esim. puhunnoksenloppuinen
+vokaali), mik‰li soinnittomuutta ei haluta tai voida kuvata soinnittomuuden
+tarkemerkill‰ ‰‰nnekerroksen (\ref{sub:Phone-fooni-aanne}) vastaavassa
+yksikˆss‰.
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Kuiskaukseksi tai soinnittomalla ‰‰nenlaadulla tuotetuksi merkit‰‰n
+sellainen puheen osa, jossa yksi tai useampi ‰‰nne on odotusten vastaisesti
+soinniton. Kuiskaus voi alkaa tai p‰‰tty‰ myˆs keskell‰ ‰‰nnett‰.
+Esimerkiksi vokaalin alkuosa voi olla soinnillinen ja loppuosa soinniton.
+T‰m‰ on yleist‰ etenkin puhunnoksen lopussa esiintyvill‰ vokaaleilla.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Puh-editorissa kuiskausyksikˆlle ei merkit‰ erillist‰ kuvausta. Jos
+nimikoidaan esimerkiksi Praat-ohjelmalla, tulisi kuiskattu jakso merkit‰
+soinnittomuuden merkill‰ \emph{0}.
+
+
+\subsection{\label{sub:BreathyVoice-henkayssointi}BreathyVoice\index{BreathyVoice}
+\--- henk‰yssointi\index{henk‰yssointi}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Henk‰yssoinnillinen ‰‰nenlaatu. Osittain tai heikosti soinnillinen,
+puoliksi kuiskaava ‰‰nenlaatu, jossa on mukana h‰ly‰. 
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Henk‰yssointia esiintyy usein esim. soinnittomien frikatiivi‰‰nteiden
+vieress‰, puhunnosten lopussa ja aivan narina‰‰nen vieress‰. Puhe
+kuulostaa h-v‰ritteiselt‰, muttei ole kuitenkaan t‰ydellist‰ kuiskausta
+vaan sis‰lt‰‰ heikkoa sointia. Spektrogrammissa voidaan mahdollisesti
+erottaa jonkinlaista h‰ly‰, puheen kokonaisenergia on v‰h‰isempi ja
+aaltomuodosta katsottuna myˆs amplitudi on usein ymp‰ristˆ‰ pienempi.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Puh-editorissa henk‰yssointiyksikˆlle ei merkit‰ erillist‰ kuvausta.
+Jos nimikoidaan esimerkiksi Praat-ohjelmalla, tulisi henk‰yssoinnillinen
+jakso merkit‰ henk‰yssoinnin Worldbet-merkill‰ \emph{Hv}.
+
+
+\subsection{\label{sub:CreakyVoice-narinaaani}CreakyVoice\index{CreakyVoice}
+\--- narina‰‰ni\index{narina‰‰ni}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Nariseva ‰‰nenlaatu. Puhujan tuottamaa sointia, jonka ‰‰nihuuliperiodit
+ovat normaalia pitempi‰ ja/tai ep‰s‰‰nnˆllisi‰. Narinaa esiintyy usein
+erilaisten prosodisten rajakohtien yhteydess‰, ja joillakin puhujilla
+myˆs laajemmin. On olemassa erilaisia narisevia ‰‰nenlaatuja, mutta
+t‰m‰ yksikkˆ kuvaa niit‰ yhteisesti.
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Aaltomuodossa soinnillisten ‰‰nteiden aikana n‰kyv‰t periodit ovat
+ep‰s‰‰nnˆllisi‰ ja/tai normaalia pitempi‰. Joskus narinan aaltomuodossa
+erottuu kahden hieman erilaisen periodin vuorottelua (t‰t‰ kutsutaan
+diplofoniaksi).
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Puh-editorissa narinayksikˆlle ei merkit‰ erillist‰ kuvausta. Jos
+nimikoidaan esimerkiksi Praat-ohjelmalla, tulisi nariseva jakso merkit‰
+narinan/glottalisaation Worldbet-merkill‰ \emph{?}.
+
+Jos halutaan erottaa useampia narinatyyppej‰, t‰st‰ yksikˆst‰ on mahdollista
+Puh-editorilla periytt‰‰ aliyksikkˆ, jolle sitten m‰‰ritell‰‰n uusia
+ominaisuuksia (esim. ominaisuus creakType, jolla on joukko haluttuja
+arvoja, esim. 1 \-- m‰‰rittelem‰tˆn, 2 \-- puristeinen ‰‰ni, 3 \--
+diplofonia, 4 \-- ''vantaalaisnarina'' tms.)
+
+
+\subsection{\label{sub:FalsettoVoice-falsettiaani}FalsettoVoice\index{FalsettoVoice}
+\--- falsetti‰‰ni\index{falsetti‰‰ni}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Korkea ‰‰nentuoton rekisteri. Falsetti‰‰nt‰ voi esiinty‰ vaikkapa
+referoinnin yhteydess‰, esim. kun miespuhuja matkii naisen puhetta.
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Falsetti voidaan erottaa kuulonvaraisesti ja usein huomattavasti tavanomaista
+korkeamman perustaajuuden (eri ohjelmissa F0- eli Pitch-k‰yr‰) avulla.
+Pelkk‰‰n perustaajuusk‰yr‰‰n ei kannata luottaa, sill‰ joissakin tapauksissa
+perustaajuusanalyysi voi tuottaa k‰yr‰n, joka n‰ytt‰‰ arvoja oktaavia
+korkeammalta kuin pit‰isi (t‰h‰n voivat vaikuttaa esim. ep‰huomiossa
+naispuhujan puheelle s‰‰detyt perustaajuusanalyysin asetukset, vaikka
+puhujana olisi mies).
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Puh-editorissa falsettiyksikˆlle ei merkit‰ erillist‰ kuvausta. Jos
+nimikoidaan esimerkiksi Praat-ohjelmalla, tulisi falsetissa tuotettu
+puheen jakso merkit‰ merkill‰ \emph{F}.
+
+
+\chapter{\label{cha:Lingvistiset-yksikot}Lingvistiset yksikˆt}
+
+
+\section{\label{sub:Phoneme-foneemi}Phoneme\index{Phoneme} \--- foneemi\index{foneemi}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Teoreettinen kielen perusyksikkˆ, joka voi muuttaa sanan merkityksen.
+Foneemi on eri asia kuin ‰‰nne. \emph{Foneemiyksikkˆ‰ k‰ytet‰‰n yleens‰
+vain automaattisin menetelmin tuotetussa puheen annotaatiossa}, jolloin
+karkea ''foneemijono'' m‰‰ritet‰‰n k‰sin tehdyn ortografisen litteraation
+pohjalta ja t‰m‰n j‰lkeen ''pakotetaan'' segmentointiohjelmistolla
+n‰iden foneemien rajat ‰‰nisignaaliin.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Koska foneemi on oikeastaan lingvistinen abstraktio eik‰ foneemeja
+esiinny puheessa sellaisenaan, ei foneemien nimikointi varsinaisesta
+puhesignaalista ole relevanttia. Foneemisegmenttej‰ tuotetaan yleens‰
+vain automaattisilla menetelmill‰, mink‰ j‰lkeen annotaatio on tarkistettava
+k‰sin ja muunnettava realistisemmaksi ‰‰nnekerroksen annotaatioksi. 
+
+Sen sijaan jo annotoidun sanakerroksen (ks. \ref{sub:Word-Sana})
+yksikˆille voidaan periaatteessa m‰‰ritt‰‰ n‰iden sis‰lt‰m‰t teoreettiset
+foneemit. T‰llˆin foneemikuvaus on kuitenkin sananmuotojen ominaisuus,
+eik‰ n‰in kuvatuilla foneemiyksikˆill‰ ole ajallista alku- ja loppupistett‰.
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Automaattisesti luotava foneemipohjainen ''esisegmentointi'' voidaan
+yleens‰ tehd‰ vain jonkinlaisen ortografisen litteraatin perusteella.
+Varsinaista rakenteellista annotaatiota automaattinen segmentointi
+ei kuitenkaan edellyt‰.
+
+Mik‰li annotoidaan fonologisessa mieless‰ teoreettisia foneemiyksikˆit‰,
+t‰m‰ voidaan tehd‰ vasta kun sananmuodot on annotoitu.
+
+
+\subsection*{Kuvauksen valinta}
+
+Foneemiyksikˆn nimike on sit‰ ensisijaisesti vastaavan ‰‰nteen ts.
+allofonin Worldbet- tai IPA-muotoinen kuvaus (ks liite \ref{sec:Worldbet-symbolit}).
+
+
+\section{\label{sub:Word-Sana}Word\index{Word} \--- sana\index{Sana}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Puheen yksikkˆ, jolla on itsen‰inen merkitys ja joka voi esiinty‰
+myˆs yksin‰‰n. Sanayksikˆll‰ tarkoitetaan t‰ss‰ itse asiassa kimppua
+yhteen saneeseen liittyvi‰ piirteit‰. Saneeseen liittyy ensisijaisesti
+sen l‰hes ortografinen litteraatti (ts. sama asu kuin foneettisen
+puhunnoksen kuvauksessa), mutta yksikˆst‰ voidaan annotaatiossa mainita
+myˆs esimerkiksi fonologinen kuvaus, perusmuoto, morfologisia piirteit‰,
+vastaava sananmuoto kirjoitetussa kieless‰ jne. Puh-editorissa n‰m‰
+piirteet on kuitenkin m‰‰ritelt‰v‰ erikseen.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Sanakerros on suositeltavaa nimikoida vasta foonikerroksen j‰lkeen
+ja mieluiten tavukerroksen annotoinnin yhteydess‰. Puh-editorilla
+sanakerroksen pohja voidaan generoida myˆs jo annotoidusta puhunnoskerroksesta,
+mik‰li t‰m‰ on jo olemassa. T‰llˆin muodostuu ns. kelluvia\index{kelluva yksikkˆ}
+(\emph{floating}\index{floating unit}, ks. s. \ref{Kelluva-yksikko})
+sanayksikˆit‰, joita ei ole kohdistettu oikeisiin aikav‰leihin, vaan
+jaettu tasaisesti kyseisen puhunnoksen ajalle.
+
+Sanakerroksen rajan ei tarvitse v‰ltt‰m‰tt‰ aina osua yksiin ‰‰nnetason
+rajan kanssa, mutta jokaisen sanarajan tulee osua yksiin jonkin tavurajan
+kanssa, mik‰li tavutaso on annotoitu.
+
+
+\subsubsection{Geminaatta (kaksoiskonsonantti) sanarajalla}
+
+Jos suomenkielisess‰ puheessa sanarajalla esiintyy geminaatta (kaksoiskonsonantti),
+joka on selv‰sti seurausta alku- tai loppukahdennuksesta, koko konsonanttisegmentti
+merkit‰‰n kuuluvaksi vain yhteen sanaan. Jos suomenkielisess‰ puheessa
+sanarajalla esiintyy geminaatta (kaksoiskonsonantti), joka ei v‰ltt‰m‰tt‰
+johdu em. kahdennuksesta, sanaraja merkit‰‰n joko keskelle konsonantti‰‰nnett‰
+tai mahdollisuuksien mukaan jollakin akustisella kriteerill‰ perusteltuun
+kohtaan konsonanttisegmentin sis‰ll‰.
+
+
+\subsubsection{Pitk‰ vokaali sanarajalla}
+
+Jos suomenkielisess‰ puheessa sanarajalla esiintyy pitk‰ vokaali‰‰nne
+siten, ett‰ edellinen sana p‰‰ttyy samaan vokaaliin jolla seuraava
+alkaa: Etsi ensin akustisia vihjeit‰ sanarajasta vokaalisegmentin
+keskelt‰. Toisinaan sopivan sanarajakohdan voi lˆyt‰‰ perustaajuusmuutosten
+tai ‰‰nenlaatumuutosten perusteella. Rajalla voi olla esim. narinaa,
+liev‰ puristussupistuma tai per‰ti glottaaliklusiili. Jos rajakohdan
+paikkeilla on narinainen \char`\"{}kuoppa\char`\"{}, merkitse raja
+pisimm‰n ‰‰nihuuliperiodin j‰lkeen, juuri ennen kuin perustaajuus
+alkaa j‰lleen nousta. T‰llainen rajakohta heijastuu usein myˆs vokaalin
+laatuun. Jos sanojen rajalla on glottaaliklusiili, glottaaliklusiilin
+sulkeumavaihe kuuluu edelliseen sanaan ja sen j‰lkeinen \char`\"{}laukeama\char`\"{}
+seuraavaan sanaan. Jos glottaaliklusiili on eritt‰in pitk‰ ja sanarajalla
+tuntuu olevan esim. ep‰rˆinti‰, ‰l‰ merkitse glottaaliklusiilin sulkeumaa
+kumpaankaan sanaan kuuluvaksi, vaan j‰t‰ se kokonaan sanojen ulkopuolelle.
+Huom. Glottaaliklusiilin sulkeuma kuuluu kuitenkin puhunnokseen, sill‰
+se on selv‰sti puhujan tuottama artikulaatio! Jos mit‰‰n akustisia
+vihjeit‰ ei lˆydy, merkitse sanaraja keskelle vokaalisegmentti‰.
+
+
+\subsubsection{Puhunnoksenloppuiset/-alkuiset saneet}
+
+Jos puhunnos p‰‰ttyy soinnittomaan vaiheeseen ja viimeisen sanan lopussa
+on {[}h{]}-mainen ‰‰nne, t‰m‰ merkit‰‰n kuuluvaksi puhunnokseen, muttei
+viimeiseen saneeseen. Siihen saakka kun {[}h{]}-‰‰nne on selv‰sti
+viimeisen saneen viimeisen vokaalin v‰rinen (\char`\"{}soinniton vokaali\char`\"{}),
+se kuuluu myˆs saneeseen. T‰llaisessa tapauksessa ‰‰nne segmentoidaan
+myˆs osaksi puhunnoksen viimeist‰ vokaalisegmentti‰, mutta segmentin
+soinniton osa merkit‰‰n ‰‰nenlaatutasolle soinnittomaksi.
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Puhunnos, fooniyksikˆt ja tavut, mik‰li ne ovat olemassa.
+
+
+\subsection*{Kuvauksen valinta}
+
+Merkit‰‰n ainakin saneen l‰hes ortografinen litteraatti (ts. sama
+asu kuin foneettisen puhunnoksen kuvauksessa); mahdollisesti myˆs
+muita piirteit‰. Sanarajat ylitt‰vi‰ suomen ortografiassa n‰kym‰ttˆmi‰
+assimilaatioita (esim. \emph{poja}\emph{\underbar{m}} \emph{pallo})
+ei tarvitse merkit‰, sill‰ ne voidaan todeta ‰‰nnekerroksen annotaatiosta
+ja/tai tuottaa s‰‰ntˆpohjaisesti. Keskener‰iseksi j‰‰neen sanan loppuun
+merkit‰‰n tavuviiva \emph{-}.
+
+Jollet k‰yt‰ annotaatiossa Puh-editoria, merkitse kaikki sanayksikkˆˆn
+liittyv‰t piirteet omiin kerroksiinsa. Esimerkiksi Praat-ohjelmalla
+rajataan saneet yhteen IntervalTier-tyyppiseen kerrokseen ja kirjoitetaan
+n‰iden nimikkeiksi saneen litteraatti. Sen j‰lkeen luodaan PointTier-tyyppinen
+kerros esimerkiksi sanan perusmuodolle, ja lis‰t‰‰n t‰h‰n kerrokseen
+yksi ankkuri (point) jokaisen saneen keskivaiheille. Ankkureiden nimikkeiksi
+annetaan sitten ko. saneen perusmuoto ortografisessa asussaan.
+
+Sanalle ei ole m‰‰ritelty valmiiksi esimerkiksi ominaisuutta 'sanaluokka',
+sill‰ ominaisuudet periytyv‰t kaikille yksikˆn aliyksikˆille ja eri
+tutkijoiden k‰sitykset sanaluokkien m‰‰r‰st‰ ja merkityksest‰ vaihtelevat
+(esim. \citealp{ISK} vs. erilaisten automaattisten morfologisten
+analyysityˆkalujen k‰ytt‰m‰t luokitukset). Mik‰li sanaluokan annotointi
+on tarpeen, kannattaa luoda Puh-editorissa sanayksikˆlle uusi aliyksikkˆ,
+jolle m‰‰ritell‰‰n sanaluokka-ominaisuus ja t‰lle puolestaan lista
+haluttuja luokkanimikkeit‰.
+
+
+\section{\label{sub:Syllable-tavu}Syllable\index{Syllable} \--- tavu\index{tavu}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Tavu on sanan fonotaktisen j‰rjestymisen yksikkˆ. Tavu sis‰lt‰‰ aina
+vokaalin tai poikkeustapauksessa syllabisen konsonantin. Suomen oikeinkirjoituksessa
+sana voidaan katkaista tavurajan kohdalta.
+
+Tavun ja tavurajojen m‰‰ritt‰minen nojaa usein huomattavasti annotoijan
+intuitioon. N‰in on etenkin kirjoittamattoman puheen kohdalla: tavutus
+riippuu siit‰, mihin kirjoitetun kielen muotoon annotoija kulloinkin
+haluaa nojata.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Tavurajojen tulisi noudattaa mahdollisimman pitk‰lle vastaavia ‰‰nnerajoja.
+Poikkeuksia ovat esim. geminaatat ja muut tavu- tai sanarajan ylitt‰v‰t
+‰‰nteet. N‰iss‰ tapauksissa tavuraja merkit‰‰n 
+
+\begin{enumerate}
+\item kohtaan, jossa ‰‰nteen keskell‰ tapahtuu jokin akustis-foneettinen
+muutos, tai
+\item silm‰m‰‰r‰isesti ‰‰nteen puoliv‰liin noudattaen ‰‰nteiden rajauss‰‰ntˆj‰.
+\end{enumerate}
+Tavutason rajan ei tarvitse aina osua yksiin ‰‰nnetason rajan kanssa,
+mutta sanarajojen tulee osua yksiin tavurajojen kanssa.
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Tavukerros on suositeltavaa annotoida ‰‰nnekerroksen nimikoinnin j‰lkeen
+ja mieluiten sanakerroksen annotoinnin yhteydess‰. 
+
+
+\subsection*{Kuvauksen valinta}
+
+Tavun ortografinen kuvaus. Tavurajat ylitt‰vi‰ suomen ortografiassa
+n‰kym‰ttˆmi‰ assimilaatioita (esim. \emph{ke}\emph{\underbar{N}}\emph{.g‰n})
+ei tarvitse merkit‰, sill‰ ne voidaan todeta ‰‰nnekerroksen annotaatiosta
+tai tuottaa s‰‰ntˆpohjaisesti. Keskener‰iseksi j‰‰neen tavun loppuun
+merkit‰‰n tavuviiva \emph{-}.
+
+
+\section{\label{sub:Morpheme-morfeemi}Morpheme\index{Morpheme} \--- morfeemi\index{morfeemi}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Kielen pienin yksikkˆ, jolla on merkitys tai kieliopillinen teht‰v‰.
+Koska morfeemien luokittelu ja merkint‰tavat vaihtelevat eri tutkijoilla
+ja eri kieliss‰, ei morfeemiyksikˆlle ole valmiiksi m‰‰ritelty tietty‰
+kuvaustapaa. Suomesta on eroteltu kuudenlaisia morfeemeja: \emph{sanavartalot}\index{sanavartalo}\index{vartalo, sana-},
+\emph{johtimet}\index{johdin}, \emph{tunnukset}\index{tunnus}, \emph{p‰‰tteet}\index{p‰‰te},
+\emph{omistusliitteet\index{omistusliite}} ja \emph{liitepartikkelit}\index{liitepartikkeli}
+(\citealp[s. 25--26]{Laaksonen98}, ks. myˆs \citealp[s. 89--95]{Karlsson98}).
+Sanojen jakaminen morfeemeihin ja morfeemien tai morfien erottaminen
+toisistaan eiv‰t ole aina aivan yksinkertaisia toimenpiteit‰. Kieleen
+on myˆs kiteytynyt ns. morfeemiyhdistelmi‰\index{morfeemiyhdistelm‰},
+joiden jakaminen osiin ei auta muodon merkityksen ymm‰rt‰mist‰. Isossa
+suomen kieliopissa n‰it‰ kutsutaankin nipputunnuksiksi\index{nipputunnus}
+\citep[s. 89]{ISK}. Nimikoijan kannattaa mietti‰, olisiko niit‰ varten
+hyˆdyllist‰ periytt‰‰ oma aliyksikkˆ.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Morfeemit kannattaa nimikoida vasta sen j‰lkeen, kun sanat on nimikoitu,
+koska morfeemit toteutuvat sanoina tai niit‰ pienempin‰ yksikˆin‰.
+Morfeemi voi ilmet‰ vain yhten‰ ‰‰nteen‰ (kuten esim. monikon tunnus
+sanassa koulu+i+ssa), joten voi olla k‰yt‰nnˆllisint‰ nimikoida morfeemit
+vasta ‰‰nnekerroksen j‰lkeen. Mik‰li sana sis‰lt‰‰ morfeemin, jolle
+ei lˆydy selke‰‰ vastinetta puhesignaalissa, merkit‰‰n kyseisen morfeemin
+tila (\emph{status}, ks. s. \ref{yksikon-tila}) Puh-editorissa \emph{kelluvaksi}
+(\emph{floating}, s. \ref{Kelluva-yksikko}), jolloin yksikˆn alku-
+ja loppuaikaa ei tulkita absoluuttisina.
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Morfeemiyksikˆiden rajat on syyt‰ kohdistaa ainakin vastaavien sana-
+ja foneemirajojen sek‰ soveltuvin osin ‰‰nnerajojen kanssa.
+
+
+\subsection*{Kuvauksen valinta}
+
+Morfeemiyksikˆiden nimikkeiksi voi kirjoittaa vapaata teksti‰.
+
+Mik‰li aikoo k‰ytt‰‰ morfeemien nimikointiin jotakin tietty‰ luokittelu-
+ja kuvaustapaa, kannattaa morfeemiyksikˆlle periytt‰‰ Puh-editorilla
+aliyksikkˆ, jolle m‰‰ritell‰‰n ominaisuuksina esim. mink‰laisia nimikkeit‰
+yksikˆille saa antaa, kuvataanko vaikkapa samaan yksikkˆˆn liittyv‰
+morfi (morfeemin yksitt‰isen esiintym‰n tai reaalistuman muoto) ja
+morfeemi (abstrakti muoto) erikseen ja mink‰tyyppisi‰ morfeemiluokkia
+on olemassa. Mik‰li jotkin morfeemityypit muodostavat suljetun luokan,
+ne kannattaa luetella kyseisen ominaisuuden vaihtoehtoisina arvoina,
+joista annotoitaessa valitaan paras. Jos k‰ytet‰‰n jotakin automaattista
+menetelm‰‰ morfologisen analyysin tuottamiseen, voidaan morfeemiyksikˆn
+nimikkeiksi m‰‰ritell‰ kyseisen analyysialgoritmin tuntemat morfologiset
+kategoriat.
+
+
+\section{\label{sec:Clause-lause}Clause\index{Clause} \--- lause}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Lause on rakenteellinen kokonaisuus, joka sis‰lt‰‰ finiittiverbin.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Lause paikannetaan finiittiverbin avulla. Lause voi muodostua pelk‰st‰
+finiittiverbist‰ (esim. \emph{sataa}); verbin lis‰ksi lauseen ytimeen
+kuuluvat verbin argumentit (subjekti, objekti, adverbiaalit‰ydennys).
+\citep[s. 827]{ISK}
+
+Lause voi olla yksinkertainen tai kompleksinen. Yhdyslauseet nimikoidaan
+erillisiksi lauseiksi. Rinnasteisten yhdyslauseiden annotoiminen on
+yleens‰ vaivatonta. Yhdyslause voi kuitenkin muodostua myˆs niin,
+ett‰ lause voi olla toisen lauseen osa. Sis‰kk‰iset lauseet voi Puh-editorissa
+nimikoida samaan kerrokseen. Praatissa puolestaan pit‰‰ luoda useampi
+nimikointikerros.
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Lauseiden rajat tulisi soveltuvin osin kohdistaa vastaavien sana-,
+tavu- ja ‰‰nnerajojen kanssa, mik‰li n‰m‰ ovat ennest‰‰n olemassa.
+Niiss‰ aineistoissa, joissa virkkeiden nimikointi on relevanttia,
+tulee lauserajat kohdistaa myˆs vastaavien virkekerroksen yksikˆiden
+(\emph{Sentence}, ks. \ref{sec:Sentence-virke}) kanssa.
+
+
+\subsection*{Kuvauksen valinta}
+
+Lauseen kuvaukseksi kirjoitetaan sen ortografinen litteraatti. Keskener‰iseksi
+j‰‰neen lauseen viimeisen sanan loppuun merkit‰‰n tavuviiva \emph{-}.
+
+Lauseesta voi periytt‰‰ muita yksikˆit‰ esim. syntaktisten (eksistentiaali-,
+omistus-, tila-, ilmiˆ-, kvanttori-, tulos-, tunnekausatiivi- ja genetiivialkuiset
+lauseet) tai modaalisten (v‰ite-, kysymys-, k‰sky- huudahduslause)
+lausetyyppien nimikointiin (k‰sitteist‰ ks. esim. \citealp{ISK},
+ss. 845\--862). Myˆs lauseen erikoistapauksia, kuten esim. lohko-
+ja limitt‰israkennetta sek‰ ellipsi‰, varten on mahdollista luoda
+aliyksikkˆ. Puh-editorilla annotoitaessa eri lausetyypit on hyv‰ m‰‰ritell‰
+annotointiyksikˆn eri piirteiksi. Siin‰ tapauksessa niiden t‰ytyy
+olla t‰ydennysjakaumassa kesken‰‰n; piirteiden k‰yttˆ ei mahdollista
+yhden lauseen nimikointia moneksi eri lausetyypiksi (esim. sek‰ kysymys-
+ett‰ huudahduslauseeksi).
+
+
+\section{\label{sec:Sentence-virke}Sentence\index{Sentence} \--- virke\index{virke}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Virke on tekstin ortografinen rakenneyksikkˆ \citep[s. 827]{ISK}.
+Virkkeit‰ nimikoidaan ainoastaan, mik‰li on kyseess‰ ‰‰neen luettu
+teksti, jonka virkerakenne on tunnettu.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Virkkeit‰ tulisi annotoida vain, jos annotoijalla on k‰ytett‰viss‰‰n
+teksti, johon ‰‰neenluenta perustuu. Siin‰ tapauksessa yksikˆiden
+rajaaminen perustuu ortografiaan. ƒ‰neen luetun puheen virkerakenteen
+hahmottamisessa auttaa myˆs intonaatio: virkkeen s‰velkulku noudattaa
+usein deklinaatiomallia, ja virkkeen alun voi tunnistaa s‰velkorkeuden
+noususta. T‰t‰ havainnollistaa kuva \ref{cap:kaksi-virketta}, jonka
+virkeyksikˆt on rajattu Kielipankin tv-uutisl‰hetyksist‰ koostuvasta
+aineistosta.
+
+\begin{landscape}%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.6]{/home/lennes/annotation_guide/jpgfigs/1DB-225586_kaksi_virketta.jpg}\end{center}
+
+
+\caption{\label{cap:kaksi-virketta}Kuvassa on annotoitu kaksi uutisankkurin
+er‰‰ss‰ tv-uutisl‰hetyksess‰ lukemaa virkett‰. Perustaajuusk‰yr‰ ja
+spektrogrammi havainnollistavat sit‰, miten intonaatio nousee virkkeen
+alussa ja laskee loppua kohden. N‰yte on Kielipankin tallenteesta
+1DB-225586 (\protect\url{http://www.csc.fi/kielipankki/puhe/recordings/1DB-225586/}).}
+\end{figure}
+\end{landscape}
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Virkerajat tulee soveltuvin osin kohdistaa vastaavien lause-, sana-,
+tavu- ja ‰‰nnerajojen kanssa, mik‰li n‰m‰ on jo nimikoitu.
+
+
+\subsection*{Kuvauksen valinta}
+
+Ortografinen litteraatti. Keskener‰iseksi j‰‰neen virkkeen viimeisen
+sanan loppuun merkit‰‰n tavuviiva \emph{-}.
+
+
+\chapter{\label{cha:Prosodiset-yksikot}Prosodiset yksikˆt}
+
+Prosodisilla yksikˆill‰ kuvataan puheen prosodiikkaa eli tonaalisia,
+dynaamisia ja temporaalisia piirteit‰.
+
+Painotuksen kuvausta varten on luotu yksikkˆ nimelt‰ prominenssi.
+Painotukselle ei ole olemassa yleisesti hyv‰ksytty‰ m‰‰ritelm‰‰, ja
+mill‰ tahansa m‰‰ritelm‰ll‰ painollisuuden annotointi on hyvin subjektiivista.
+Maailman kieliss‰ erotellaan usein sanapaino tai leksikaalinen paino
+(tietylle sanalle luonteenomainen, mahdollisesti sanan merkityst‰
+erottava painon sijoittumispaikka; suomessa varsinaista sanapainoa
+ei ole, mutta paino sijoittuu potentiaalisesti sanan ensimm‰iselle
+tavulle) ja toisaalta lausepaino (pitemm‰ss‰ puheen p‰tk‰ss‰ tai lauseessa
+se sana tai tavu, jota painotetaan).
+
+
+\section{\label{sub:Prominence-prominenssi}Prominence\index{Prominence}
+\--- prominenssi\index{prominenssi}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Jokin puheen yksikkˆ, joka erottuu ymp‰ristˆst‰‰n jollakin tavalla
+korosteisena eli prominenttina. Prominenssiyksikkˆ‰ tai siit‰ Puh-editorilla
+periytettyj‰ aliyksikˆit‰ voidaan k‰ytt‰‰ mm. ns. lausepainon merkitsemiseen.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Rajataan auditiivisin perustein. Koska prominenssi on kuulohavaintoon
+perustuva k‰site, akustisia analyyseja (esim. perustaajuus- ja intensiteettik‰yr‰‰)
+ei v‰ltt‰m‰tt‰ tarvitse annotointivaiheessa k‰ytt‰‰, mutta niiden
+avulla voidaan saada vahvistusta havaitulle prominenssivaikutelmalle
+(ks. esim. kuva \ref{cap:Kaksi-prominenssia}). Mik‰li akustisten
+kuvausten k‰ytt‰minen prominenssin annotoinnissa halutaan metodisista
+syist‰ kokonaan kielt‰‰ (esim. halutaan koemieless‰ ker‰t‰ useiden
+annotoijien subjektiiviset kuulonvaraiset arviot saman puhen‰ytteen
+prominenteista kohdista), kannattaa prominenssiyksikˆst‰ periytt‰‰
+uusi aliyksikkˆ, jonka m‰‰ritelm‰‰n kielto merkit‰‰n.
+
+\begin{landscape}%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.6]{/home/lennes/annotation_guide/jpgfigs/1DB-222809-2_prominenssia.jpg}\end{center}
+
+
+\caption{\label{cap:Kaksi-prominenssia}Kuvassa on lausuma \emph{mutta t‰mmˆsen‰
+nimityksen‰ niin se on kyll‰ pohjosmaista juurta meill‰}, jonka kaksi
+sanaa (\emph{nimityksen‰} ja \emph{pohjosmaista}) on merkitty prominenteiksi,
+ts. annotoijan mielest‰ ne ovat erottuneet korosteisina tai painollisina
+ymp‰ristˆˆns‰ n‰hden. Kuva havainnollistaa hyvin sen, miten sek‰ perustaajuus
+(sininen/tumma k‰yr‰) ett‰ intensiteetti (keltainen/vaalea k‰yr‰)
+ovat yhteydess‰ kuulonvaraisesti havaittuun prominenssiin. N‰yte on
+Kielipankin tallenteesta 1DB-222809-2 (\protect\url{http://www.csc.fi/kielipankki/puhe/recordings/1DB-222809-2/}).}
+\end{figure}
+\end{landscape}
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Mik‰li prominenssin vaikutusalaksi katsotaan tietyntyyppinen yksikkˆ
+(esim. tavu, sana tms.), pit‰‰ vastaavan annotaatiokerroksen olla
+olemassa.
+
+Prominentiksi voidaan kuitenkin merkit‰ myˆs mik‰ tahansa puheen jakso.
+Kun annotaatiokerroksia tulee j‰lkeenp‰in lis‰‰, prominenssin vaikutusalan
+voidaan silloin ajatella koskevan kaikkia kyseisell‰ ajanjaksolla
+esiintyvi‰ muita yksikˆit‰.
+
+
+\subsection*{Kuvauksen valinta}
+
+Ei m‰‰ritelty erillist‰ kuvausta, mutta nimikkeeksi voi kirjoittaa
+vapaata teksti‰. Prominenssiyksikˆlle voi halutessaan antaa nimikkeeksi
+esimerkiksi kuvauksen prominenssin tai painollisuuden asteesta. Mik‰li
+k‰ytet‰‰n tietty‰ sovittua asteikkoa, voidaan Puh-editorissa periytt‰‰
+prominenssiyksikˆlle aliyksikkˆ, jolle erikseen m‰‰r‰t‰‰n esim. ominaisuus
+\linebreak degreeOfProminence ja t‰lle lista haluttuja arvoja. Samoin
+toimitaan, jos halutaan m‰‰ritell‰ erilaisia prominenssityyppej‰ esim.
+funktion tai vaikutusalan mukaan.
+
+
+\subsection{\label{sub:Stress-sanapaino}Stress\index{Stress} \--- sanapaino\index{sanapaino}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Sanapaino eli sanan (leksikaalisesti) painollisin osa. \emph{Stress}-yksikkˆ
+on \emph{Prominence}-yksikˆn aliyksikkˆ.
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Sanapainolliseksi voidaan merkit‰ jokin sanaa pienempi yksikkˆ tai
+puheen jakso, yleens‰ tavu. Sanapainoyksikkˆ‰ ei saa rajata niin,
+ett‰ se ulottuu saman puhujan kahden sanayksikˆn alueelle.
+
+
+\subsubsection*{Riippuvuudet muista yksikˆist‰}
+
+Sanapainon merkint‰ vaatii ainakin olemassaolevan sanakerroksen ja
+yleens‰ myˆs jonkin sanaa pienemm‰n yksikˆn, esimerkiksi tavun annotaatiokerroksen. 
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Ei m‰‰ritelty erillist‰ kuvausta, mutta nimikkeeksi voi kirjoittaa
+vapaata teksti‰. Stress-yksikˆlle voi halutessaan antaa nimikkeeksi
+esimerkiksi kuvauksen painollisuuden asteesta (esim. p‰‰paino 1, sivupaino
+2). Mik‰li k‰ytet‰‰n tietty‰ sovittua asteikkoa, voidaan Puh-editorissa
+periytt‰‰ Stress-yksikˆlle aliyksikkˆ, jolle erikseen m‰‰r‰t‰‰n esim.
+ominaisuus degreeOfStress ja annetaan t‰lle lista haluttuja arvoja.
+
+
+\section{\label{sub:IntonationPattern-intonaatiokuvio}IntonationPattern\index{IntonationPattern}
+\--- intonaatiokuvio\index{intonaatiokuvio}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Puheen intonaatiota tai melodiaa kuvaava yksikkˆ, jota voi k‰ytt‰‰
+esim. tyyliteltyjen intonaatiokuvioiden nimikointiin (ks. esim. \citealp{Ogden}).
+Huomaa, ett‰ lausuman loppuintonaatio nimikoidaan lausuman (\ref{sub:ProsodicUtterance-lausuma})
+piirteen‰ eik‰ intonaatiokuvioyksikˆll‰.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Rajataan auditiivisen havainnon perusteella. Apuna voi k‰ytt‰‰ myˆs
+esim. perustaajuusk‰yr‰‰.
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Intonaatiokuvion kuvaus voidaan antaa mit‰ tahansa puheen olemassaolevaa
+annotaatioyksikkˆ‰ vastaavalle ajanjaksolle.
+
+
+\subsection*{Kuvauksen valinta}
+
+Vapaa tekstikuvaus. Mik‰li tiedossa on jokin intonaatiokuvioiden luokitteluj‰rjestelm‰
+(esim. fonologinen intonaation transkriptioj‰rjestelm‰ kuten \emph{ToBI},
+tai rajattu joukko tyyliteltyj‰ intonaatiokuvioita), kannattaa Puh-editorilla
+periytt‰‰ intonaatiokuviolle uusi aliyksikkˆ, jolle m‰‰ritell‰‰n yhten‰
+ominaisuutena lista sallittuja intonaatiotyyppej‰.
+
+
+\section{\label{sec:ChangeInTone-aanensavy}ChangeInTone\index{ChangeInTone}
+\--- ‰‰nens‰vyn\index{‰‰nens‰vy} muutos}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Havaittu ‰‰nens‰vyn muutos. Esiintyy esim. referoinnin tai ironian
+yhteydess‰. Voidaan joskus kuvata myˆs muiden prosodisten muuttujien
+avulla (esim. normaalia korkeampaa, hitaampaa ja kova‰‰nisemp‰‰ puhetta).
+Ilmiˆ tarvitsee kuitenkin oman nimikointikerroksensa, koska kuulohavainto
+ei aina ole prosodisesti j‰sennett‰viss‰. Huomaa, ett‰ esimerkiksi
+hymyillen lausutulle puheelle on oma nimikointikerroksensa (\ref{sub:Smile-hymyily}).
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Rajataan kuulohavainnon perusteella. Usein ‰‰nen s‰vyn muunnoksen
+alkaminen on selvemmin havaittavissa kuin sen loppuminen \citep[s. 965]{ISK}.
+K‰yt‰nnˆss‰ ‰‰nens‰vy-yksikˆlle on kuitenkin aina merkitt‰v‰ jokin
+tarkka alkamis- ja loppumishetki. Tarvittaessa yksikkˆˆn voi liitt‰‰
+kommentin (\ref{yksikon-kommentti}), josta ‰‰nens‰vymuutoksen ep‰m‰‰r‰inen
+loppumisaika k‰y ilmi.
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+ƒ‰nens‰vyn muutos voi esiinty‰ miss‰ kerroksessa tahansa. Vaikutusalueena
+saattaa olla sana, lausuma, kokonainen vuoro, jopa useampi vuoro (vrt.
+esim. \citealp{Haakana}). ƒ‰nens‰vy-yksikˆn rajat voidaan haluttaessa
+kohdistaa jonkin muun annotaatioyksikˆn rajojen kanssa, mik‰li halutaan
+korostaa, ett‰ ‰‰nens‰vy on muuttunut juuri kyseisen yksikˆn ajaksi.
+
+
+\subsection*{Kuvauksen valinta}
+
+Nimikkeeksi voi kirjoittaa vapaamuotoisen kuvauksen. Mik‰li halutaan
+k‰ytt‰‰ jotakin tietty‰ luokitteluj‰rjestelm‰‰, kannattaa Puh-editorilla
+periytt‰‰ ‰‰nens‰vy-yksikˆlle uusi aliyksikkˆ, jonka yhdelle ominaisuudelle
+m‰‰ritell‰‰n lista sallittuja arvoja. Puh-editorissa ‰‰nens‰vyn muutosta
+voi halutessaan kuvailla tarkemmin annotointiyksikˆn kommenttikent‰ss‰
+(\ref{yksikon-kommentti}).
+
+
+\section{\label{sec:ChangeInPitch-savelkorkeus}ChangeInPitch\index{ChangeInPitch}
+\--- s‰velkorkeuden\index{s‰velkorkeus} muutos}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Tilap‰inen puheen s‰velkorkeuden muutos, esim. ymp‰ristˆ‰‰n korkeammalta
+tai matalammalta lausuttu puhe.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Rajataan p‰‰asiassa kuulohavainnon perusteella. Myˆs perustaajuusk‰yr‰st‰
+voi olla apua.
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Yksikˆn vaikutusalue vaihtelee: s‰velkorkeus voi muuttua kesken sanan
+yhden tavun tai pidemm‰n jakson, kuten vuoron tai lausuman ajaksi.
+Haluttaessa s‰velkorkeusyksikˆn rajat voidaan kohdistaa jonkin muun
+annotaatioyksikˆn rajojen kanssa, mik‰li halutaan korostaa, ett‰ s‰velkorkeus
+on muuttunut juuri kyseisen yksikˆn ajaksi.
+
+
+\subsection*{Kuvauksen valinta}
+
+Puh-editorissa on mahdollista k‰ytt‰‰ hyv‰ksi yksikˆn piirrett‰ \emph{directionOfPitchChange},
+jonka avulla voi nimikoida s‰velkorkeuden muutoksen suunnan. Kyseisen
+piirteen arvoksi voi merkit‰ \emph{lower} (ymp‰ristˆ‰‰n matalammalta
+lausuttu puhe) tai \emph{higher} (ymp‰ristˆ‰‰n korkeammalta lausuttu
+puhe). Jos nimikointiin k‰ytt‰‰ esim. Praatia, voi IntervalTier-yksikˆn
+nimikkeeksi merkit‰ tiedon s‰velkorkeusmuutoksen tyypist‰ yksikˆn
+aikana. Tarvittaessa voi k‰ytt‰‰ esim. lyhenteit‰ \emph{L} = \emph{lower}
+ja \emph{H} = \emph{higher}.
+
+
+\section{\label{sec:ChangeInLoudness-voimakkuus}ChangeInLoudness\index{ChangeInLoudness}
+\--- voimakkuuden\index{voimakkuus} muutos}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Auditiivisesti havaittu puheen voimakkuuden muutos, esim. huutaminen
+tai hyvin hiljainen puhe. Huomaa, ett‰ kuiskaus on erillinen annotointiyksikkˆns‰.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Rajataan auditiivisin kriteerein, mutta esim. intensiteettik‰yr‰st‰
+tai aaltomuodosta voi olla hyˆty‰. Periaatteessa puheen voimakkuuden
+vaihtelua voi esiinty‰ monilla kielen eri tasoilla. Sanojen, tavujen
+ja ‰‰nteiden voimakkuuseroja annotoitaessa kannattaa mietti‰ myˆs
+prominenssiyksikˆn k‰yttˆ‰.
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Haluttaessa voimakkuusmuutosyksikˆn rajat voidaan kohdistaa jonkin
+muun annotaatioyksikˆn rajojen kanssa, mik‰li halutaan korostaa, ett‰
+voimakkuus on muuttunut juuri kyseisen yksikˆn ajaksi.
+
+
+\subsection*{Kuvauksen valinta}
+
+Puh-editorissa on mahdollista k‰ytt‰‰ hyv‰ksi yksikˆn piirrett‰ \linebreak
+\emph{directionOfLoudnessChange}, jonka avulla voi kuvata puheen voimakkuuden
+muutoksen suunnan. Voit merkit‰ kyseisen piirteen arvoksi \emph{softer}
+(ymp‰ristˆ‰‰n hiljaisemmin lausuttu puhe) tai \emph{louder} (ymp‰ristˆ‰‰n
+‰‰nekk‰‰mmin lausuttu puhe). Praatissa merkitse IntervalTier-yksikˆn
+nimikkeeksi tieto voimakkuusmuutoksen tyypist‰ yksikˆn aikana. Tarvittaessa
+voit k‰ytt‰‰ esim. lyhenteit‰ \emph{-}, \emph{softer} ja \emph{+},
+\emph{louder}.
+
+
+\section{\label{sec:ChangeInTempo-=3D-puhenopeus}ChangeInTempo\index{ChangeInTempo}\index{tempo}
+\--- puhenopeuden\index{puhenopeus}\index{nopeus} muutos}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Auditiivisesti havaittu puhenopeuden muutos (esim. ymp‰ristˆ‰‰n hitaampi
+tai nopeampi puhe) tai yksitt‰isen ‰‰nteen pidennys tai lyhennys.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Yksikˆll‰ puhenopeuden muutos voidaan kuvata periaatteessa kaikille
+kielen eri tasoille ulottuvia tempon muutoksia. Mik‰li muutos koskee
+yht‰ sanaa, rajataan aineistosta yhden sanan mittainen annotointiyksikkˆ.
+Jos koko lausuma on ymp‰ristˆ‰‰n nopeammin tai hitaammin lausuttu,
+on yksikˆn vaikutusalana koko lausuma. Yksikˆn avulla voidaan kuvata
+myˆs yksitt‰isten ‰‰nteiden pidennykset ja lyhennykset: jos yksikkˆ
+ulottuu yhteen ‰‰nteeseen, se on piirteest‰ riippuen joko lyhentynyt
+tai pidentynyt; jos vaikutusala on laajempi, on kyseess‰ puheen nopeutuminen
+tai hidastuminen.
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Haluttaessa puhenopeusyksikˆn rajat voidaan kohdistaa mink‰ tahansa
+muun annotaatioyksikˆn rajojen kanssa, mik‰li halutaan korostaa, ett‰
+puhenopeus on muuttunut juuri kyseisen yksikˆn ajaksi.
+
+
+\subsection*{Kuvauksen valinta}
+
+Mik‰li k‰yt‰t Puh-editoria, voit kuvata puhenopeuden muutoksen suunnan
+piirteen \linebreak \emph{directionOfTempoChange} avulla. Voit merkit‰
+kyseisen piirteen arvoksi \emph{slower} (ymp‰ristˆ‰‰n hitaammin lausuttu
+puhe) tai \emph{faster} (ymp‰ristˆ‰‰n nopeammin lausuttu puhe). Jos
+k‰yt‰t esim. Praatia, merkitse IntervalTier-yksikˆn nimikkeeksi tieto
+siit‰, onko kyse puheen nopeutumisesta vai hidastumisesta yksikˆn
+aikana. Tarvittaessa voit k‰ytt‰‰ esim. lyhenteit‰ \emph{-}, \emph{slower}
+ja \emph{+}, \emph{faster}.
+
+
+\chapter{\label{cha:Vuorovaikutusyksikot}Vuorovaikutusyksikˆt}
+
+
+\section{\label{sub:Turn-vuoro}Turn\index{Turn} \--- vuoro\index{vuoro}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Yhden puhujan yhden tai useamman per‰kk‰isen lausuman muodostama kokonaisuus,
+jonka aikana toiset puhujat eiv‰t onnistuneesti keskeyt‰. Lausumien
+lis‰ksi vuoron rakenneyksikˆin‰ voivat periaatteessa toimia eleet
+(\ref{sub:Gesture-ele}) ja ilmeet (\ref{sec:Mimic-ilme}) sek‰ paralingvistiset
+yksikˆt (\ref{cha:Paralingvistiset-yksikot}, esim. p‰‰n nyˆkk‰ys
+tai nauru). Puhujanvaihdokset osoittavat vuoron alkua ja loppua. Vuoron
+sis‰ll‰ voi olla taukoja%
+\footnote{Lis‰tietoa keskustelun vuorotteluj‰sennyksest‰ ja vuoron rakenteesta
+\citealp{ISK}, ss. 955\--1000; \citep{Hakulinen97}.%
+} (\ref{sub:Pause-tauko}).
+
+%
+\begin{figure}[h]
+\begin{center}\includegraphics[%
+  scale=0.6]{/home/lennes/annotation_guide/jpgfigs/1DB-220197_yksi_sana_lausuma_vuoro.jpg}\end{center}
+
+
+\caption{\label{cap:sana-per-vuoro}Yksi ainoa sana voi muodostaa kokonaisen
+lausuman ja vuoron. N‰yte on Kielipankin tallenteesta 1DB-220197}
+
+(\url{http://www.csc.fi/kielipankki/puhe/recordings/1DB-220197/}).
+\end{figure}
+
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Vuoron nimikointia varten tulisi luoda kullekin puhujalle oma annotointikerros,
+koska puheenvuorot menev‰t ainakin arkikeskustelussa yleens‰ osin
+p‰‰llekk‰in. N‰in myˆs p‰‰llekk‰ispuhunnat saadaan n‰kyviin ilman
+erillist‰ annotointikerrosta. 
+
+\label{puhujien-maara-ja-vuorokerrokset}Jos vuorojen nimikointiin
+k‰ytet‰‰n Puh-editoria ja puhujia on monta, voidaan haluttaessa k‰ytt‰‰
+v‰hemm‰n vuorokerroksia, jolloin nimikoidaan esimerkiksi kahden tai
+kolmen puhujan vuoroyksikˆt samaan annotaatiokerrokseen. T‰llˆin kussakin
+vuoroyksikˆss‰ esiintyv‰ puhuja t‰ytyy merkit‰ erikseen yksikˆn ominaisuuden
+\emph{soundSource} (‰‰nil‰hde) avulla (ks. \ref{yksikon-aanilahde}).
+Mik‰li nimikointiin k‰ytet‰‰n Puh-editorin sijaan Praatia tai jotakin
+muuta ohjelmaa, on kunkin puhujan vuoroille aina teht‰v‰ oma \emph{Turn}-annotaatiokerros.
+
+Puhujien minimipalautteet eli vastauspartikkelit merkit‰‰n omiksi
+vuoroikseen. Jos minimipalaute tuotetaan kokonaan p‰‰llekk‰ispuhunnan
+aikana, toisen puhujan vuoro ei (v‰ltt‰m‰tt‰) jakaudu kahtia. 
+
+Annotoija p‰‰tt‰‰ tapauskohtaisesti, esiintyv‰tkˆ tauot vuorojen v‰lill‰
+vai ovatko ne vuoronsis‰isi‰. Yleist‰en ja yksinkertaistaen voitaneen
+sanoa, ett‰ mik‰li vuoro on syntaktisesti ja/tai prosodisesti kesken,
+se voi siet‰‰ jopa yli sekunnin mittaisia taukoja. Jos selkeit‰ keskener‰isyyden
+osoittimia ei ole, yli puolen sekunnin tauot vuoron sis‰ll‰ ovat harvinaisia.
+Kuvassa \ref{cap:vuoronsisaiset-tauot} on vuoro, joka koostuu kahdesta
+lausumasta. J‰lkimm‰inen niist‰ sis‰lt‰‰ kaksi yli puolen sekunnin
+mittaista taukoa, jotka ovat vuoronsis‰isi‰. Tulkintaa puoltavat sek‰
+syntaksi ett‰ prosodia. Kuvassa \ref{cap:vuorot-ja-tauot} on kuvan
+\ref{cap:vuoronsisaiset-tauot} vuoro ja osa sit‰ seuraavasta vuorosta.
+Vuorot ovat eri puhujien tuottamia. Ensimm‰isen vuoron toisen lausuman
+j‰lkeinen tauko on rajattu molempien vuorojen ulkopuolelle. Nimikoinnissa
+on k‰ytetty rajaamiskriteerein‰ j‰lleen sek‰ prosodiaa ett‰ syntaksia:
+lausuma ja vuoro ovat syntaktisesti ja prosodisesti loppuun saatettuja,
+eik‰ tauon n‰in ollen oleteta kuuluvan kumpaankaan vuoroon.
+
+\begin{landscape}%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.8]{/home/lennes/annotation_guide/jpgfigs/1DB-222809-1_vuoro_ja_tauot.jpg}\end{center}
+
+
+\caption{\label{cap:vuoronsisaiset-tauot}Vuoron sis‰ll‰ voi esiinty‰ taukoja.
+Ylemp‰‰n annotaatiokerrokseen on merkitty vuoro, joka koostuu kahdesta
+lausumasta (\emph{selv‰ / l‰hdet‰‰n sitten n‰ihin p‰iv‰n agendalla
+oleviin asioihin}). Alempaan kerrokseen on rajattu sanayksikˆt (\emph{Word}).
+J‰lkimm‰inen lausuma sis‰lt‰‰ kaksi yli puolen sekunnin mittaista
+taukoa. Ne ovat vuoronsis‰isi‰. Tulkintaa puoltavat sek‰ syntaksi
+ett‰ prosodia. N‰yte on Kielipankin tallenteesta 1DB-222809-1}
+
+(\url{http://www.csc.fi/kielipankki/puhe/recordings/1DB-222809-1/}).
+\end{figure}
+\end{landscape}
+
+\begin{landscape}%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.6]{/home/lennes/annotation_guide/jpgfigs/1DB-222809-1_vuorot_ja_tauot.jpg}\end{center}
+
+
+\caption{\label{cap:vuorot-ja-tauot}Taukoja vuoron sis‰ll‰ ja vuorojen v‰liss‰.
+N‰yte on Kielipankin tallenteesta 1DB-222809-1}
+
+(\url{http://www.csc.fi/kielipankki/puhe/recordings/1DB-222809-1/}).
+\end{figure}
+\end{landscape}
+
+Vuorot rajautuvat puhujanvaihdosten kautta. T‰t‰ havainnollistaa kuva
+\ref{cap:3puhujan-vuorottelu}, johon on nimikoitu kahden ensimm‰isen
+minuutin vuorot yhdest‰ Ylen Aamu-tv:n haastattelusta. Vuorojen v‰lill‰
+ei tarvitse olla taukoa vaan vuorot voivat liitty‰ saumattomasti toisiinsa.
+
+\begin{landscape}%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.6]{/home/lennes/annotation_guide/jpgfigs/1DB-222809-1_vuorottelu.jpg}\end{center}
+
+
+\caption{\label{cap:3puhujan-vuorottelu}Kolmen puhujan vuorottelua. Vuorot
+rajautuvat puhujanvaihdosten kautta. N‰yte on Kielipankin tallenteesta
+1DB-222809-1}
+
+(\url{http://www.csc.fi/kielipankki/puhe/recordings/1DB-222809-1/}).
+\end{figure}
+\end{landscape}
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Koska aineiston nimikointi kannattaa aloittaa laajimmasta yksikˆst‰,
+olisi vuorot hyv‰ nimikoida ensimm‰isen‰. Mik‰li lausumat, sanat,
+tavut ja/tai ‰‰nteet on rajattu omiin kerroksiinsa ennen vuoroja,
+kohdistetaan vuorojen rajat n‰iden kanssa soveltuvin osin. 
+
+
+\subsection*{Kuvauksen valinta}
+
+Ortografinen litteraatti.
+
+
+\section{\label{sub:ProsodicUtterance-lausuma}ProsodicUtterance\index{ProsodicUtterance}
+\--- lausuma\index{lausuma}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Vuoron rakenneyksikkˆ, joka muodostaa syntaktisen, pragmaattisen ja/tai
+prosodisen kokonaisuuden (ks. esim. kuva \ref{cap:Kaksi-lausumaa}).
+Lausumaa ei voi tyhjent‰v‰sti rakenteellisin kriteerein m‰‰ritell‰.
+Yksi lausuma voi koostua pelk‰st‰ dialogipartikkelista, mutta toisaalta
+se voi olla usean lauseen mittainen. %
+\footnote{Ks. \citealp{ISK} , ss. 957\--958; \citealp{Hakulinen97}.%
+}
+
+%
+\begin{figure}[h]
+\begin{center}\includegraphics[%
+  scale=0.6]{/home/lennes/annotation_guide/jpgfigs/1DB-220197_kaksi_lausumaa.jpg}\end{center}
+
+
+\caption{\label{cap:Kaksi-lausumaa}Kuvassa on kaksi saman puhujan per‰kk‰ist‰
+lausumaa. Ne voidaan erotella kahdeksi lausumaksi prosodisin kriteerein:
+lausumien v‰liss‰ on lyhyt tauko ja lausumat ovat prosodisia kokonaisuuksia.
+Toisaalta ne voidaan erottaa kahdeksi eri lausumaksi myˆs pragmatiikan
+avulla: ensimm‰inen lausuma osoittaa puhujan ymm‰rt‰neen, mist‰ edellisess‰
+vuorossa oli kyse; toinen puolestaan pyyt‰‰ edelliseen vuoroon tarkennusta.
+N‰yte on Kielipankin tallenteesta 1DB-220197}
+
+(\url{http://www.csc.fi/kielipankki/puhe/recordings/1DB-220197/}).
+\end{figure}
+
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Vuorot kannattaa nimikoida ennen lausumia. Vuoro voi sis‰lt‰‰ yhden
+tai useamman lausuman eli vuoron rakenneyksikˆn. Ison suomen kieliopin
+mukaan \char`\"{}jokainen syntaktisen kokonaisuuden loppu on periaatteessa
+mahdollinen puhujanvaihdoskohta\char`\"{} \citep[s. 960]{ISK}. N‰in
+ollen jokainen syntaktisen kokonaisuuden loppu on myˆs todenn‰kˆinen
+lausuman raja.
+
+Usein lausuma on myˆs prosodinen kokonaisuus. Moniyksikkˆisiss‰ vuoroissa
+puhuja saattaa kuitenkin j‰tt‰‰ lausumarajan prosodisesti merkitsem‰tt‰
+voidakseen pit‰‰ vuoroa pidemp‰‰n. H‰n voi esim. rynn‰t‰ vaihdoskohdan
+yli \citep[s. 38]{Hakulinen97}, mist‰ on esimerkki kuvassa \ref{cap:ryntays}.
+Moniyksikkˆiset vuorot ovat tavallisia etenkin kertomuksissa ja selostuksissa
+\citep[s. 962]{ISK}. Narina‰‰ni (ks. \ref{sub:CreakyVoice-narinaaani})
+voi \--- etenkin suomenkielisess‰ puheessa \--- olla merkkin‰ mahdollisesta
+puhujanvaihdoskohdasta ja n‰in ollen myˆs lausuman rajasta (ks. esim.
+\citealp{Ogden01}, \citealp{Ogden}).
+
+\begin{landscape}%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.6]{/home/lennes/annotation_guide/jpgfigs/1DB-222809-2_rynt.jpg}\end{center}
+
+
+\caption{\label{cap:ryntays}Kuvassa on kolme lausumaa. Kaksi lausumaa voi
+esiinty‰ saumattomasti per‰kk‰in esimerkiksi t‰llaisessa tapauksessa,
+jossa puhuja ''rynt‰‰'' ensimm‰isest‰ lausumasta toiseen s‰ilytt‰‰kseen
+vuoron itsell‰‰n. Rynt‰ys vaikuttaa lausumien rajan molemmilla puolilla
+esiintyviin prosodisiin piirteisiin. T‰ss‰ puhuja nostaa rynt‰yskohdassa
+hetkeksi ‰‰nens‰ s‰velkorkeutta, mik‰ erottuu myˆs kapeakaistaisessa
+spektrogrammissa vaakasuuntaisten raitojen harventumisena. N‰yte on
+Kielipankin tallenteesta 1DB-222809-2}
+
+(\url{http://www.csc.fi/kielipankki/puhe/recordings/1DB-222809-2/}).
+\end{figure}
+\end{landscape}
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Lausuman rajat tulee kohdistaa vuorojen (\ref{sub:Turn-vuoro}) rajojen
+kanssa sek‰ sana-, tavu- ja ‰‰nnerajojen kanssa, mik‰li n‰m‰ on jo
+annotoitu.
+
+
+\subsection*{Kuvauksen valinta}
+
+Ortografinen litteraatti. Lausumalla on myˆs piirre \textbf{finalIntonation},
+jolla voidaan haluttaessa kuvata lausuman lopussa havaittu s‰velkulku.
+Vaihtoehtoja on kolme: intonaatio joko laskee (\emph{falling}), pysyy
+tasaisena (\emph{level}) tai nousee (\emph{rising}) lausuman lopussa.
+Jos k‰yt‰t esim. Praatia, merkitse PointTier-tyyppiseen finalIntonation-annotaatiokerrokseen
+yksi piste (point) suunnilleen keskelle lausumaa ja pisteen nimikkeeksi
+loppuintonaation tyyppi. Tarvittaessa voit k‰ytt‰‰ lyhenteit‰, esim.
+\emph{\textbackslash{}}, \emph{falling}; \emph{-}, \emph{level}; \emph{/},
+\emph{rising}.
+
+
+\section{\label{sub:Pause-tauko}Pause\index{Pause} \--- tauko\index{tauko}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Signaalin jakso, jonka aikana ei esiinny m‰‰r‰tty‰ toimintaa. Annotoijan
+on itse p‰‰tett‰v‰, mitk‰ annotointiyksikˆt eiv‰t voi sis‰lty‰ taukoon,
+sill‰ t‰m‰ m‰‰rittely riippuu taukoyksikˆiden k‰yttˆtarkoituksesta
+(halutaanko tutkia puhujien vuorovaikutusta vai mitata taustakohinan
+m‰‰r‰‰).
+
+Yksinkertaisimmillaan tauko on puhunnosten (\emph{PhoneticUtterance},
+\ref{sub:PhoneticUtterance-puhunnos}) ulkopuolelle j‰‰v‰ alue. Esimerkiksi
+paralingvistisi‰ piirteit‰ voidaan myˆs j‰tt‰‰ taukojen ulkopuolelle.
+Joskus on tarpeen rajata puhujakohtaiset tauot, mutta usein tauko
+tarkoittaa jonkinlaista katkosta koko keskustelussa. Haluttaessa voidaan
+m‰‰ritell‰ tiukasti, ett‰ tauko on t‰ysin ‰‰netˆn kohta puhesignaalissa,
+jolloin mik‰‰n muu ‰‰nt‰ kuvaava yksikkˆ ei voi taukoon sis‰lty‰ (akustinen
+tai hiljaisuuden m‰‰ritelm‰). Tauon sis‰ll‰ voidaan vaihtoehtoisesti
+sallia h‰ly‰‰ni‰ (\emph{Noise}, \ref{sub:Noise-haly}). 
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Puheesta annotoidaan ensin kaikki taukoihin kuulumattomat yksikˆt
+(esimerkiksi puhunnokset, \ref{sub:PhoneticUtterance-puhunnos}),
+mink‰ j‰lkeen taukoyksikˆt voidaan rajata t‰ysin automaattisesti.
+Mik‰li tauoille ei ole olemassa mit‰‰n erillist‰ j‰sentely‰, niit‰
+ei siis tarvitse annotoida k‰sin.
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Tauot rajautuvat kaikkien niiden yksikˆiden perusteella, joita ei
+katsota taukoon kuuluviksi.
+
+
+\subsection*{Kuvauksen valinta}
+
+Tauolle ei ole m‰‰ritelty erillist‰ kuvaustapaa, mutta tauon nimikkeeksi
+voi antaa mit‰ tahansa teksti‰. K‰ytt‰j‰ voi halutessaan m‰‰ritell‰
+erilaisia taukotyyppej‰ ja annotoida n‰m‰ taukojen piirteiksi. 
+
+Kun taukoon kuulumattomat yksikˆt on m‰‰ritelty eksplisiittisesti,
+kannattaa \emph{Pause}-yksikˆlle periytt‰‰ aliyksikkˆ, jonka m‰‰ritelm‰ss‰
+kielletyt tai sallitut yksikˆt luetellaan.
+
+
+\chapter{\label{cha:Paralingvistiset-yksikot}Paralingvistiset yksikˆt}
+
+Paralingvistiseen annotaatiokerrokseen merkit‰‰n sellaisia puheen
+piirteit‰, jotka eiv‰t ole varsinaisesti lingvistisi‰ vaan kuvastavat
+puhujan fyysist‰ tai emotionaalista tilaa: esim. hymyily, nauru, yskiminen,
+haukottelu. Kaikille piirteille, jotka voivat esiinty‰ p‰‰llekk‰in,
+on luotava oma annotaatiokerros.
+
+
+\section{Riippuvuudet muista yksikˆist‰}
+
+Paralingvistiset yksikˆt eiv‰t yleens‰ ole riippuvaisia mist‰‰n muusta
+annotaatioyksikˆst‰, joskin tietyt paralingvistiset yksikˆt voivat
+olla fysiologisista syist‰ toisensa poissulkevia (esim. aivastuksen
+aikana ei hengitet‰ sis‰‰n vaan yleens‰ juuri ennen aivastusta; jne.).
+Paralingvistisi‰ yksikˆit‰ voidaan siis periaatteessa annotoida myˆs
+ilman mit‰‰n muita olemassaolevia annotaatioyksikˆit‰.
+
+
+\section{Fysiologista tilaa ilmaisevat}
+
+
+\subsection{\label{sub:Breathing-hengitys}Breathing\index{Breathing} \---
+hengitys\index{hengitys}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Jakso, jonka aikana puhuja hengitt‰‰.
+
+Tallenteesta havaitut puhujan sis‰‰n- ja uloshengitykset merkit‰‰n
+omaan annotaatiokerrokseensa (Breathing), sill‰ sis‰‰n- ja uloshengityksi‰
+voi esiinty‰ p‰‰llekk‰in monen muun puheen ilmiˆn kanssa. Suomenkieliselle
+ep‰muodolliselle puheelle tyypillisi‰ ovat esimerkiksi lyhyet ingressiivisen
+puheen jaksot (ingressiivist‰ puhetta tuotetaan sis‰‰nhengityksen
+aikana). 
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+L‰hesk‰‰n kaikki sis‰‰nhengitykset eiv‰t erotu ‰‰nisignaalissa eiv‰tk‰
+siis ole annotoitavissa (ilman fysiologista lis‰informaatiota). Hengityksest‰
+kuuluvan ‰‰nen alku ja loppu eiv‰t myˆsk‰‰n ole tarkkarajaisia. Sis‰‰nhengitykset
+kannattaa kuitenkin merkit‰, sill‰ niiden ajallisella sijoittumisella
+voi olla paljon merkityst‰ esim. ‰‰nenlaadun muutosten ja intonaation
+kannalta.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Hengitysten nimikevaihtoehdot ovat sis‰‰nhengitys (\emph{in}) ja uloshengitys
+(\emph{out}). Normaalisti puhuja hengitt‰‰ puheen aikana ulosp‰in,
+mutta t‰t‰ ei tarvitse k‰sin annotoida. Nk. ingressiivisen, sis‰‰nhengitetyn
+puheen kohdalle merkit‰‰n sis‰‰nhengitys. Puhunnosten ulkopuolella
+esiintyv‰n selv‰n uloshengitys‰‰nen voi merkit‰ erikseen. Jos tietty
+uloshengitys on ymm‰rrett‰viss‰ esimerkiksi huokaukseksi, sen voi
+lis‰ksi tai vaihtoehtoisesti merkit‰ huokauskerrokseen huokausmerkinn‰ll‰.
+
+
+\subsection{\label{sub:Sigh-huokaus}Sigh\index{Sigh} \--- huokaus\index{huokaus}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Huokauksesta syntyv‰ ‰‰ni.
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Kuulonvaraisesti ja akustisia kuvauksia ja/tai videokuvaa tarkastelemalla.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Huokausyksikˆille ei Puh-editorissa merkit‰ erillist‰ kuvausta. Praatissa
+huokauksia kuvaavaan annotaatiokerrokseen merkit‰‰n huokausjakson
+kohdalle merkint‰ \emph{.sigh}. Mik‰li halutaan m‰‰ritell‰ huokauksen
+tyyppej‰, on Puh-editorilla periytett‰v‰ huokausyksikˆlle aliyksikkˆ,
+jonka yhdelle ominaisuudelle m‰‰ritell‰‰n lista sallittuja huokaustyyppej‰
+tai vapaa tekstinimike.
+
+
+\subsection{\label{sub:Yawn-haukotus}Yawn\index{Yawn} \--- haukotus\index{haukotus}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Haukotuksesta syntyv‰ ‰‰ni
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Kuulonvaraisesti ja akustisia kuvauksia ja/tai videokuvaa tarkastelemalla.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Haukotusyksikˆille ei Puh-editorissa merkit‰ erillist‰ kuvausta. Praatissa
+haukotuksia kuvaavaan annotaatiokerrokseen merkit‰‰n haukottelun kohdalle
+merkint‰ .\emph{yawn}.
+
+
+\subsection{\label{sub:Sniff-niiskautus}Sniff\index{Sniff} \--- niiskautus\index{niiskutus}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Nen‰n niiskautuksesta syntyv‰ ‰‰ni.
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Kuulonvaraisesti ja akustisia kuvauksia tarkastelemalla.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Niiskutusyksikˆille ei Puh-editorissa merkit‰ erillist‰ kuvausta.
+Praatissa niiskutuksia kuvaavaan annotaatiokerrokseen merkit‰‰n niiskutuksen
+kohdalle merkint‰ .\emph{sniff}.
+
+
+\subsection{\label{sub:ClearThroat-rykaisy}ClearThroat\index{ClearThroat} \---
+ryk‰isy\index{ryk‰isy}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Ryk‰isyst‰ syntyv‰ ‰‰ni.
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Kuulonvaraisesti ja akustisia kuvauksia tarkastelemalla.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Ryk‰isy-yksikˆille ei Puh-editorissa merkit‰ erillist‰ kuvausta. Praatissa
+ryk‰isyj‰ kuvaavaan annotaatiokerrokseen merkit‰‰n ryk‰isyn kohdalle
+Worldbet-merkint‰ .\emph{ct}. 
+
+
+\subsection{\label{sub:Cough-yskiminen}Cough\index{Cough} \--- yskiminen\index{yskiminen}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Yskimisest‰ syntyv‰ ‰‰ni.
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Kuulonvaraisesti ja akustisia kuvauksia ja/tai videokuvaa tarkastelemalla.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Cough-yksikˆille ei Puh-editorissa merkit‰ erillist‰ kuvausta. Praatissa
+yskimist‰ kuvaavaan annotaatiokerrokseen merkit‰‰n yskimisen kohdalle
+Worldbet-merkint‰ .\emph{cough}. 
+
+
+\subsection{\label{sub:Sneeze-=3D-aivastus}Sneeze\index{Sneeze} \--- aivastus\index{aivastus}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Aivastuksesta syntyv‰ ‰‰ni
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Kuulonvaraisesti ja akustisia kuvauksia ja/tai videokuvaa tarkastelemalla.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Aivastusyksikˆille ei Puh-editorissa merkit‰ erillist‰ kuvausta. Praatissa
+aivastuksia kuvaavaan annotaatiokerrokseen merkit‰‰n aivastuksen kohdalle
+Worldbet-merkint‰ .\emph{sneeze}.
+
+
+\subsection{\label{sub:Swallow-nielaisu}Swallow\index{Swallow} \--- nielaisu\index{nielaisu}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Nielaisusta syntyv‰ ‰‰ni.
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Kuulonvaraisesti ja akustisia kuvauksia ja/tai videokuvaa tarkastelemalla.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Nielaisuyksikˆille ei Puh-editorissa merkit‰ erillist‰ kuvausta. Praatissa
+nielaisuja kuvaavaan annotaatiokerrokseen merkit‰‰n yskimisen kohdalle
+merkint‰ .\emph{swallow}.
+
+
+\section{Tunnetilaa ilmaisevat}
+
+
+\subsection{\label{sub:Laughter-nauru}Laughter\index{Laughter} \--- nauru\index{nauru}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Nauru tai naurunsekaisesti lausuttu puheen jakso.
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Kuulonvaraisesti ja ‰‰nisignaalin perusteella m‰‰ritet‰‰n naurulle
+ominaisten per‰kk‰isten hengityksen pyrsk‰hdysten alku ja loppu. Yksitt‰isi‰
+pyrsk‰hdyksi‰ ei tarvitse merkit‰ erikseen.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Nauruyksikˆille ei Puh-editorissa merkit‰ erillist‰ kuvausta. Praatissa
+naurua kuvaavaan annotaatiokerrokseen merkit‰‰n naurujakson kohdalle
+Worldbet-merkint‰ \emph{.laugh}. Mik‰li halutaan m‰‰ritell‰ naurutyyppej‰,
+on Puh-editorilla periytett‰v‰ nauruyksikˆlle aliyksikkˆ, jonka yhdelle
+ominaisuudelle m‰‰ritell‰‰n lista sallittuja naurutyyppej‰ tai vapaa
+tekstinimike. 
+
+
+\subsection{\label{sub:Smile-hymyily}Smile\index{Smile} \--- hymyily\index{hymyily}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Hymyillen lausuttu puheen jakso.
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Etsit‰‰n l‰hinn‰ kuulonvaraisesti hymyilyn alku ja loppu. Mik‰li tallenteeseen
+liittyy videoaineistoa, saadaan nimikoiduksi myˆs sellaiset kohdat,
+joissa hymyilev‰ henkilˆ ei tuota puhetta tai muita ‰‰ni‰.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Hymyily-yksikˆille ei voi Puh-editorissa antaa erillist‰ kuvausta.
+Praatissa hymyily‰ kuvaavaan annotaatiokerrokseen merkit‰‰n hymyillen
+lausutun jakson kohdalle Worldbet-merkint‰ \emph{.smile}. Mik‰li halutaan
+m‰‰ritell‰ hymyilyn tyyppej‰, on Puh-editorilla periytett‰v‰ hymyily-yksikˆlle
+aliyksikkˆ, jonka yhdelle ominaisuudelle m‰‰ritell‰‰n lista sallittuja
+hymyilyn tyyppej‰ tai vapaa tekstinimike. 
+
+
+\subsection{\label{sub:Weep-itku}Weep\index{Weep} \--- itku\index{itku}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Itku tai itkunsekaisesti lausuttu puheen jakso.
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Kuulonvaraisesti.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Itkuyksikˆille ei Puh-editorissa merkit‰ erillist‰ kuvausta. Praatissa
+itkua kuvaavaan annotaatiokerrokseen merkit‰‰n itkujakson kohdalle
+merkint‰ \emph{.weep}. Mik‰li halutaan m‰‰ritell‰ itkun tyyppej‰ (esim.
+pienen vauvan itkun luokitus), on Puh-editorilla periytett‰v‰ itkuyksikˆlle
+aliyksikkˆ, jonka yhdelle ominaisuudelle m‰‰ritell‰‰n lista sallittuja
+itkun tyyppej‰ tai vapaa tekstinimike.
+
+
+\subsection{\label{sub:Sob-nyyhkytys}Sob\index{Sob} \--- nyyhkytys\index{nyyhkytys}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Nyyhkytyksest‰ syntyv‰ ‰‰ni
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Kuulonvaraisesti.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Nyyhkytysyksikˆille ei voi Puh-editorissa antaa erillist‰ kuvausta.
+Praatissa nyyhkytyst‰ kuvaavaan annotaatiokerrokseen merkit‰‰n nyyhkytt‰en
+tuotetun jakson kohdalle merkint‰ \emph{.sob}. Mik‰li halutaan m‰‰ritell‰
+nyyhkytyksen tyyppej‰, on Puh-editorilla periytett‰v‰ nyyhkytysyksikˆlle
+aliyksikkˆ, jonka yhdelle ominaisuudelle m‰‰ritell‰‰n lista sallittuja
+nyyhkytyksen tyyppej‰ tai vapaa tekstinimike.Vapaa tekstikuvaus.
+
+
+\section{Muut}
+
+
+\subsection{\label{sub:TongueClick-kielen-naksahdus}TongueClick\index{TongueClick}
+\--- kielen naksahdus\index{kielen naksahdus}\index{maiskautus, kielen}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Kielen naksahdus tai maiskautus. Usein tahattomia, mutta esiintyv‰t
+toisinaan vuorojen tai puhunnosten alun merkkein‰. Huom. t‰t‰ yksikkˆ‰
+ei k‰ytet‰ joissakin kieliss‰ esiintyvien maiskaus‰‰nteiden kuvaukseen.
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Kuulonvaraisesti kielen naksahdukset tai maiskahdukset on helppo todeta,
+mutta niiden tarkka paikantaminen on toisinaan mahdotonta ilman akustisten
+kuvausten tarkastelua. Kielen naksaukset erottuvat yleens‰ aaltomuodossa
+ja/tai spektrogrammissa hyvin lyhyin‰ purskeina, joiden energia on
+painottunut enimm‰kseen korkeille taajuuksille (samoille kohdille
+kuin esim. {[}s{]}- tai {[}t{]}-‰‰nteiss‰). Myˆs k-maisempia naksahduksia
+esiintyy. Joskus puhunnosten alussa esiintyy tahallisia maiskautuksia,
+joissa huulia ja kielt‰ maiskautetaan yhdess‰. T‰llˆin voidaan samaan
+kohtaan annotoida sek‰ TongueClick- ett‰ Lipsmack-yksikkˆ.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+TongueClick-yksikˆille ei Puh-editorissa merkit‰ erillist‰ kuvausta.
+Praatissa TongueClick- annotaatiokerrokseen merkit‰‰n kielen naksauksen
+kohdalle Worldbet-merkint‰ \emph{.tc}. 
+
+
+\subsection{\label{sub:Lipsmack-huulten-maiskautus}Lipsmack\index{Lipsmack}
+\--- huulten maiskautus\index{maiskautus, huulten}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Huulten maiskautuksesta syntyv‰ ‰‰ni. Huom. T‰t‰ yksikkˆ‰ ei k‰ytet‰
+\emph{maiskaus‰‰nteiden} kuvaukseen.
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Kuulonvaraisesti huulten maiskahdukset on helppo todeta. Huulten maiskautukset
+erottuvat yleens‰ aaltomuodossa ja/tai spektrogrammissa hyvin lyhyin‰,
+kielen naksahduksia vaimeampina purskeina. Joskus puhunnosten alussa
+esiintyy tahallisia maiskautuksia, joissa huulia ja kielt‰ maiskautetaan
+yhdess‰. T‰llˆin voidaan samaan kohtaan annotoida sek‰ TongueClick-
+ett‰ Lipsmack-yksikkˆ.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Lipsmack-yksikˆille ei Puh-editorissa merkit‰ erillist‰ kuvausta.
+Praatissa \linebreak Lipsmack-annotaatiokerrokseen merkit‰‰n maiskautuksen
+kohdalle Worldbet-merkint‰ \emph{.ls}. 
+
+
+\chapter{\label{cha:Ulkopuoliset-aanet}Ulkopuoliset ‰‰net}
+
+
+\section{\label{sub:Noise-haly}Noise\index{Noise} \--- h‰ly\index{h‰ly}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+H‰ly-yksikkˆ kattaa ‰‰net, jotka eiv‰t ole puhujien tuottamia. H‰lykerrokseen
+merkit‰‰n kaikki puheen ulkopuoliset, ei-paralingvistiset eli ekstralingvistiset
+‰‰net. H‰lykerroksia voi olla useita: esim. kellon tikitys‰‰net, ohi
+kulkevien autojen ‰‰net, oven narahdukset, kahvikuppien kilahdukset
+jne. Kaikille ‰‰nille, jotka voivat esiinty‰ p‰‰llekk‰in, on luotava
+oma annotaatiokerros. Uusia h‰ly-yksikˆit‰ voi periytt‰‰ \emph{Noise}-yksikˆst‰.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Kuulonvaraisesti ja akustisia kuvauksia ja/tai videokuvaa tarkastelemalla.
+
+
+\subsection*{Kuvauksen valinta}
+
+Vapaa tekstikuvaus.
+
+
+\chapter{\label{cha:Kineettiset-yksikot}Kineettiset yksikˆt}
+
+
+\section{\label{sec:Kineettisten-yksikoiden-annotointi}Kineettisten yksikˆiden
+annotointi}
+
+Kineettisten annotointiyksikˆiden avulla voi nimikoida puhujien eleit‰,
+ilmeit‰ ja kehon asentoja. Kaikkien kineettisten yksikˆiden annotointi
+vaatii, ett‰ k‰ytett‰viss‰ on tallenteeseen liittyv‰ videosignaali.
+Liikkeit‰ ja ilmeit‰ voi annotoida suoraan videolta esimerkiksi \emph{Anvil}-ohjelmalla
+tai hyvin karkeasti \emph{SoundForge}-ohjelmalla. Puh-editorissa tai
+Praatissa ei toistaiseksi saa videokuvaa n‰kyviin, mutta annotoinnit
+voi n‰iss‰kin ohjelmissa yhdist‰‰ vastaaviin ajallisiin kohtiin ‰‰nisignaalia,
+vaikka k‰ytt‰isi videon selailuun jotakin toista ohjelmaa (esim. \emph{Windows
+Media Player} tms.). ƒ‰nisignaaliin linkitetyt liikeannotoinnit antavat
+tutkijalle joka tapauksessa hyˆdyllist‰ tietoa siit‰, mihin kohtaan
+puhetta tietyt liikkeet ajoittuvat.
+
+Liikkeiden annotointia varten olisi hyv‰ luoda jokaiselle puhujalle
+oma nimikointikerros kutakin annotointiyksikkˆ‰ varten. Yleens‰ liikkeet
+eiv‰t ole riippuvaisia muista yksikˆist‰ vaan ne voidaan annotoida
+erill‰‰n. 
+
+Alla kuvattujen kineettisten yksikˆiden kuvaustapaa ei ole tarkasti
+m‰‰ritelty, vaan ilmeille, eleille ja asennoille voidaan antaa nimikkeiksi
+vapaata teksti‰. Tarvittaessa yksikˆille voidaan periytt‰‰ aliyksikˆit‰,
+joiden ominaisuuksilla voi olla haluttu joukko vaihtoehtoisia arvoja.
+Liikkeiden annotoinnissa on syyt‰ keskitty‰ videosignaalin perusteella
+m‰‰ritt‰m‰‰n konkreettisesti, \emph{mik‰ liikkuu, milloin ja minne.}
+
+
+\subsubsection{\label{sub:Kineettisten-yksikoiden-funktio}Kineettisten yksikˆiden
+funktionaalinen annotaatio}
+
+Mik‰li liikkeist‰, asennoista ja ilmeist‰ halutaan tehd‰ funktionaalisia
+kuvauksia\index{funktio, kineettiset yksik\"ot}, on huomattava, ett‰
+liikkeet voivat esiinty‰ ajallisesti eri paikassa kuin kielellinen
+ilmaus, johon ne mahdollisesti liittyv‰t. Funktioiden m‰‰ritt‰minen
+on myˆs eritt‰in subjektiivinen toimenpide verrattuna esimerkiksi
+tietyn eleen yksinkertaiseen ajalliseen rajaamiseen videolta. Funktionaaliset
+ominaisuudet kannattaakin pit‰‰ erill‰‰n kineettisist‰ yksikˆist‰
+ja m‰‰ritell‰ funktioille ehk‰ kokonaan omia yksikˆit‰, sill‰ tietty
+funktio voi ainakin teoriassa koskea muitakin yksikˆit‰ kuin kineettisi‰.%
+\footnote{Esim. Paul Ekman \citep{Ekman99} esittelee kineettisille yksikˆille
+viisiosaisen taksonomian. H‰n jakaa liikkeet 
+
+\begin{enumerate}
+\item \emph{symboleihin} (emblems) , joilla h‰n tarkoittaa kulttuurisidonnaisia
+ja sosiaalisesti opittuja k‰sien, p‰‰n ja kasvojen liikkeit‰
+\item \emph{kuvittajiin} (illustrators), jotka etup‰‰ss‰ kuvittavat ja havainnollistavat
+puhetta
+\item \emph{muokkaajiin} (manipulators/adapters), jotka ovat osin tiedostamattomia
+liikkeit‰, joissa yksi kehon osa \char`\"{}manipuloi\char`\"{} toista
+\item \emph{s‰‰telijˆihin} (regulators), jotka yll‰pit‰v‰t ja s‰‰telev‰t
+vuorovaikutusta; antavat ik‰‰n kuin toimintaohjeita sek‰ kuulijalle
+ett‰ puhujalle 
+\item \emph{tunteenosoituksiin} (emotional expressions), joita h‰n pit‰‰
+nimenomaan tahattomina. \end{enumerate}
+%
+}
+
+
+\section{\label{sub:Gesture-ele}Gesture\index{Gesture} \--- ele\index{ele}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Puheeseen liittyv‰ raajojen liike, erityisesti k‰sien ja p‰‰n liikkeet.
+Eleiden annotaatiosta ei ole viel‰ olemassa yhten‰isi‰ suosituksia
+saati standardeja. Eri tutkijat kuvaavat eleit‰ hyvin vaihtelevin
+tavoin, joten \emph{Gesture}-yksikˆlle ei ole m‰‰r‰tty mit‰‰n tietty‰
+kuvaustapaa. 
+
+ISLEn ehdotuksen \citep{ISLEmultimodal02} mukaan voitaisiin esimerkiksi
+annotoida
+
+\begin{itemize}
+\item p‰‰n eleet: rotaatio, kulma eteen/taakse, sivuttaiskulma
+\item k‰sien eleet: funktio (\char`\"{}osoittaminen\char`\"{}, \char`\"{}ei\char`\"{},
+\char`\"{}takaisin\char`\"{})
+\item modifioijat: esim. viittaus projisoitavaan kuvaan, raaka morfologinen
+muoto (esim. \char`\"{}ympyr‰ yhdell‰ k‰dell‰\char`\"{}), alku- ja
+loppukoordinaatit.
+\end{itemize}
+Henkilˆn jokaisen raajan liikkeit‰ kannattaa kuvata eri annotaatiokerroksissa,
+sill‰ esimerkiksi vasen ja oikea k‰si voivat periaatteessa liikkua
+itsen‰isesti. Tarvittavat uudet annotaatioyksikˆt voidaan periytt‰‰
+Gesture-yksikˆst‰ Puh-editorilla. Ilmeille (\ref{sec:Mimic-ilme}),
+katseille (\ref{sub:Gaze-katse}) sek‰ vartalon asennolle ja liikkeille
+(\ref{sub:Posture-asento}) on kuitenkin jo olemassa omat annotaatioyksikkˆns‰.
+
+Lis‰tietoa eleist‰ esim. Ekman ja Friesen\citep{Ekman72}.
+
+
+\subsection*{Kuvauksen valinta}
+
+Vapaa tekstikuvaus. Tarvittaessa eleyksikˆst‰ voidaan Puh-editorilla
+periytt‰‰ aliyksikˆit‰, joilla kuvataan eri raajojen eleit‰ ja n‰iden
+erilaisia ominaisuuksia.
+
+
+\section{\label{sec:Mimic-ilme}Mimic\index{Mimic} \--- ilme\index{ilme}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Kasvojen ja silmien liikkeet. Ilmeit‰ voi jaotella monin tavoin. Koska
+eri tutkijoiden n‰kemykset ilmeiden luokittelusta vaihtelevat, ei
+Mimic-yksikˆlle ole t‰ss‰ m‰‰ritelty tarkkaa kuvaustapaa.%
+\footnote{Esimerkiksi Per‰kyl‰ ja Ruusuvuori \citep{Perakyla04} luokittelevat
+ilmeet seuraavasti: suupielien nosto (kaksi astetta), suupielien lasku,
+suun avaaminen, kulmakarvojen kohotus, huulien yhteen puristaminen
+ja kulmien kurtistus. Funktionaalisemmin ilmeet voidaan jaotella esim.
+kolmia: iloa, mielipahaa tai muuta negatiivista tunnetta ja yll‰ttyneisyytt‰
+ilmaiseviin. Funktionaalisia ominaisuuksia ei kuitenkaan annotaatiossa
+suositella yhdistett‰v‰ksi suoraan kineettisiin yksikˆihin (ks. perustelut
+kohdasta \ref{sub:Kineettisten-yksikoiden-funktio}).
+
+Lis‰tietoa ilmeiden luokittelusta ja kuvaamisesta lˆytyy mm. teoksista
+Ekman \citep{Ekman92}, Ekman ja Friesen \citep{Ekman92b} ja Fridlund
+\citep{Fridlund94}.%
+} Myˆs silmien sulkeminen ja avaaminen (lukuun ottamatta normaalia
+r‰pyttely‰) annotoidaan tarvittaessa Mimic-yksikˆst‰ periytetyll‰
+aliyksikˆll‰.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Jokaiselle keskustelijalle luodaan oma nimikointikerros, johon ilmeet
+merkit‰‰n.
+
+
+\subsection*{Kuvauksen valinta}
+
+Vapaa tekstikuvaus.
+
+
+\subsection{\label{sub:Gaze-katse}Gaze\index{Gaze} \--- katse\index{katse}}
+
+
+\subsubsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Katseen suunta. Katseiden nimikointi on t‰rke‰‰ esim. monenkeskisiss‰
+kasvokkaiskeskusteluissa. Katseilla on merkityst‰ etenkin keskustelun
+vuorojen jakautumisen kannalta. 
+
+
+\subsubsection*{Paikantaminen ja rajaaminen}
+
+Jokaiselle keskustelijalle olisi hyv‰ luoda oma nimikointikerros.
+Siihen merkit‰‰n katseen kohdistuminen ja sen siirtyminen johonkin
+tai jostakin. T‰rke‰‰ on, ett‰ nimikoinnista selvi‰v‰t eri keskustelijoiden
+katsekontaktit tai niiden puute \citep[s. 26--29]{Seppanen97}.
+
+
+\subsubsection*{Kuvauksen valinta}
+
+Katseyksikˆille voi antaa kuvaukseksi vapaata teksti‰. Katseita annotoitaessa
+kannattaa merkit‰ ainakin katseen kohde (keneen tai mihin henkilˆ
+katsoo yksikˆn kuvaamalla ajanjaksolla). T‰llˆin tulee implisiittisesti
+merkitty‰ myˆs, ett‰ n‰iden yksikˆiden v‰lill‰ kyseisen henkilˆn katseen
+suunta muuttuu. Mik‰li kahden puhujan \emph{Gaze}-annotaatiokerroksissa
+on samanaikaisesti yksikkˆ, jonka kohde on toinen puhujista, vallitsee
+n‰iden henkilˆiden v‰lill‰ silloin molemminpuolinen katsekontakti,
+eik‰ katsekontakteja n‰in tarvitse merkit‰ mihink‰‰n erilliseen annotaatiokerrokseen.
+Tarvittaessa Gaze-kerrokseen voidaan merkit‰ erillisiksi yksikˆiksi
+ajanjaksot, jolloin henkilˆ kohdistaa tai tarkentaa katsettaan. T‰llˆinkin
+kuvauksessa tulee mainita, mihin katsetta kohdistetaan.
+
+
+\section{\label{sub:Posture-asento}Posture\index{Posture} \--- asento\index{asento}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Kehon asento. Mik‰li p‰‰n ja raajojen asentojen kuvaaminen ei luontevasti
+onnistu muiden annotaatioyksikˆiden avulla, siihen voi k‰ytt‰‰ myˆs
+t‰t‰ yksikkˆ‰.
+
+
+\subsection*{Paikantaminen ja rajaaminen}
+
+Rajataan videosignaalin avulla.
+
+
+\subsection*{Kuvauksen valinta}
+
+Asentoyksikˆille voi antaa kuvaukseksi vapaata teksti‰, jolla voi
+kuvata henkilˆn kehon asentoa kyseisell‰ ajanjaksolla. Tarkempaa luokittelua
+ja kuvausta varten kannattaa \linebreak Posture-yksikˆst‰ periytt‰‰
+Puh-editorilla aliyksikˆit‰, joille on m‰‰ritelty haluttuja ominaisuuksia.
+
+Yksikˆn avulla voi kuvata keskustelijoiden kehon asentoa esimerkiksi
+sek‰ vertikaalisen ett‰ horisontaalisen akselin suhteen (suorassa/pystyss‰,
+eteen- tai taaksep‰in kallellaan, jommallekummalle sivulle kiertyneen‰).
+Kehon asentoja voi nimikoida myˆs suhteessa muihin keskustelijoihin
+(kohti - poisp‰in). 
+
+
+\chapter{\label{cha:Apuyksikot}Apuyksikˆt}
+
+Seuraavat annotointiyksikˆt ovat hyvin yleisluontoisia. Niille ei
+ole haluttu m‰‰ritell‰ mit‰‰n tietty‰ vaikutus- tai toteutumisalaa,
+vaan niiden m‰‰ritelm‰t on tarkoituksellisesti j‰tetty v‰ljiksi, jotta
+annotoijat voivat periytt‰‰ niist‰ tarvitsemiaan aliyksikˆit‰ ongelmitta
+ja jotta niiden avulla voi nimikoida monentasoisia kielen ilmiˆit‰.
+
+
+\section{\label{sub:Topic-topiikki}Topic\index{Topic} \--- topiikki\index{topiikki}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Apuyksikkˆ, jonka avulla voi kuvata puheenaihetta tai topiikkia. Topiikkien
+nimikoinnista voi olla hyˆty‰, jos esimerkiksi hyvin pitk‰st‰ ‰‰nitallenteesta
+halutaan nopeasti lˆyt‰‰ jotain tietty‰ aihetta k‰sittelev‰ kohta.
+Topiikkiyksikkˆ‰ voidaan hyˆdynt‰‰ myˆs, jos nimikoitavaan tallenteeseen
+on koottu per‰kk‰in useita erilaisia n‰ytteit‰. Ne voidaan helposti
+rajata topiikin avulla.
+
+
+\subsection*{Kuvauksen valinta}
+
+Vapaa tekstikuvaus.
+
+
+\section{\label{sub:Sequence-sekvenssi}Sequence\index{Sequence} \--- sekvenssi\index{sekvenssi}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Sekvenssi on apuyksikkˆ, jota voidaan k‰ytt‰‰ toisiinsa kiinte‰sti
+liittyvien vuorojen nimikointiin. Yksikkˆ on tarkoitettu esimerkiksi
+vierusparien ja kolmannen position vuorojen tai muiden vuoroa laajempien
+toimintajaksojen nimikointiin.
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Kohdistetaan vuoro- ja lausumayksikˆiden rajojen kanssa, mik‰li n‰m‰
+ovat ennest‰‰n olemassa.
+
+
+\subsection*{Kuvauksen valinta}
+
+Vapaa tekstikuvaus.
+
+
+\section{\label{sub:SpeechFunction-puhefunktio}SpeechFunction\index{SpeechFunction}
+\--- puhetoiminto\index{puhefunktio}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Puhetoiminto on apuyksikkˆ, jota voidaan k‰ytt‰‰ yksinkertaisten,
+prototyyppisten puhetoimintojen nimikointiin.%
+\footnote{Puhetoimintoja on luokiteltu ainakin USIX Interact -projektissa
+
+(\url{http://www.mlab.uiah.fi/interact/index.htm}).
+
+Turun puhekielen tutkimusprojektissa puhefunktioita on nimetty l‰hes
+kolmekymment‰ (ks. \citealp[s. 85]{Suojanen85}).%
+}Yksikˆn tarkempi m‰‰rittely on annotoijan vastuulla.
+
+
+\subsection*{Kuvauksen valinta}
+
+Vapaa tekstikuvaus.
+
+
+\section{\label{sub:Hesitation-eparointi}Hesitation\index{Hesitation} \---
+ep‰rˆinti\index{ep‰rˆinti}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Ep‰rˆinniksi voidaan nimikoida mm. ep‰rˆinti- tai empimis‰‰ntely (esim.
+‰‰nnˆkset \emph{mm}, \emph{ee}, \emph{ˆˆ}) sek‰ erilaiset suunnitteluilmaukset
+(esim. \emph{tuota}, \emph{niinku}) tai itsekorjauksessa k‰ytetyt
+partikkelit (ks. \citep[ss. 821--822]{ISK}). Empimis‰‰ntelyll‰ voidaan
+viivytt‰‰ varsinaisen sis‰llˆn esiinpanemista keskustelussa, ja yleens‰
+se liittyy puheen suunnitteluun, korjaukseen ja sanahakuun.
+
+
+\subsection*{Riippuvuudet muista yksikˆist‰}
+
+Ep‰rˆinti- eli empimis‰‰nteet nimikoidaan yleens‰ lausumien tai puhunnosten
+yhteydess‰ ja tarkennetaan esimerkiksi ‰‰nnekerroksen annotaation
+yhteydess‰.
+
+
+\subsection*{Kuvauksen valinta}
+
+Erillist‰ luokittelua ep‰rˆinti- tai empimis‰‰nteille ei ole, vaan
+kuvaukseksi k‰y mik‰ tahansa teksti. Tarvittaessa ep‰rˆinti‰‰nne voidaan
+merkit‰ yksikˆn nimekkeeksi tai periytt‰‰ Puh-editorissa \textbf{Hesitation}-yksikˆst‰
+aliyksikkˆ, jolla on halutut ominaisuudet ja m‰‰r‰tyt vaihtoehdot
+piirrearvoiksi.
+
+
+\section{\label{sec:Chunk-jakso}Chunk\index{Chunk} \--- jakso\index{jakso}}
+
+
+\subsection*{M‰‰ritelm‰ ja k‰yttˆtarkoitus}
+
+Apuyksikkˆ, jonka avulla voidaan m‰‰ritell‰ sellaisia uusia yksikˆit‰,
+joita ei voi periytt‰‰ mist‰‰n olemassaolevasta yksikˆst‰.
+
+
+\subsection*{Kuvauksen valinta}
+
+Vapaa tekstikuvaus.
+
+\appendix
+
+\part{Liitteet}
+
+
+\chapter{\label{cha:Foneettiset-merkit}Foneettiset merkit}
+
+Eniten k‰ytetty foneettinen transkriptioj‰rjestelm‰ on \textbf{kansainv‰linen
+foneettinen aakkosto} (\emph{International Phonetic Alphabet} eli
+IPA)\index{IPA}. IPA-merkkikartat selityksineen lˆytyv‰t Kansainv‰lisen
+foneettisen yhdistyksen (\emph{International Phonetic Association})
+verkkosivuilta \citep{IPAwebsite}.
+
+Koska kaikissa laitteistoissa ei ole asennettuna foneettista kirjasinta
+ja koska foneettisia symboleita pit‰isi voida yksiselitteisesti k‰sitell‰
+ja siirt‰‰ tietokoneesta toiseen, tarvitaan IPA-merkeist‰ ASCII-versio.
+ASCII-muotoisten transkriptioiden lukeminen on tottumattomalle hieman
+ep‰mukavampaa kuin IPA-kirjasinten. Er‰s IPA-aakkoston ASCII-versio
+on Worldbet \citep{Hieronymus93}. Muitakin foneettisten merkkien
+ASCII-versioita on, esim. SAMPA (ja sen laajennus X-SAMPA; \citealp{Sampa})
+jne.
+
+Worldbetiss‰ ns. perussymbolia merkit‰‰n yleens‰ yhdell‰ ASCII-merkill‰,
+toisinaan kahdella. ƒ‰nteen lis‰artikulaatiot tai artikulaatiopiirteiden
+muutokset merkit‰‰n tarkkeilla eli diakriiteill‰ kuten IPAssakin.
+Jokainen tarke erotetaan perussymbolista (ja muista mahdollisista
+tarkkeista) merkitsem‰ll‰ sen eteen alaviiva '\_'. Kun alaviivan muistaa
+merkit‰ jokaisen tarkkeen eteen, tarkkeet on helpompi erottaa toisistaan
+myˆs annotaatioiden myˆhemm‰ss‰ automaattisessa k‰sittelyss‰.
+
+Esimerkiksi vokaalilaadun tarkka erottelu on hyvin vaikeaa ja subjektiivista.
+Kannattaa myˆs muistaa, ett‰ kaksi annotoijaa ei juuri koskaan p‰‰dy
+t‰ysin samaan foneettiseen transkriptioon, ja p‰‰tˆs symbolin valinnasta
+pit‰isikin tehd‰ kohtalaisen nopeasti ja turhia miettim‰tt‰. Johdonmukainen
+transkriptiotaito kehittyy vain harjoittelemalla.
+
+Kuulonvaraisesti suunnilleen samaa ‰‰nnelaatua voidaan usein kuvata
+kahdella tai useammalla tavalla yhdistelem‰ll‰ eri perussymboleja
+ja tarkkeita. N‰in on erityisesti vokaalien kohdalla. Kun pyrit‰‰n
+mahdollisimman foneettiseen annotaatioon, ei periaatteessa ole merkityst‰
+sill‰, mik‰ perussymboli valitaan ja paljonko tarkkeita joudutaan
+k‰ytt‰m‰‰n, kunhan lopputuloksen kaikkien merkkien yhdistelm‰ suunnilleen
+vastaa ‰‰nteen havaittua artikulatorista laatua. Sen sijaan foneemisessa
+annotaatiossa joudutaan tekem‰‰n tulkinta siit‰, mik‰ on ollut kyseist‰
+‰‰nnett‰ vastaava foneeminen muoto: t‰llˆin on perusmerkiksi valittava
+se symboli, joka l‰hinn‰ vastaa alkuper‰ist‰ foneemia. On huomattava,
+ett‰ foneeminen annotaatio on siis riippuvainen annotoijan lingvistisest‰
+n‰kemyksest‰. Toisaalta useimmat automaattiset segmentointityˆkalut
+perustuvat foneemiseen annotaatioon, jossa esimerkiksi ortografisesta
+litteraatiosta muutamalla s‰‰nnˆll‰ johdettu foneemijono ''pakotetaan''
+sopimaan ‰‰nisignaaliin. Automaattinen segmentteri ei siis yleens‰
+sopeudu puheen foneettisiin erikoisuuksiin, jotka on siksi k‰sin tarkistettava.
+
+
+\section{\label{sec:Worldbet-symbolit}Worldbet-symbolit}
+
+
+\subsection{Vokaalimerkit}
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  width=17cm]{/home/lennes/annotation_guide/jpgfigs/vowels.jpg}\end{center}
+
+
+\caption{Vokaalimerkit IPA-aakkoston (kunkin laatikon yl‰reuna) ja sit‰ vastaavan
+ASCII-muotoisen Worldbet-aakkoston (alareuna) mukaan.}
+\end{figure}
+
+
+
+\subsection{Konsonanttimerkit}
+
+\begin{landscape}%
+\begin{figure}
+\begin{center}\includegraphics[%
+  width=21cm]{/home/lennes/annotation_guide/jpgfigs/consonants.jpg}\end{center}
+
+
+\caption{Konsonanttimerkit IPA-aakkoston (kunkin ruudun vasen yl‰kulma) ja
+sit‰ vastaavan ASCII-muotoisen Worldbet-aakkoston (oikea alakulma)
+mukaan.}
+\end{figure}
+\end{landscape}
+
+
+\subsection{Tarkkeet eli diakriitit}
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  width=13cm]{/home/lennes/annotation_guide/jpgfigs/diacritics.jpg}\end{center}
+
+
+\caption{Tarkemerkit\index{tarkemerkki} eli diakriitit\index{diakriitti}
+IPA-aakkoston (kunkin ruudun vasen yl‰kulma) ja sit‰ vastaavan ASCII-muotoisen
+Worldbet-aakkoston (oikea alakulma) mukaan. Tarkemerkeill‰ kuvataan
+tietyn ‰‰nteen lis‰piirteit‰.}
+\end{figure}
+
+
+
+\chapter{\label{cha:Keskustelunanalyysin-litterointimerkit}Keskustelunanalyysin
+litterointimerkit}
+
+
+\section{Litteraatin muuntaminen monikerroksiseksi annotaatioksi}
+
+Keskustelunanalyysin litterointik‰yt‰nteiden mukainen litteraatti
+voidaan muuntaa esimerkiksi Praatilla tai Puh-editorilla monikerrokseksi
+annotaatioksi, joka noudattaa t‰ss‰ oppaassa kuvattuja annotaatioyksikˆit‰
+ja -periaatteita. Kuvassa \ref{cap:KA-litteraattiesimerkki} on esimerkki
+\linebreak keskustelunanalyyttisesta litteraatista. Taulukossa \ref{cap:KA-litterointimerkit}
+on lueteltu yleisimpi‰ keskustelunanalyytikkojen k‰ytt‰mi‰ litterointimerkintˆj‰
+ja kuvattu, mihin t‰ss‰ oppaassa kuvattuihin annotaatiokerroksiin
+tai -piirteisiin kukin merkint‰tapa viittaa.%
+\footnote{Esim. \emph{Isossa suomen kieliopissa} \citep[s. 12--13]{ISK} lausumanloppuinen
+intonaatio jaetaan kolmia: laskevan intonaation merkkin‰ on piste
+(.), tasaisen intonaation pilkku (,) ja nousevan kysymysmerkki (?). %
+}
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  width=150mm,
+  keepaspectratio]{/home/lennes/annotation_guide/jpgfigs/KA-litteraatti.jpg}\end{center}
+
+
+\caption{\label{cap:KA-litteraattiesimerkki}. Esimerkki keskustelunanalyyttisesta
+litteraatista. N‰yte on Helsingin yliopiston suomen kielen laitoksen
+keskustelunanalyysin arkistosta, signum 98.}
+\end{figure}
+
+
+%
+\begin{table*}[p]
+
+\caption{\label{cap:KA-litterointimerkit}Yleisimpi‰ keskustelunanalyyttisissa
+tutkimuksissa k‰ytettyj‰ litterointimerkkej‰. T‰m‰n merkistˆn on kehitt‰nyt
+Gail Jefferson ja merkit on otettu t‰h‰n Hakulisen teoksesta \citep{Hakulinen96}.
+Taulukossa kuvataan, mihin annotaatiokerrokseen kutakin litterointimerkki‰
+vastaava ilmiˆ tulisi annotoida.}
+
+\begin{longtable}{|p{18mm}|p{8cm}||>{\raggedright}p{5cm}|}
+\hline 
+\textbf{Merkint‰ (ks.\citealp{Hakulinen96})}&
+\textbf{Kuvaus}&
+\textbf{Ehdotettu annotaatiokerros}\tabularnewline
+\hline 
+\texttt{.}&
+laskeva intonaatio&
+\emph{ProsodicUtterance}\tabularnewline
+\hline 
+&
+(ei merkki‰) intonaatio tasainen&
+\emph{ProsodicUtterance}\tabularnewline
+\hline 
+\texttt{,}&
+intonaatio laskee hieman&
+\emph{ProsodicUtterance}\tabularnewline
+\hline 
+\texttt{?}&
+intonaatio nousee&
+\emph{ProsodicUtterance}\tabularnewline
+\hline 
+&
+seuraava sana lausuttu ymp‰ristˆ‰ matalammalta&
+\emph{ChangeInPitch: directionOfPitchChange=lower}\tabularnewline
+\hline 
+&
+seuraava sana lausuttu ymp‰ristˆ‰ korkeammalta&
+\emph{ChangeInPitch: directionOfPitchChange=higher}\tabularnewline
+\hline 
+\texttt{\underbar{‰}}\texttt{l‰}&
+‰‰nteen tai tavun painotus sanan sis‰ll‰&
+\emph{Prominence}\tabularnewline
+\hline 
+\texttt{>joo<}&
+nopeutettu jakso&
+\emph{ChangeInTempo}\tabularnewline
+\hline 
+\texttt{<joo>}&
+hidastettu jakso&
+\emph{ChangeInTempo}\tabularnewline
+\hline 
+\texttt{∞joo∞}&
+ymp‰ristˆ‰ vaimeampaa puhetta&
+\emph{ChangeInLoudness}\tabularnewline
+\hline 
+\texttt{JOO}&
+kova‰‰nist‰ puhetta&
+\emph{ChangeInLoudness}\tabularnewline
+\hline 
+\texttt{jo-}&
+kesken j‰‰nyt sana&
+\emph{Word}, \emph{PhoneticUtterance}, \emph{ProsodicUtterance} \tabularnewline
+\hline 
+\texttt{jo::}&
+venytetty ‰‰nne&
+\emph{ChangeInTempo}\tabularnewline
+\hline 
+\texttt{j$^{\textrm{oo}}$}&
+lyhentynyt ‰‰nne&
+\emph{ChangeInTempo}\tabularnewline
+\hline 
+\texttt{\textbf{t}}\texttt{ule}&
+voimakkaasti ‰‰nnetty konsonantti&
+\emph{ChangeInLoudness}\tabularnewline
+\hline 
+\texttt{.hhh}&
+sis‰‰nhengitys&
+\emph{Breathing}\tabularnewline
+\hline 
+\texttt{hhh}&
+uloshengitys&
+\emph{Breathing}\tabularnewline
+\hline 
+\texttt{.joo}&
+sana lausuttu sis‰‰nhengitt‰en&
+\emph{Breathing}\tabularnewline
+\hline 
+\texttt{\#joo\#}&
+nariseva ‰‰ni&
+\emph{CreakyVoice}\tabularnewline
+\hline 
+\texttt{@joo@}&
+‰‰nt‰ muunneltu, esim. referoinnissa&
+\emph{ChangeInTone}\tabularnewline
+\hline 
+\texttt{\$joo\$, \textsterling{}joo\textsterling{}}&
+nauruinen ‰‰ni&
+\emph{Smile}\tabularnewline
+\hline 
+\texttt{jo(h)o}&
+sana tuotettu nauraen&
+\emph{Laughter}\tabularnewline
+\hline 
+\texttt{hehe}&
+naurua&
+\emph{Laughter}\tabularnewline
+\hline 
+\texttt{{[}}&
+p‰‰llekk‰ispuhunnan alku&
+implisiittinen (\emph{Turn})\tabularnewline
+\newpage
+\hline 
+\texttt{{]}}&
+p‰‰llekk‰ispuhunnan loppu&
+implisiittinen (\emph{Turn})\tabularnewline
+\hline 
+\texttt{=}&
+kaksi eri puhunnosta liittyy toisiinsa tauotta&
+implisiittinen (\emph{Turn})\tabularnewline
+\hline 
+\texttt{(0.7)}&
+tauko ja sen pituus&
+\emph{Pause}\tabularnewline
+\hline 
+\texttt{(.)}&
+mikrotauko (alle 0.2 sek)&
+\emph{Pause}\tabularnewline
+\hline 
+\texttt{(jo)}&
+ep‰varmasti kuultu jakso&
+(nimike)\tabularnewline
+\hline 
+\texttt{(- -)}&
+jakso, josta ei ole saatu selv‰‰&
+(- nimike -)\tabularnewline
+\hline 
+\texttt{(( ))}&
+litteroijan kommentteja&
+yksikˆn \emph{comment}-attribuutti\tabularnewline
+\hline
+\end{longtable}
+\end{table*}
+
+
+Kuvassa \ref{cap:CA-puh-editori} n‰kyy Puh-editorilla tehty nimikointi,
+jossa kuvan \ref{cap:KA-litteraattiesimerkki} litteraatti on muunnettu
+vastaaviksi annotaatiokerroksiksi. Kuvassa \ref{cap:CA-Praat} on
+puolestaan Praat-ohjelman vastaava n‰kym‰. N‰iden nimikointien l‰htˆkohdaksi
+on otettu nimenomaan em. litteraatti. T‰m‰n vuoksi keskustelusta on
+nimikoitu vain ne kielen ilmiˆt, jotka litteraatista k‰yv‰t ilmi (vuorot,
+lausumat, lausumanloppuinen intonaatio, prominenssi, temponmuutokset
+ja ‰‰nteiden pidennykset, narina, hengitys ja erilaiset paralingvistiset
+ilmiˆt). Nimikointikerroksia voisi Puh-editorissa ja Praatissa olla
+enemm‰nkin (vrt. t‰m‰n oppaan osassa \ref{par:Annotaatioyksikot}
+kuvatut annotointiyksikˆt). Tarvittaessa eri kerrosten nimikointeja
+voidaan tietenkin tarkastella myˆs yksitt‰in.
+
+Joidenkin keskustelunanalyyttisissa litteraateissa k‰ytettyjen yksikˆiden
+ajallisen vaikutusalan hahmottaminen voi Praatissa ja Puh-editorissa
+olla hankalaa, kun aineiston annotointi aloitetaan litteraatin avulla.
+T‰m‰ johtuu siit‰, ett‰ tutkittavasta aineistosta ei ole nimikoitu
+sanoja eik‰ ‰‰nteit‰, joiden rajojen kanssa esim. prominenssin tai
+temponmuutoksen rajat voidaan tarpeen tullen kohdentaa. Alkuper‰ist‰
+‰‰nimateriaalia kuuntelemalla rajauksia voidaan kuitenkin tarkentaa.
+
+Toistaiseksi litteraatin siirt‰minen ja erilaisten siihen merkittyjen
+ilmiˆiden erottaminen omiin annotaatiokerroksiinsa on teht‰v‰ k‰sin.
+Kehitteill‰ on automaattinen muunnostyˆkalu.
+
+\begin{landscape}
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  width=200mm,
+  keepaspectratio]{/home/lennes/annotation_guide/jpgfigs/CA-puh-editori.jpg}\end{center}
+
+
+\caption{\label{cap:CA-puh-editori}Puh-editorilla tehty esimerkkinimikointi,
+jossa keskustelunanalyysin k‰yt‰nteiden mukainen keskustelun‰ytteen
+litteraatti on muunnettu t‰m‰n oppaan mukaisiksi annotaatiokerroksiksi.}
+\end{figure}
+
+
+\end{landscape}
+
+\begin{landscape}
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  width=200mm,
+  keepaspectratio]{/home/lennes/annotation_guide/jpgfigs/CA-praat.jpg}\end{center}
+
+
+\caption{\label{cap:CA-Praat}Praat-ohjelmalla tehty esimerkkinimikointi,
+jossa keskustelunanalyysin k‰yt‰nteiden mukainen keskustelun‰ytteen
+litteraatti on muunnettu t‰m‰n oppaan mukaisiksi annotaatiokerroksiksi.}
+\end{figure}
+
+
+\end{landscape}
+
+
+\chapter{\label{cha:Aanteiden-segmentointiesimerkkeja}ƒ‰nteiden segmentointiesimerkkej‰}
+
+Usein ‰‰nteiden v‰lisen rajan paikka on jonkinasteinen kompromissi.
+T‰m‰n liitteen kuvissa on esimerkkej‰ siit‰, kuinka kahden ‰‰nteen
+v‰linen raja kannattaa yleens‰ sijoittaa.%
+\footnote{ƒ‰nteiden segmentointikriteerej‰ on samaan tapaan kuvannut myˆs esim.
+Martti Vainio \citep[ss. 83--93]{Vainio01}.%
+} Esimerkeiss‰ ja niiden selityksiss‰ on k‰ytetty Worldbet-aakkostoa
+(ks. \ref{sec:Worldbet-symbolit}).
+
+
+\section{Konsonantit}
+
+
+\subsection{\label{sub:Klusiilit}Klusiilit}
+
+Soinnittomat klusiilit on yleens‰ helppo tunnistaa l‰hes t‰ysin hiljaisesta
+vaiheesta, jota seuraa yleens‰ lyhyt h‰lypurske. N‰m‰ erottuvat sek‰
+‰‰nen aaltomuodossa ett‰ spektrogrammissa. 
+
+Soinnillisissa klusiileissa ‰‰nen amplitudi heikkenee klusiilin ajaksi.
+H‰lypurske on toisinaan hankala lˆyt‰‰, ja sit‰ kannattaa yleens‰
+etsi‰ tarkasti ‰‰nen aaltomuodosta. Huomaa, ett‰ soinnittoman klusiilinkaan
+alussa sointi‰‰ni ei p‰‰ty t‰sm‰llisesti vaan saattaa jatkua hieman
+klusiilisegmentin puolelle. 
+
+Klusiilin alku merkit‰‰n kohtaan, jossa edelt‰v‰n vokaalin tms. soinnillisen
+‰‰nteen formanttirakenne p‰‰ttyy ja aaltomuoto muuttuu korkeiden taajuuksien
+vaimenemisen vuoksi ''pyˆristetyksi''. Klusiilin loppuraja on kuulonvaraisesti
+m‰‰ritett‰v‰ kohta heti laukeaman eli h‰lypurskeen j‰lkeen. Loppuraja
+merkit‰‰n siihen, miss‰ klusiilin tarkka artikulaatiopaikka ei en‰‰
+erotu; kuitenkin korkeintaan noin 2\--3 ‰‰nihuuliperiodin p‰‰h‰n
+laukeamasta.
+
+\emph{Jos soinniton klusiili esiintyy} \textbf{\emph{puhunnoksen alussa}}\emph{,
+klusiilisegmentiksi rajataan ainoastaan laukeamavaihe} (ja mahdollisesti
+sit‰ seuraava ‰‰nihuuliperiodi tai pari), sill‰ t‰ss‰ tapauksessa
+on mahdotonta p‰‰tell‰, miss‰ kohden puhujan klusiiliartikulaatio
+on todella alkanut (ks. kuva \ref{fig:Aanneraja-BEGtita}).
+
+Esimerkkej‰ {[}p{]}:st‰ kuvissa \ref{fig:Aanteet-puhum}, {[}t{]}:st‰
+kuvissa \ref{fig:Aanneraja-t-k}, \ref{fig:Aanneraja-sta-2lauk} ja
+{[}k{]}:sta kuvissa \ref{fig:Aanneraja-t-k}, \ref{fig:Aanneraja-k-s},
+\ref{fig:Aanneraja-N-k}. Esimerkkej‰ soinnillisesta {[}d{]}:st‰ on
+kuvissa \ref{fig:Aanneraja-nidio} ja \ref{fig:Aanneraja-uude} ja
+soinnillisesta {[}b{]}:st‰ kuvassa \ref{fig:Aanneraja-lebaN}.
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_BEGtita.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-BEGtita}Puhunnoksenalkuinen klusiili rajataan
+alkavaksi laukeamah‰lyn alusta, sill‰ yleens‰ t‰ss‰ tilanteessa ei
+ole mit‰‰n keinoa todeta, miss‰ kohtaa puhujan klusiiliartikulaatio
+(eli klusiilin sulkeumavaihe) on todella alkanut. }
+\end{figure}
+
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_tk.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-t-k}ƒ‰nneraja {[}t k{]} sanassa \emph{tutkimukselle}.}
+\end{figure}
+
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_asta.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-sta-2lauk}ƒ‰nteet {[}@ s t \&{]} sanassa \emph{sijasta}.
+Huomaa, ett‰ klusiilien (t‰ss‰ {[}t{]}) laukeaman yhteydess‰ saattaa
+toisinaan esiinty‰ useita artikulaatioliikkeen aiheuttamia h‰lypiikkej‰
+tai maiskahduksia. Kyseess‰ on kuitenkin vain yksi ‰‰nnesegmentti.}
+\end{figure}
+
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_ks.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-k-s}ƒ‰nneraja {[}k s{]} sanassa \emph{siksi}.}
+\end{figure}
+
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_nidio.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-nidio}{[}d{]}-‰‰nteen rajaaminen sanassa \emph{titaanidioksidin}.
+Huolellisesti ‰‰nnetyss‰ {[}d{]}:ss‰ sointi eli periodinen rakenne
+jatkuu koko ‰‰nnesegmentin ajan, ja ‰‰nteen loppuvaiheessa esiintyy
+pieni h‰lypurske.}
+\end{figure}
+
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_muude.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-uude}Vokaalienv‰linen {[}d\_({]} sanassa \emph{koskemattomuuden}.
+Vokaalien v‰liss‰ esiintyy suomessa usein puhtaan {[}d{]}-klusiilin
+sijaan napaus‰‰nne, jota merkit‰‰n Worldbet-tarkkeella {[}\_({]}.
+Huomaa, ett‰ t‰m‰ ‰‰nne ei merkitt‰v‰sti eroa yksit‰ryisest‰ {[}r\_({]}:st‰.}
+\end{figure}
+
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_lebaN.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-lebaN}{[}b{]}:n rajaaminen sanassa \emph{bangladeshille}.
+Huolellisesti ‰‰nnetyss‰ {[}b{]}:ss‰ sointi eli periodinen rakenne
+jatkuu koko ‰‰nnesegmentin ajan, ja ‰‰nteen loppuvaiheessa esiintyy
+pieni h‰lypurske.}
+\end{figure}
+
+
+
+\subsection{\label{sub:Frikatiivit}Frikatiivit}
+
+Frikatiivi‰‰nteiden rajauksessa ensisijaisena kriteerin‰ k‰ytet‰‰n
+frikatiivih‰ly‰, joka yleens‰ erottuu selv‰sti sek‰ aaltomuodossa
+ett‰ spektrogrammissa. Lis‰ksi apuna k‰ytet‰‰n kuuntelua \--- raja
+merkit‰‰n siten, ett‰ esimerkiksi frikatiivin tarkka artikulaatiopaikka
+ei kuulonvaraisesti erotu viereisess‰ ‰‰nteess‰.
+
+{[}s{]}-‰‰nteess‰ frikaatioh‰ly n‰kyy selv‰sti tummana spektrogrammin
+yl‰laidassa (ks. kuvat \ref{fig:Aanneraja-u-s}, \ref{fig:Aanneraja-k-s},
+\ref{fig:Aanneraja-sta-2lauk}). {[}z{]}:ss‰ mukana on lis‰ksi sointia
+(myˆs suomessa {[}z{]} esiintyy usein vokaalien tai muiden soinnillisten
+‰‰nteiden v‰liss‰, ks. esim. kuva \ref{fig:Aanteet-yzy}). {[}f{]}:ss‰
+h‰ly on vaimeampaa ja matalammilla taajuuksilla. 
+
+{[}h{]}-frikatiivi on sik‰li erikoinen ‰‰nne, ettei sill‰ suomessa
+ole yht‰ tietty‰ artikulaatiopaikkaa, vaan {[}h{]}:n viereiset vokaalit
+vaikuttavat voimakkaasti sen artikulaatioon ja v‰riin (ks. esim. kuvat
+\ref{fig:Aanteet-thyv} ja\ref{fig:Aanteet-puhum}). {[}h{]} onkin
+suomessa usein jonkinlainen ''soinniton vokaali'', ja vokaalien
+v‰liss‰ esiintyess‰‰n se erottuu naapureistaan l‰hinn‰ vain henk‰yssoinnillisen
+‰‰nenlaatunsa perusteella. Kokonaan soinnillinen {[}h{]} merkit‰‰n
+{[}hv{]}.
+
+Huomaa, ett‰ suomen /v/ on tavallisesti pikemminkin approksimantti
+{[}V{]} kuin ''tiukka frikatiivi'' {[}v{]}. Jos k‰yt‰t merkint‰‰
+{[}v{]}, pit‰isi ‰‰nteess‰ siis olla mukana jonkinlaista frikaatioh‰ly‰.
+Esimerkki kummastakin tapauksesta n‰kyy kuvassa \ref{fig:Aanteet-vauvaa}.
+
+Frikatiivien kummallakin puolella esiintyy artikulatorisista syist‰
+usein soinnin heikentymist‰ (henk‰yssointia) tai soinnittomuutta.
+T‰m‰n ilmiˆn vaikutusalue ei v‰ltt‰m‰tt‰ kuulu frikatiivisegmentin
+sis‰lle.
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_us.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-u-s}ƒ‰nneraja {[}u s{]} sanassa \emph{perusteita}.}
+\end{figure}
+
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_yzym.jpg}\end{center}
+
+
+\caption{\label{fig:Aanteet-yzy}ƒ‰nteet {[}y z y{]} sanassa \emph{kysymysten}.
+Vokaalien v‰liss‰ esiintyy usein soinnillinen {[}z{]} soinnittoman
+{[}s{]}:n sijasta. Aaltomuodossa n‰kyy silloin periodisuutta koko
+konsonantin ajan, ja spektrogrammin alaosassa on vastaavasti tumma
+kaistale. Ero on myˆs kuultavissa.}
+\end{figure}
+
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_thyv.jpg}\end{center}
+
+
+\caption{\label{fig:Aanteet-thyv}Vain loppuosastaan soinnillinen {[}h{]}
+sanassa \emph{hyv‰ll‰}. Edelt‰v‰ ‰‰nne on soinniton klusiili {[}t{]},
+jonka laukeamah‰lyn j‰lkeen {[}h{]}:n alkuraja on sijoitettu.}
+\end{figure}
+
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_puhum.jpg}\end{center}
+
+
+\caption{\label{fig:Aanteet-puhum}ƒ‰nteet {[}u hv u{]} sanassa \emph{puhumiseen}.
+Vokaalien v‰liss‰ esiintyy usein soinnillinen {[}hv{]} soinnittoman
+{[}h{]}:n sijasta. Aaltomuodossa n‰kyy silloin periodisuutta koko
+konsonantin ajan, ja spektrogrammin alaosassa on vastaavasti tumma
+kaistale. Ero on myˆs kuultavissa.}
+\end{figure}
+
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_vauvaa.jpg}\end{center}
+
+
+\caption{\label{fig:Aanteet-vauvaa}Frikatiivi {[}v{]}:n ja approksimantti
+{[}V{]}:n esiintym‰t sanassa \emph{koeputkivauvaa}. Frikatiivin loppuvaiheessa
+esiintyy hieman korkeataajuista h‰ly‰, ja t‰m‰ ‰‰nne myˆs kuulostaa
+''kire‰mmin'' ‰‰nnetylt‰ kuin j‰lkimm‰inen, vokaalimaisempi {[}V{]}.
+Kumpikin ‰‰nne rajataan kuulonvaraisesti ja spektrogrammin sek‰ intensiteettik‰yr‰n
+perusteella. ƒ‰nteisiin liittyy intensiteetin selv‰ lasku.}
+\end{figure}
+
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_BEGvan.jpg}\end{center}
+
+
+\caption{\label{fig:Aanteet-BEGvan}Puhunnoksen alussa frikatiivi {[}v{]}:n
+taikka muiden soinnillisten ‰‰nteiden alku merkit‰‰n kohtaan, jossa
+aaltomuodossa n‰kyv‰ ensimm‰inen periodi alkaa ja jossa aaltomuotok‰yr‰
+nousee ylˆsp‰in ja ylitt‰‰ nollakohdan.}
+\end{figure}
+
+
+
+\subsection{\label{sub:Likvidat}Likvidat}
+
+Suomenkielisess‰ puheessa esiintyv‰t yleens‰ alveolaarinen {[}l{]}
+tai velaarinen {[}L{]}. Likvidoiden rajaaminen on joskus hyvin vaikeaa,
+sill‰ ne muistuttavat paljon vokaaleja eiv‰tk‰ erotu spektrogrammissa
+viereisest‰ vokaalista juuri muuten kuin formanttisiirtymin‰. Likvidan
+rajaaminen tapahtuukin kuulonvaraisesti ja spektrogrammissa n‰kyvi‰
+formanttien liikkeit‰ tarkastelemalla. Esimerkkej‰ {[}l{]}-segmenteist‰
+on kuvissa \ref{fig:Aanneraja-ole}, \ref{fig:Aanneraja-n-l} ja \ref{fig:Aanneraja-elle}.
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_oleell.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-ole}Vokaalienv‰linen {[}l{]} sanassa \emph{oleellisten}.
+{[}l{]}:n rajat erottuvat l‰hinn‰ tutkimalla spektrogrammissa n‰kyv‰‰
+formanttirakennetta ja kuuntelemalla. J‰lkimm‰inen {[}l{]} on t‰ss‰
+merkitty palataalistuneeksi, mik‰ johtuu seuraavasta {[}i{]}-vokaalista.}
+\end{figure}
+
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_VlV.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-elle}Vokaalienv‰linen {[}l{]} sanassa \emph{tutkimukselle}.
+Huomaa, ett‰ ‰‰nnekerrokseen ei merkit‰ konsonantin fonologista pituusastetta!
+T‰ss‰ on teoriassa kyse pitk‰st‰ konsonantista eli geminaatasta, mutta
+‰‰nnekerroksen annotaatiossa k‰ytet‰‰n vain ‰‰nteen foneettista merkki‰.
+Nimikoidun segmentin fyysinen kesto taas voidaan mitata, eik‰ sit‰
+tarvitse erikseen merkit‰ nimikkeeseen. Kuvasta n‰kyy, ett‰ kyseisen
+sananmuodon kannalta fonologisesti lyhyt {[}s{]} on kuitenkin kestoltaan
+suunnilleen yht‰ pitk‰ kuin fonologisesti pitk‰ {[}l{]}.}
+\end{figure}
+
+
+
+\subsection{\label{sub:Nasaalit}Nasaalit}
+
+Nasaalikonsonantit n‰kyv‰t spektrogrammissa vaimeampina soinnillisina
+alueina, joiden formanttirakenne ei erotu selv‰sti. Nasaalisuus levi‰‰
+tyypillisesti viereisiin ‰‰nnesegmentteihin, sill‰ nen‰portin avaaminen
+ja sulkeminen ovat artikulaatioliikkein‰ suhteellisen hitaita. Nasaalikonsonantin
+rajat merkit‰‰n kuitenkin siten, ett‰ konsonantti alkaa sill‰ hetkell‰
+kun puhujan suuhun muodostuu t‰ydellinen sulkeuma ja p‰‰ttyy, kun
+sulkeuma avataan. Sulkeuman alku ja loppu erottuvat yleens‰ ‰‰nen
+aaltomuodossa ja/tai spektrogrammissa. Sulkeuman aikana aaltomuoto
+pehmenee tai ''pyˆristyy'' korkeiden taajuuksien vaimenemisen vuoksi.
+
+Nasaalikonsonantin artikulaatiopaikkaa on usein vaikea tunnistaa oikein
+kuuntelemalla muutaman segmentin p‰tk‰‰, joten on t‰rke‰‰ kuunnella
+myˆs koko sanaa ja muuta kontekstia.
+
+Esimerkki {[}m{]}:st‰ kuvassa \ref{fig:Aanneraja-m-i}, {[}n{]}:st‰
+kuvassa \ref{fig:Aanneraja-n-l} sek‰ {[}N{]}:st‰ kuvassa\ref{fig:Aanneraja-N-k}.
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_nl_wclicks.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-n-l}ƒ‰nneraja {[}n l{]} sanassa \emph{mink‰‰nlaisia}.
+Konsonanttien keskell‰ erottuu sek‰ aaltomuodossa ett‰ spektrogrammissa
+pari pient‰ h‰lypursketta, jotka ovat aiheutuneet kielen tahattomista
+maiskahduksista artikulaatioliikkeen aikana. }
+\end{figure}
+
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_mi.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-m-i}ƒ‰nneraja {[}m i{]} sanassa \emph{mink‰‰nlaisia}.}
+\end{figure}
+
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_Nk.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-N-k}ƒ‰nneraja {[}N k{]} sanassa \emph{mink‰‰nlaisia}.}
+\end{figure}
+
+
+
+\subsection{\label{sub:Tremulantit}Tremulantit}
+
+Suomessa esiintyy tremulanteista l‰hinn‰ {[}r{]}. Tremulantteihin
+liittyy useita per‰tt‰isi‰ sulkeumia ja avaumia, jotka {[}r{]}:n tapauksessa
+tuotetaan kielen k‰rjell‰. Monimutkaiseen artikulaatioon liittyy kielen
+asento, joka aiheuttaa ‰‰nteeseen ''r-m‰isen'' eli retrofleksisen
+vaikutelman. {[}r{]}-‰‰nne merkit‰‰n alkavaksi siit‰ kohdasta, jossa
+t‰m‰ retrofleksisyys alkaa, ja p‰‰ttyv‰ksi siihen kohtaan, jossa ''r-m‰isyys''
+suunnilleen p‰‰ttyy. Rajaamisen apuna k‰ytet‰‰n kuulohavainnon lis‰ksi
+spektrogrammia, jossa n‰kyv‰t formanttirakenteen muutokset ja vaimentuminen
+auttavat rajan m‰‰rityksess‰ (ks. esim. kuva \ref{fig:Aanneraja-arvoa}).
+Varsinkin vokaalien v‰liss‰ lyhyt /r/ esiintyy yleens‰ yksit‰ryisen‰
+ns. napaus‰‰nteen‰ {[}r\_({]} eik‰ monit‰ryisen‰ tremulanttina {[}r{]}
+(ks. esim. kuva \ref{fig:Aanneraja-VrV}).
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_arvoa.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-arvoa}ƒ‰nteen {[}r{]} rajaus sanassa \emph{arvoa}.
+Huomaa, ett‰ {[}r{]}:n sis‰ll‰ on useita vaiheita: t‰ss‰ tapauksessa
+kaksi sulkeumaa. Kielen asennon muuttuminen retrofleksiseksi erottuu
+formanttirakenteessa.}
+\end{figure}
+
+
+%
+\begin{figure}[h]
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_r_btw_vowels.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-VrV}Vokaalienv‰linen {[}r\_({]} sanassa \emph{perusteita}.
+Vokaalien v‰liss‰ esiintyy usein monit‰ryisen tremulantin sijaan yksit‰ryinen
+napaus‰‰nne, jota merkit‰‰n Worldbet-tarkkeella {[}\_({]}. Vastaava
+‰‰nne voi esiinty‰ myˆs vokaalienv‰lisen {[}d{]}:n tilalla, ks. kuva
+\ref{fig:Aanneraja-uude}.}
+\end{figure}
+
+
+
+\subsection{\label{sub:Approksimantit-eli-puolivokaalit}Approksimantit eli puolivokaalit}
+
+Approksimanteille (toiselta nimelt‰‰n puolivokaaleille) on tyypillist‰
+vokaalimainen artikulaatio, jonka aikana tapahtuva artikulaatioliike
+on kuitenkin ‰‰nteen hallitseva ominaisuus. Suomenkielisess‰ puheessa
+esiintyv‰t yleisimmin approksimantti {[}j{]} sek‰ labiodentaalinen
+approksimantti {[}V{]}, jota on kuvattu kohdassa \ref{sub:Frikatiivit},
+ja lateraaliapproksimantti {[}l{]}, jota on kuvattu kohdassa \ref{sub:Likvidat}.
+
+Varsinaista h‰ly‰ tai laukeamavaihetta ei approksimantteihin kuulu.
+T‰m‰n vuoksi approksimanttien segmentointi tapahtuu spektrogrammin
+formanttirakenteen ja mahdollisesti intensiteettik‰yr‰n perusteella,
+koska ‰‰nteen aikana luotava v‰h‰inen kapeikko saattaa aiheuttaa ‰‰nisignaalissa
+liev‰n intensiteetin laskun. Usein approksimantti on vastaavan vokaalin
+kanssa akustisesti identtinen. Approksimantti kannattaakin yritt‰‰
+segmentoida silloin, kun se on oman kielitajun perusteella oletettavissa
+(esim. \emph{ja}-sana kannattaa mieluummin segmentoida {[}j A{]} kuin
+diftongina {[}i a{]}, vaikkei n‰ill‰ olekaan artikulatorisesti juuri
+mit‰‰n eroa). Esimerkki {[}j{]}-‰‰nteest‰ on kuvassa \ref{fig:Aanneraja-sijas}.
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_sijas.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-sijas}Vokaalienv‰linen approksimantti {[}j{]}
+sanassa \emph{sijasta}. {[}j{]} erottuu viereisist‰ ‰‰nteist‰ l‰hinn‰
+formanttien jatkuvana liikkeen‰.}
+\end{figure}
+
+
+
+\section{Vokaalit}
+
+
+\subsection{\label{sub:Yksittaisvokaalien-segmentointi}Yksin‰isvokaalit eli
+monoftongit}
+
+Puhunnoksenalkuinen vokaalisegmentti merkit‰‰n alkavaksi ensimm‰isen
+‰‰nihuuliperiodin alusta. Spektrogrammissa n‰hd‰‰n formanttirakenteen
+v‰hitellen ilmaantuvan samassa kohdassa. Puhunnoksenalkuisen vokaalin
+edess‰ voi esiinty‰ myˆs \emph{glottaaliklusiili} tai sen heikompi
+muoto, ns. \emph{puristussupistuma} tai \emph{kova aluke}. Selv‰sti
+erottuva glottaaliklusiili merkit‰‰n omaksi ‰‰nnesegmentikseen (ks.
+kuva \ref{fig:Aanneraja-BEGasi}). 
+
+Mik‰li soinnin edell‰ tai tilalla on soinniton vaihe, josta vokaalin
+laatu on kuultavissa (kuiskattu vokaali), merkit‰‰n alkuraja t‰m‰n
+soinnittoman vaiheen alkuun. Frikatiivien, etenkin {[}s{]}:n vieress‰
+on myˆs tyypillist‰, ett‰ vokaalin alussa tai lopussa on soinniton
+tai heikosti soinnillinen vaihe, jossa konsonanttisegmentin varsinaista
+frikaatioh‰ly‰ ei kuitenkaan kuulu. 
+
+Vokaalin loppuraja merkit‰‰n kohtaan, jossa kyseiselle vokaalille
+tyypillinen formanttirakenne p‰‰ttyy tai muuttuu ep‰selv‰ksi spektrogrammissa
+(ks. etenkin ylemm‰t taajuudet, esim. formanttien F3, F4 ja F5 seutu),
+sek‰ kuulonvaraisin perustein. Huomaa, ett‰ vokaalisegmentin p‰‰ttyminen
+ei v‰ltt‰m‰tt‰ edellyt‰ soinnin ts. periodisuuden p‰‰ttymist‰.
+
+Vokaalin vieress‰ tai vokaalien v‰liss‰ esiintyv‰ soinnillinen {[}hv{]}
+on usein vaikea rajata. Se erottuu vokaalista siten, ett‰ kun {[}hv{]}-‰‰nne
+alkaa, n‰hd‰‰n aaltomuodossa amplitudin heikkenev‰n ja spektrogrammissa
+etenkin ylempien taajuuksien formanttirakenteen muuttuvan ep‰s‰‰nnˆlliseksi.
+Vastaavasti formanttirakenne selkiytyy ja amplitudi nousee {[}hv{]}:n
+p‰‰ttyess‰. Esimerkki {[}hv{]}:n rajauksesta on kuvassa \ref{fig:Aanteet-puhum}.
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_BEGasi.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-BEGasi}Puhunnoksenalkuisen vokaalin edess‰
+saattaa esiinty‰ glottaaliklusiili {[}?{]}, joka rajataan omaksi segmentikseen.
+}
+\end{figure}
+
+
+
+\subsection{\label{sub:Diftongien-segmentointi}Diftongien segmentointi}
+
+K‰yt‰nnˆss‰ \emph{diftongin} (kaksi per‰kk‰ist‰, laadullisesti erilaista
+tavunsis‰ist‰ vokaalia) ja \emph{vokaaliyhtym‰n} (per‰kk‰iset vokaalit,
+joiden v‰liss‰ on tavuraja) v‰lill‰ ei useinkaan ole selv‰‰ foneettista
+eroa. Siksi myˆs diftongin osat on syyt‰ segmentoida erikseen ‰‰nnekerrokseen,
+vaikka niiden erottaminen toisistaan onkin hankalaa. Vokaalien v‰linen
+raja sijoitetaan niiden v‰lisen auditiivisen ja akustisen muutoksen
+keskikohtaan (ks. esim. \ref{fig:Aanneraja-loukk} ja \ref{fig:Aanteet-vauvaa}).
+Akustisesti raja voidaan usein helpoiten paikallistaa spektrogrammissa
+n‰kyvien formanttisiirtymien, erityisesti F2:n liikkeen puoliv‰liin.%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_miaeis.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-miaeis}Vokaalijono {[}i @ e{]} sanassa \emph{helmi‰ist‰}.
+Vokaalijonon osat on rajattava pitk‰lti kuulonvaraisesti, ja tulos
+on aina kompromissi. Koska sana esiintyy t‰ss‰ puhunnoksen lopussa,
+on puhujan ‰‰nenlaatu nariseva koko vokaalijonon ajan, mik‰ erottuu
+esimerkiksi aaltomuodon ep‰s‰‰nnˆllisin‰ periodeina.}
+\end{figure}
+
+
+%
+\begin{figure}
+\begin{center}\includegraphics[%
+  scale=0.7]{jpgfigs/Phone_loukk.jpg}\end{center}
+
+
+\caption{\label{fig:Aanneraja-loukk}Diftongi {[}o u{]} erottuu spektrogrammissa
+formanttien jatkuvana liikkeen‰. Siirtym‰ on kuitenkin suhteessa hitaampi
+kuin approksimanteilla (ks. \ref{sub:Approksimantit-eli-puolivokaalit}).
+Diftongin komponenttien (t‰ss‰ {[}o{]} ja {[}u{]}) v‰linen raja on
+usein pelkk‰ kompromissi. Raja sijoitetaan formanttien liikkeen puoliv‰liin
+ja kuulonvaraisesti arvioimalla.}
+\end{figure}
+
+
+\bibliographystyle{amsplain}
+\cleardoublepage\addcontentsline{toc}{chapter}{\bibname}\bibliography{/home/lennes/annotation_guide/annotation_guide}
+
+
+\printindex{}
+\end{document}

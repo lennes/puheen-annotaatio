@@ -1,0 +1,220 @@
+\begin{theindex}
+
+  \item \"a\"anenlaatu, \hyperpage{28}
+  \item \"a\"anens\"avy, \hyperpage{44}
+  \item \"a\"anil\"ahde, \hyperpage{22}
+  \item \"a\"anne, \hyperpage{26}
+
+  \indexspace
+
+  \item aivastus, \hyperpage{62}
+  \item aliyksikk\"o, \hyperpage{21}
+  \item anchor, \hyperpage{9}
+  \item ankkuri, \hyperpage{9}
+  \item annotaatio, \hyperpage{9}
+  \item annotaation hyv\"aksyminen, \hyperpage{23}
+  \item annotoida, \hyperpage{9}
+  \item asento, \hyperpage{72}
+
+  \indexspace
+
+  \item Breathing, \hyperpage{59}
+  \item BreathyVoice, \hyperpage{30}
+
+  \indexspace
+
+  \item ChangeInLoudness, \hyperpage{46}
+  \item ChangeInPitch, \hyperpage{45}
+  \item ChangeInTempo, \hyperpage{46}
+  \item ChangeInTone, \hyperpage{44}
+  \item Chunk, \hyperpage{75}
+  \item Clause, \hyperpage{37}
+  \item ClearThroat, \hyperpage{61}
+  \item comment, \hyperpage{23}
+  \item Cough, \hyperpage{61}
+  \item CreakyVoice, \hyperpage{31}
+
+  \indexspace
+
+  \item diakriitti, \hyperpage{82}
+  \item dialogin annotaatio, esimerkki, \hyperpage{15}
+
+  \indexspace
+
+  \item ele, \hyperpage{70}
+  \item ep\"ar\"ointi, \hyperpage{74}
+
+  \indexspace
+
+  \item F0, \hyperpage{12}
+  \item falsetti\"a\"ani, \hyperpage{31}
+  \item FalsettoVoice, \hyperpage{31}
+  \item floating unit, \hyperpage{23}, \hyperpage{34}
+  \item foneemi, \hyperpage{33}
+  \item fooni, \hyperpage{26}
+  \item funktio, kineettiset yksik\"ot, \hyperpage{69}
+
+  \indexspace
+
+  \item Gaze, \hyperpage{71}
+  \item Gesture, \hyperpage{70}
+
+  \indexspace
+
+  \item h\"aly, \hyperpage{67}
+  \item haukotus, \hyperpage{60}
+  \item hengitys, \hyperpage{59}
+  \item henk\"ayssointi, \hyperpage{30}
+  \item hertsi, \hyperpage{13}
+  \item Hesitation, \hyperpage{74}
+  \item huokaus, \hyperpage{60}
+  \item hymyily, \hyperpage{63}
+
+  \indexspace
+
+  \item ilme, \hyperpage{71}
+  \item intonaatiokuvio, \hyperpage{44}
+  \item IntonationPattern, \hyperpage{44}
+  \item IPA, \hyperpage{26}, \hyperpage{79}
+  \item itku, \hyperpage{63}
+
+  \indexspace
+
+  \item jakso, \hyperpage{75}
+  \item johdin, \hyperpage{37}
+
+  \indexspace
+
+  \item kapeakaistainen spektrogrammi, \hyperpage{12}
+  \item katse, \hyperpage{71}
+  \item kelluva yksikk\"o, \hyperpage{23}, \hyperpage{34}
+  \item keskener\"aisyys, \hyperpage{23}
+  \item kielen naksahdus, \hyperpage{64}
+  \item kieli, \hyperpage{23}
+  \item kuiskaus, \hyperpage{30}
+
+  \indexspace
+
+  \item language, \hyperpage{23}
+  \item Laughter, \hyperpage{62}
+  \item lausuma, \hyperpage{54}
+  \item leve\"akaistainen spektrogrammi, \hyperpage{12}
+  \item liitepartikkeli, \hyperpage{37}
+  \item Lipsmack, \hyperpage{65}
+  \item litteraatio, \hyperpage{10}
+
+  \indexspace
+
+  \item maiskautus, huulten, \hyperpage{65}
+  \item maiskautus, kielen, \hyperpage{64}
+  \item metadata, \hyperpage{14}
+  \item metatiedot, \hyperpage{14}
+  \item Mimic, \hyperpage{71}
+  \item morfeemi, \hyperpage{36}
+  \item morfeemiyhdistelm\"a, \hyperpage{37}
+  \item Morpheme, \hyperpage{36}
+
+  \indexspace
+
+  \item narina\"a\"ani, \hyperpage{31}
+  \item nauru, \hyperpage{62}
+  \item nielaisu, \hyperpage{62}
+  \item niiskutus, \hyperpage{61}
+  \item nimike, \hyperpage{9}
+  \item nimikoinnin hyv\"aksyminen, \hyperpage{23}
+  \item nimikointi, \hyperpage{9}
+  \item nipputunnus, \hyperpage{37}
+  \item Noise, \hyperpage{67}
+  \item nopeus, \hyperpage{46}
+  \item nyyhkytys, \hyperpage{64}
+
+  \indexspace
+
+  \item omistusliite, \hyperpage{37}
+
+  \indexspace
+
+  \item p\"a\"ate, \hyperpage{37}
+  \item Pause, \hyperpage{55}
+  \item periodi, \hyperpage{12}
+  \item periodisuus, \hyperpage{12}
+  \item periytt\"aminen, \hyperpage{21}
+  \item perustaajuus, \hyperpage{12}
+  \item Phone, \hyperpage{26}
+  \item Phoneme, \hyperpage{33}
+  \item PhoneticUtterance, \hyperpage{25}
+  \item Posture, \hyperpage{72}
+  \item Prominence, \hyperpage{41}
+  \item prominenssi, \hyperpage{41}
+  \item ProsodicUtterance, \hyperpage{54}
+  \item puhefunktio, \hyperpage{74}
+  \item puhenopeus, \hyperpage{46}
+  \item puhunnos, \hyperpage{25}
+
+  \indexspace
+
+  \item ryk\"aisy, \hyperpage{61}
+
+  \indexspace
+
+  \item s\"avelkorkeus, \hyperpage{45}
+  \item Sana, \hyperpage{34}
+  \item sanapaino, \hyperpage{43}
+  \item sanavartalo, \hyperpage{37}
+  \item segmentoida, \hyperpage{9}
+  \item segmentti, \hyperpage{9}
+  \item sekvenssi, \hyperpage{73}
+  \item Sentence, \hyperpage{38}
+  \item Sequence, \hyperpage{73}
+  \item Sigh, \hyperpage{60}
+  \item signaali, \hyperpage{9}
+  \item Smile, \hyperpage{63}
+  \item Sneeze, \hyperpage{62}
+  \item Sniff, \hyperpage{61}
+  \item Sob, \hyperpage{64}
+  \item soundSource, \hyperpage{22}
+  \item SpeechFunction, \hyperpage{74}
+  \item status, \hyperpage{23}
+  \item Stress, \hyperpage{43}
+  \item Swallow, \hyperpage{62}
+  \item Syllable, \hyperpage{36}
+
+  \indexspace
+
+  \item tarkemerkki, \hyperpage{82}
+  \item tauko, \hyperpage{55}
+  \item taustatiedot, \hyperpage{14}
+  \item tavu, \hyperpage{36}
+  \item tempo, \hyperpage{46}
+  \item TongueClick, \hyperpage{64}
+  \item Topic, \hyperpage{73}
+  \item topiikki, \hyperpage{73}
+  \item transcript, \hyperpage{10}
+  \item transliteration, \hyperpage{10}
+  \item tunnus, \hyperpage{37}
+  \item Turn, \hyperpage{49}
+
+  \indexspace
+
+  \item vartalo, sana-, \hyperpage{37}
+  \item virheellinen annotaatio, \hyperpage{23}
+  \item virke, \hyperpage{38}
+  \item VoiceQuality, \hyperpage{28}
+  \item voimakkuus, \hyperpage{46}
+  \item vuoro, \hyperpage{49}
+
+  \indexspace
+
+  \item Weep, \hyperpage{63}
+  \item Whisper, \hyperpage{30}
+  \item Word, \hyperpage{34}
+
+  \indexspace
+
+  \item Yawn, \hyperpage{60}
+  \item yksik\"on kieli, \hyperpage{23}
+  \item yksik\"on tila, \hyperpage{23}
+  \item yksik\"on ty\"ovaihe, \hyperpage{23}
+  \item yskiminen, \hyperpage{61}
+
+\end{theindex}

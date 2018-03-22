@@ -1,0 +1,102 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{10}
+
+\bibitem{Sampa}
+\emph{{SAMPA}, computer readable phonetic alphabet}, {URL}:
+  \url{http://www.phon.ucl.ac.uk/home/sampa/}.
+
+\bibitem{ISLEmultimodal02}
+\emph{{EAGLES/ISLE} overview of metadata initiatives and corpus metadata in
+  language engineering and linguistics}, 2002, {URL}:
+  \url{http://lingue.ilc.pi.cnr.it/EAGLES96/isle/nimmwg_doc.html}.
+
+\bibitem{Boersma}
+Paul Boersma, \emph{Praat: doing phonetics by computer}, 1992--2004, {URL}:
+  \url{http://www.praat.org/}.
+
+\bibitem{Ekman92}
+Paul Ekman, \emph{An argument for basic emotions}, {Cognition and Emotion}
+  \textbf{6} (1992), 169--200.
+
+\bibitem{Ekman99}
+\bysame, \emph{Emotional and conversational nonverbal signals}, Gesture,
+  speech, and sign (Lynn~S. Messing and Ruth Campbell, eds.), Oxford: Oxford
+  University Press, 1999.
+
+\bibitem{Ekman72}
+Paul Ekman and W.~V. Friesen, \emph{Hand movements}, Journal of Communication
+  \textbf{22} (1972), 353--374.
+
+\bibitem{Ekman92b}
+\bysame, \emph{Unmasking the face}, Englewood Cliffs, N. J.: Prentice Hall,
+  1992.
+
+\bibitem{Fridlund94}
+A.~J. Fridlund, \emph{Human facial expression: an evolutionary view}, San
+  Diego, CA: Academic Press, 1994.
+
+\bibitem{Gerratt01}
+R.~Gerratt and J.~Kreiman, \emph{Toward a taxonomy of nonmodal phonation},
+  Journal of Phonetics \textbf{29} (2001), 365--381.
+
+\bibitem{Haakana}
+Markku Haakana and Laura Visap‰‰, \emph{Tuttu tv:st‰ --- fakta homman ‰‰net
+  keskustelun keinona homman ‰‰net keskustelun keinona}, Moni‰‰nisyys ja
+  referointi (Markku Haakana and Jyrki Kalliokoski, eds.), Helsingin yliopiston
+  suomen kielen laitos, tulossa.
+
+\bibitem{Hakulinen96}
+Auli Hakulinen (ed.), \emph{Suomalaisen keskustelun keinoja {II}}, Kieli,
+  vol.~10, Helsingin yliopiston suomen kielen laitos, 1996.
+
+\bibitem{Hakulinen97}
+\bysame, \emph{Vuorotteluj‰sennys}, Keskustelunanalyysin perusteet (Liisa
+  Tainio, ed.), Vastapaino, Tampere, 1997, pp.~32--55.
+
+\bibitem{ISK}
+Auli Hakulinen, Maria Vilkuna, Riitta Korhonen, Vesa Koivisto, Tarja~Riitta
+  Heinonen, and Irja Alho, \emph{Iso suomen kielioppi}, {Suomalaisen
+  Kirjallisuuden Seuran Toimituksia}, no. 950, SKS, 2004.
+
+\bibitem{Hieronymus93}
+James~L. Hieronymus, \emph{{ASCII Phonetic Symbols for the World's Languages:
+  Worldbet}}, Technical report, Bell Labs, 1993, {URL}:
+  \url{ftp://speech.cse.ogi.edu/pub/docs/worldbet.ps}.
+
+\bibitem{Karlsson98}
+Fred Karlsson, \emph{Yleinen kielitiede}, Helsinki: Yliopistopaino, 1998.
+
+\bibitem{Laaksonen98}
+Kaino Laaksonen and Anneli Lieko, \emph{Suomen kielen ‰‰nne- ja muoto-oppi},
+  Helsinki: Finn Lectura, 1998.
+
+\bibitem{Ogden01}
+Richard Ogden, \emph{Turn transition, creak and glottal stop in {F}innish
+  talk-in-interaction}, Journal of the International Phonetic Association
+  \textbf{31} (2001), no.~1, 139--152.
+
+\bibitem{Ogden}
+Richard Ogden, Auli Hakulinen, and Liisa Tainio, \emph{Indexing {'No news' with
+  stylisation in Finnish}}, Sound patterns in interaction (Elizabeth
+  Couper-Kuhlen and Cecilia Ford, eds.), Benjamins, tulossa.
+
+\bibitem{Perakyla04}
+Anssi Per‰kyl‰ and Johanna Ruusuvuori, \emph{Facial expression in evaluations},
+   (2004), Abstrakti.
+
+\bibitem{Seppanen97}
+Eeva-Leena Sepp‰nen, \emph{Vuorovaikutus paperilla}, Keskustelunanalyysin
+  perusteet (Liisa Tainio, ed.), Tampere: Vastapaino, 1997, pp.~18--31.
+
+\bibitem{Suojanen85}
+M.~K. Suojanen, \emph{Mit‰ {Turussa puhutaan? Raportti Turun puhekielen
+  tutkimuksesta}}, Turun yliopiston suomalaisen ja yleisen kielitieteen
+  laitoksen julkaisuja, no.~23, Turun yliopisto, 1985.
+
+\end{thebibliography}

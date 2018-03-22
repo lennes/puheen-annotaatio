@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//FI">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>2.2 Uuden annotaatioyksikön
+määritteleminen</TITLE>
+<META NAME="description" CONTENT="2.2 Uuden annotaatioyksikön
+määritteleminen">
+<META NAME="keywords" CONTENT="annotation_guide">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="annotation_guide.css">
+
+<LINK REL="next" HREF="node12.html">
+<LINK REL="previous" HREF="node10.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node12.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html801"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html795"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html789"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html797"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html799"
+  HREF="node63.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Aliluvut</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html803"
+  HREF="node11.html#SECTION03121000000000000000">2.2.1 Milloin tarvitaan uusi annotaatiokerros?</A>
+<LI><A NAME="tex2html804"
+  HREF="node11.html#SECTION03122000000000000000">2.2.2 Sama vai eri yksikkö?</A>
+<LI><A NAME="tex2html805"
+  HREF="node11.html#SECTION03123000000000000000">2.2.3 Annotaatioyksikön piirteiden määritteleminen</A>
+<UL>
+<LI><A NAME="tex2html806"
+  HREF="node11.html#SECTION03123100000000000000">2.2.3.1 Kaikkien yksiköiden
+yhteiset ominaisuudet</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION03120000000000000000"></A><A NAME="sec:Uuden-annotaatioyksikon-maaritteleminen"></A>
+<BR>
+2.2 Uuden annotaatioyksik&#246;n
+m&#228;&#228;ritteleminen
+</H1>
+
+<P>
+Perusannotaatioyksik&#246;ist&#228; voidaan tarvittaessa <I>periytt&#228;&#228;<A NAME="168"></A></I>
+aliyksik&#246;it&#228;<A NAME="169"></A>, joilla on samat ominaisuudet kuin
+emoyksik&#246;ll&#228;&#228;n, mutta sen lis&#228;ksi joitakin uusia ominaisuuksia. T&#228;ll&#246;in
+on huomattava, ett&#228; <I>uusi aliyksikk&#246; perii v&#228;ltt&#228;m&#228;tt&#228; kaikki
+ne ominaisuudet ja piirteet, jotka sen emoyksik&#246;ll&#228; on</I>, eik&#228; aliyksikk&#246;
+siis saa olla ristiriidassa emoyksik&#246;n m&#228;&#228;ritelm&#228;n kanssa.<A NAME="tex2html9"
+  HREF="#foot171"><SUP>2.2</SUP></A> Jotta uusien aliyksik&#246;iden luominen olisi mahdollisimman joustavaa,
+on useimpien t&#228;m&#228;n oppaan yksik&#246;iden kuvauksen tarkka muoto j&#228;tetty
+annotoijan p&#228;&#228;tett&#228;v&#228;ksi.
+
+<P>
+Kuvitellaan, ett&#228; esimerkiksi annotaatioyksik&#246;lle <I>MyBasicUnit</I>
+on m&#228;&#228;ritelty ominaisuus <I>label</I> (nimike tai tekstikuvaus), jolle
+on m&#228;&#228;ritelty tietty joukko mahdollisia arvoja, esimerkiksi ''tyyppi1,
+tyyppi2, tyyppi3''. Jos t&#228;lle yksik&#246;lle m&#228;&#228;ritell&#228;&#228;n uusi aliyksikk&#246;,
+niin my&#246;s aliyksik&#246;ll&#228; on v&#228;ltt&#228;m&#228;tt&#228; ominaisuus <I>label</I> joka
+voi saada (ainakin) samat kolme arvoa. Aliyksik&#246;lle voidaan kyll&#228;
+lis&#228;t&#228; uusia ominaisuuksia mutta ei poistaa perittyj&#228;. 
+
+<P>
+Sellaisia kokonaan uusia yksik&#246;it&#228;, jotka eiv&#228;t voi olla mink&#228;&#228;n aikaisemmin
+m&#228;&#228;ritellyn varsinaisen annotaatioyksik&#246;n aliyksik&#246;it&#228;, voidaan periytt&#228;&#228;
+esimerkiksi apuyksik&#246;st&#228; <B>Chunk</B> (<A HREF="node53.html#sec:Chunk-jakso">14</A>),
+jolla ei ole etuk&#228;teen annettuja ominaisuuksia ja jonka ''perilliset''
+voivat siksi kuvata mit&#228; tahansa tallenteen tapahtumaa tai piirrett&#228;.
+
+<P>
+
+<H2><A NAME="SECTION03121000000000000000"></A><A NAME="sub:Milloin-tarvitaan-uusi"></A>
+<BR>
+2.2.1 Milloin tarvitaan uusi annotaatiokerros?
+</H2>
+
+<P>
+<I>Periaatteena on, ett&#228; kaikille sellaisille annotoitaville ilmi&#246;ille,
+jotka voivat esiinty&#228; tallenteessa p&#228;&#228;llekk&#228;isin&#228;, tulisi luoda erilliset
+annotaatiokerrokset. </I>
+
+<P>
+Samassa annotaatiokerroksessa voidaan siis kuvata vain yhdentyyppisi&#228;
+taikka useammantyyppisi&#228; mutta toisensa poissulkevia yksik&#246;it&#228;. Esimerkiksi
+tietyn puhujan sis&#228;&#228;n- ja uloshengitykset (ks. <A HREF="node38.html#sub:Breathing-hengitys">7</A>)
+kannattaa merkit&#228; omaan kerrokseensa, koska puhuja pystyy periaatteessa
+tuottamaan puhetta (ja tekem&#228;&#228;n kaikenlaista muutakin) sek&#228; sis&#228;&#228;n-
+ett&#228; uloshengitt&#228;ess&#228;&#228;n. Toisaalta sek&#228; sis&#228;&#228;n- ett&#228; uloshengitykset
+voidaan taloudellisimmin kuvata samassa kerroksessa, koska puhuja
+ei voi tehd&#228; molempia yht&#228; aikaa.
+
+<P>
+
+<H2><A NAME="SECTION03122000000000000000"></A><A NAME="sub:Sama-vai-eri"></A>
+<BR>
+2.2.2 Sama vai eri yksikk&#246;?
+</H2>
+
+<P>
+Jos yksik&#246;iden rajat eri annotaatiokerroksissa <I>poikkeuksetta
+yhtenev&#228;t</I>, kyseess&#228; on saman yksik&#246;n kaksi eri piirrett&#228;. T&#228;ll&#246;in
+toisen annotaatiokerroksen rajaukset ovat redundantteja, ja turhan
+lis&#228;ty&#246;n sek&#228; virheiden v&#228;ltt&#228;miseksi kannattaisi annotaatiok&#228;sitteist&#246;&#246;n
+m&#228;&#228;ritell&#228; vain yksi yksikk&#246;, jolla on kaksi piirrett&#228;.
+
+<P>
+
+<H2><A NAME="SECTION03123000000000000000"></A><A NAME="sub:piirteiden-maarittely"></A>
+<BR>
+2.2.3 Annotaatioyksik&#246;n piirteiden m&#228;&#228;ritteleminen
+</H2>
+
+<P>
+Puh-editorissa annotaatioyksik&#246;ille voi lis&#228;t&#228; haluttuja ominaisuuksia
+tai piirteit&#228;, joille voi tarvittaessa m&#228;&#228;ritell&#228; rajatun joukon sallittuja
+arvoja. Puh-editorilla voi esimerkiksi lis&#228;t&#228; jollekin yksik&#246;lle piirteen
+''painoaste'' ja luetella t&#228;lle vaikkapa arvot ''0,1,2,3'', joilla
+haluaa kuvata havaitun painollisuuden m&#228;&#228;r&#228;&#228;. Jos joku jatkossa k&#228;ytt&#228;&#228;
+samaa m&#228;&#228;ritelm&#228;&#228;, h&#228;n voi Puh-editorissa antaa ko. yksik&#246;ille ainoastaan
+painoasteita nollasta kolmeen. T&#228;m&#228; helpottaa ja yhten&#228;ist&#228;&#228; kuvauksen
+valintaa. Piirteille voitaisiin yht&#228; hyvin antaa muuntyyppisi&#228;kin
+arvoja, esim. ''painollinen, painoton''. Koska valittujen piirrearvojen
+joukko on periaatteessa mielivaltainen ja riippuu k&#228;ytt&#228;j&#228;n tarpeista,
+on useimpien piirteiden m&#228;&#228;rittely j&#228;tetty k&#228;ytt&#228;jien teht&#228;v&#228;ksi.
+
+<P>
+
+<H3><A NAME="SECTION03123100000000000000"></A><A NAME="sub:yksikoiden-yhteiset-ominaisuudet"></A>
+<BR>
+2.2.3.1 Kaikkien yksik&#246;iden
+yhteiset ominaisuudet
+</H3>
+
+<P>
+Kaikilla annotaatioyksik&#246;ill&#228; on my&#246;s joukko valmiiksi esim&#228;&#228;riteltyj&#228;
+piirteit&#228;. Annotoija voi tarvittaessa m&#228;&#228;ritell&#228; kullekin yksik&#246;lle
+erikseen <I><A NAME="yksikon-aanilahde"></A>&#228;&#228;nil&#228;hteen<A NAME="185"></A></I>
+(<I>soundSource</I><A NAME="187"></A>), mik&#228;li esimerkiksi puhuja
+vaihtuu keskell&#228; annotaatiokerrosta. My&#246;s kunkin yksik&#246;n <I><A NAME="yksikon-kieli"></A>kielen<A NAME="189"></A><A NAME="190"></A></I>
+(<I>language</I><A NAME="192"></A>) voi m&#228;&#228;ritell&#228; erikseen, mik&#228;li
+halutaan osoittaa, et&#228; puhuja k&#228;ytt&#228;&#228; kesken kaiken vieraskielisi&#228;
+sanoja. &#196;&#228;nil&#228;hteell&#228; ja kielell&#228; on oletusarvot, jotka on m&#228;&#228;ritelty
+kyseisen tallenteen metatiedoissa. Oletusten mukaisia piirrearvoja
+ei siis tarvitse erikseen annotoida. Kuhunkin yksikk&#246;&#246;n voi lis&#228;t&#228;
+vapaamuotoisen <I><A NAME="yksikon-kommentti"></A>kommentin</I> (<I>comment</I><A NAME="195"></A>),
+jossa voi vaikkapa kuvailla yksik&#246;n rajaamisessa esiintyneit&#228; vaikeuksia
+tai erikseen m&#228;&#228;rittelem&#228;tt&#246;mi&#228; lis&#228;ominaisuuksia. Yksik&#246;n <I><A NAME="yksikon-tila"></A>tilaa<A NAME="197"></A></I>
+tai <I>ty&#246;vaihetta<A NAME="198"></A></I> (<I>status</I><A NAME="200"></A>)
+voi kuvata jollakin seuraavista piirteist&#228;: 
+
+<P>
+<BLOCKQUOTE>
+0 ei m&#228;&#228;ritelty
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>1 virheellinen<A NAME="202"></A>
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>2 tekeill&#228; (kesken<A NAME="203"></A>)
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>3 OK (valmis, hyv&#228;ksytty<A NAME="204"></A><A NAME="205"></A>)
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE>4 kelluva (ei aikaan sidottu)<A NAME="206"></A>
+
+</BLOCKQUOTE>
+<B>Yksik&#246;n saa merkit&#228; valmiiksi (status = 3) ainoastaan siin&#228;
+tapauksessa, ett&#228; on itse tarkastanut ja hyv&#228;ksynyt yksik&#246;n kaikkine
+nimikkeineen ja todennut, ett&#228; se noudattaa annotaatioyksik&#246;n m&#228;&#228;ritelm&#228;ss&#228;
+ja t&#228;ss&#228; oppaassa annettuja suosituksia.</B>
+
+<P>
+<I><A NAME="Kelluva-yksikko"></A>Kelluva yksikk&#246;</I><A NAME="210"></A>
+(<I>floating unit</I><A NAME="212"></A>; status = 4) tarkoittaa
+sellaista annotaatioyksikk&#246;&#228;, jonka halutaan olevan mukana annotaatiossa,
+mutta jolle ei voida m&#228;&#228;ritt&#228;&#228; alkamis- ja p&#228;&#228;ttymisaikaa. Kelluvina
+yksik&#246;in&#228; voidaan kuvata esimerkiksi erilaisia abstrakteja lingvistisi&#228;
+yksik&#246;it&#228;, joille ei n&#228;hd&#228; olevan suoraa vastinetta puhesignaalissa.
+Samassa annotaatiokerroksessa olevilla kelluvilla yksik&#246;ill&#228; on tietty
+keskin&#228;inen j&#228;rjestys, muttei siis esimerkiksi ajallista kestoa.
+
+<P>
+Jokaisella yksik&#246;ll&#228; on my&#246;s ominaisuudet <I>alkupiste</I> ja <I>loppupiste</I>
+(vaikka n&#228;m&#228; olisivatkin t&#228;sm&#228;lleen samassa aikapisteess&#228; tai vaikka
+yksikk&#246; olisi kelluvassa tilassa). Alku ja loppu tallentuvat yksik&#246;n
+piirtein&#228; automaattisesti, kun yksik&#246;n rajoja siirret&#228;&#228;n jollakin
+annotaatioeditoriohjelmalla. Lis&#228;ksi Puh-editori tallentaa jokaiselle
+yksik&#246;lle automaattisesti <I>luontiajan</I> ja viimeisimm&#228;n <I>muokkausajankohdan</I>.
+
+<P>
+Mik&#228;li k&#228;yt&#228;t nimikointiin Praat-ohjelmaa, lue ohje piirteiden annotoinnista
+Praatilla (<A HREF="node7.html#ite:piirteiden-annotointi-Praatilla">5</A>).
+
+<P>
+<BR><HR>
+<DL>
+<DT><A NAME="foot171">...</A><A
+ HREF="node11.html#tex2html9"><SUP>2.2</SUP></A></DT>
+<DD>Tämä ehto on seurausta yksiköiden määritelmien tallennukseen käytettävästä
+standardoidusta RDF-dokumenttiformaatista, joka mahdollistaa määritelmien
+perusteella tapahtuvan koneellisen päättelyn. Esimerkiksi Puh-editori
+voi RDF-muotoisten määritelmien perusteella valvoa, että annotoija
+todella noudattaa määritelmässä mainittuja rajoituksia.
+
+</DD>
+</DL><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html801"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html795"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html789"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html797"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html799"
+  HREF="node63.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> :</B> <A NAME="tex2html802"
+  HREF="node12.html">2.3 Suositeltava annotointijärjestys</A>
+<B> :</B> <A NAME="tex2html796"
+  HREF="node9.html">2. Kuinka annotaatioyksiköitä käytetään?</A>
+<B> :</B> <A NAME="tex2html790"
+  HREF="node10.html">2.1 Annotaatioyksiköiden käyttö</A>
+ &nbsp <B>  <A NAME="tex2html798"
+  HREF="node1.html">Sis&auml;lt&ouml;</A></B> 
+ &nbsp <B>  <A NAME="tex2html800"
+  HREF="node63.html">Hakemisto</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mietta Lennes
+2005-05-11
+</ADDRESS>
+</BODY>
+</HTML>

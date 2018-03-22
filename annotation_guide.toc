@@ -1,0 +1,108 @@
+\select@language {finnish}
+\contentsline {part}{I\hspace {1em}Puheen annotaatio}{7}{part.1}
+\contentsline {chapter}{\numberline {1}Mit\"a on annotaatio?}{9}{chapter.1}
+\contentsline {section}{Miksi puhetta nimikoidaan eli annotoidaan?}{10}{section*.2}
+\contentsline {subsection}{Johdonmukainen annotaatio}{11}{section*.3}
+\contentsline {section}{Akustisten analyysien hy\"odynt\"aminen nimikoinnissa}{12}{section*.4}
+\contentsline {subsection}{Spektrogrammi}{12}{section*.5}
+\contentsline {subsection}{Intensiteettik\"ayr\"a}{12}{section*.6}
+\contentsline {subsection}{Perustaajuusk\"ayr\"a}{12}{section*.7}
+\contentsline {subsection}{Aaltomuoto}{13}{section*.8}
+\contentsline {section}{Aineiston luomat rajoitukset}{13}{section*.9}
+\contentsline {section}{Annotointity\"okalut}{14}{section*.10}
+\contentsline {subsection}{Annotointi Puh-editorilla}{16}{section*.11}
+\contentsline {subsection}{Annotointi Praat-ohjelmalla}{16}{section*.12}
+\contentsline {part}{II\hspace {1em}Annotaatioyksik\"ot}{19}{part.2}
+\contentsline {chapter}{\numberline {2}Kuinka annotaatioyksik\"oit\"a k\"aytet\"a\"an?}{23}{chapter.2}
+\contentsline {section}{Annotaatioyksik\"oiden k\"aytt\"o}{23}{section*.13}
+\contentsline {section}{Uuden annotaatioyksik\"on m\"a\"aritteleminen}{23}{section*.14}
+\contentsline {subsection}{Milloin tarvitaan uusi annotaatiokerros?}{24}{section*.15}
+\contentsline {subsection}{Sama vai eri yksikk\"o?}{24}{section*.16}
+\contentsline {subsection}{Annotaatioyksik\"on piirteiden m\"a\"aritteleminen}{24}{section*.17}
+\contentsline {subsubsection}{Kaikkien yksik\"oiden yhteiset ominaisuudet}{24}{section*.18}
+\contentsline {section}{Suositeltava annotointij\"arjestys}{25}{section*.19}
+\contentsline {section}{Perusyksik\"oiden kuvaukset}{26}{section*.20}
+\contentsline {chapter}{\numberline {3}Foneettiset yksik\"ot}{27}{chapter.3}
+\contentsline {section}{PhoneticUtterance \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- puhunnos}{27}{section*.21}
+\contentsline {section}{Phone \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- fooni, \"a\"anne}{28}{section*.26}
+\contentsline {section}{VoiceQuality \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- \"a\"anenlaatu}{30}{section*.32}
+\contentsline {subsection}{Whisper \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- kuiskaus}{32}{section*.35}
+\contentsline {subsection}{BreathyVoice \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- henk\"ayssointi}{32}{section*.39}
+\contentsline {subsection}{CreakyVoice \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- narina\"a\"ani}{33}{section*.43}
+\contentsline {subsection}{FalsettoVoice \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- falsetti\"a\"ani}{33}{section*.47}
+\contentsline {chapter}{\numberline {4}Lingvistiset yksik\"ot}{35}{chapter.4}
+\contentsline {section}{Phoneme \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- foneemi}{35}{section*.51}
+\contentsline {section}{Word \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- sana}{36}{section*.56}
+\contentsline {subsubsection}{Geminaatta (kaksoiskonsonantti) sanarajalla}{36}{section*.59}
+\contentsline {subsubsection}{Pitk\"a vokaali sanarajalla}{36}{section*.60}
+\contentsline {subsubsection}{Puhunnoksenloppuiset/-alkuiset saneet}{37}{section*.61}
+\contentsline {section}{Syllable \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- tavu}{38}{section*.64}
+\contentsline {section}{Morpheme \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- morfeemi}{38}{section*.69}
+\contentsline {section}{Clause \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- lause}{39}{section*.74}
+\contentsline {section}{Sentence \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- virke}{40}{section*.79}
+\contentsline {chapter}{\numberline {5}Prosodiset yksik\"ot}{45}{chapter.5}
+\contentsline {section}{Prominence \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- prominenssi}{45}{section*.84}
+\contentsline {subsection}{Stress \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- sanapaino}{47}{section*.89}
+\contentsline {section}{IntonationPattern \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- intonaatiokuvio}{48}{section*.94}
+\contentsline {section}{ChangeInTone \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- \"a\"anens\"avyn muutos}{48}{section*.99}
+\contentsline {section}{ChangeInPitch \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- s\"avelkorkeuden muutos}{49}{section*.104}
+\contentsline {section}{ChangeInLoudness \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- voimakkuuden muutos}{50}{section*.109}
+\contentsline {section}{ChangeInTempo \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- puhenopeuden muutos}{50}{section*.114}
+\contentsline {chapter}{\numberline {6}Vuorovaikutusyksik\"ot}{53}{chapter.6}
+\contentsline {section}{Turn \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- vuoro}{53}{section*.119}
+\contentsline {section}{ProsodicUtterance \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- lausuma}{59}{section*.124}
+\contentsline {section}{Pause \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- tauko}{62}{section*.129}
+\contentsline {chapter}{\numberline {7}Paralingvistiset yksik\"ot}{65}{chapter.7}
+\contentsline {section}{Riippuvuudet muista yksik\"oist\"a}{65}{section*.134}
+\contentsline {section}{Fysiologista tilaa ilmaisevat}{65}{section*.135}
+\contentsline {subsection}{Breathing \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- hengitys}{65}{section*.136}
+\contentsline {subsection}{Sigh \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- huokaus}{66}{section*.140}
+\contentsline {subsection}{Yawn \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- haukotus}{66}{section*.144}
+\contentsline {subsection}{Sniff \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- niiskautus}{67}{section*.148}
+\contentsline {subsection}{ClearThroat \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- ryk\"aisy}{67}{section*.152}
+\contentsline {subsection}{Cough \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- yskiminen}{67}{section*.156}
+\contentsline {subsection}{Sneeze \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- aivastus}{68}{section*.160}
+\contentsline {subsection}{Swallow \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- nielaisu}{68}{section*.164}
+\contentsline {section}{Tunnetilaa ilmaisevat}{68}{section*.168}
+\contentsline {subsection}{Laughter \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- nauru}{68}{section*.169}
+\contentsline {subsection}{Smile \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- hymyily}{69}{section*.173}
+\contentsline {subsection}{Weep \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- itku}{69}{section*.177}
+\contentsline {subsection}{Sob \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- nyyhkytys}{70}{section*.181}
+\contentsline {section}{Muut}{70}{section*.185}
+\contentsline {subsection}{TongueClick \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- kielen naksahdus}{70}{section*.186}
+\contentsline {subsection}{Lipsmack \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- huulten maiskautus}{71}{section*.190}
+\contentsline {chapter}{\numberline {8}Ulkopuoliset \"a\"anet}{73}{chapter.8}
+\contentsline {section}{Noise \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- h\"aly}{73}{section*.194}
+\contentsline {chapter}{\numberline {9}Kineettiset yksik\"ot}{75}{chapter.9}
+\contentsline {section}{Kineettisten yksik\"oiden annotointi}{75}{section*.198}
+\contentsline {subsubsection}{Kineettisten yksik\"oiden funktionaalinen annotaatio}{75}{section*.199}
+\contentsline {section}{Gesture \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- ele}{76}{section*.200}
+\contentsline {section}{Mimic \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- ilme}{77}{section*.203}
+\contentsline {subsection}{Gaze \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- katse}{77}{section*.207}
+\contentsline {section}{Posture \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- asento}{78}{section*.211}
+\contentsline {chapter}{\numberline {10}Apuyksik\"ot}{79}{chapter.10}
+\contentsline {section}{Topic \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- topiikki}{79}{section*.215}
+\contentsline {section}{Sequence \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- sekvenssi}{79}{section*.218}
+\contentsline {section}{SpeechFunction \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- puhetoiminto}{80}{section*.222}
+\contentsline {section}{Hesitation \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- ep\"ar\"ointi}{80}{section*.225}
+\contentsline {section}{Chunk \penalty \@M \hskip \z@skip \discretionary {-}{}{}\penalty \@M \hskip \z@skip -- jakso}{81}{section*.229}
+\contentsline {part}{III\hspace {1em}Liitteet}{83}{part.3}
+\contentsline {chapter}{\numberline {A}Foneettiset merkit}{85}{appendix.A}
+\contentsline {section}{Worldbet-symbolit}{86}{section*.232}
+\contentsline {subsection}{Vokaalimerkit}{86}{section*.233}
+\contentsline {subsection}{Konsonanttimerkit}{86}{section*.234}
+\contentsline {subsection}{Tarkkeet eli diakriitit}{88}{section*.235}
+\contentsline {chapter}{\numberline {B}Keskustelunanalyysin litterointimerkit}{91}{appendix.B}
+\contentsline {section}{Litteraatin muuntaminen monikerroksiseksi annotaatioksi}{91}{section*.236}
+\contentsline {chapter}{\numberline {C}\"A\"anteiden segmentointiesimerkkej\"a}{97}{appendix.C}
+\contentsline {section}{Konsonantit}{97}{section*.237}
+\contentsline {subsection}{Klusiilit}{97}{section*.238}
+\contentsline {subsection}{Frikatiivit}{99}{section*.239}
+\contentsline {subsection}{Likvidat}{101}{section*.240}
+\contentsline {subsection}{Nasaalit}{101}{section*.241}
+\contentsline {subsection}{Tremulantit}{105}{section*.242}
+\contentsline {subsection}{Approksimantit eli puolivokaalit}{105}{section*.243}
+\contentsline {section}{Vokaalit}{107}{section*.244}
+\contentsline {subsection}{Yksin\"aisvokaalit eli monoftongit}{107}{section*.245}
+\contentsline {subsection}{Diftongien segmentointi}{116}{section*.246}
+\contentsline {chapter}{Kirjallisuutta}{121}{figure.C.24}

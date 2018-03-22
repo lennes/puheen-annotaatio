@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//FI">
+
+<!--Converted with jLaTeX2HTML 2002 (1.62) JA patch-1.4
+patched version by:  Kenshi Muto, Debian Project.
+LaTeX2HTML 2002 (1.62),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>6.3 Pause - tauko</TITLE>
+<META NAME="description" CONTENT="6.3 Pause - tauko">
+<META NAME="keywords" CONTENT="annotation_guide">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="jLaTeX2HTML v2002 JA patch-1.4">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="annotation_guide.css">
+
+<LINK REL="previous" HREF="node34.html">
+<LINK REL="up" HREF="node32.html">
+<LINK REL="next" HREF="node36.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1335"
+  HREF="node36.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1329"
+  HREF="node32.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1325"
+  HREF="node34.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1331"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1333"
+  HREF="node63.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Aliluvut</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html1337"
+  HREF="node35.html#SECTION03531000000000000000">Määritelmä ja käyttötarkoitus</A>
+<LI><A NAME="tex2html1338"
+  HREF="node35.html#SECTION03532000000000000000">Paikantaminen ja rajaaminen</A>
+<LI><A NAME="tex2html1339"
+  HREF="node35.html#SECTION03533000000000000000">Riippuvuudet muista yksiköistä</A>
+<LI><A NAME="tex2html1340"
+  HREF="node35.html#SECTION03534000000000000000">Kuvauksen valinta</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION03530000000000000000"></A><A NAME="sub:Pause-tauko"></A><A NAME="620"></A><A NAME="621"></A>
+<BR>
+6.3 Pause - tauko
+</H1>
+
+<P>
+
+<H2><A NAME="SECTION03531000000000000000">
+M&#228;&#228;ritelm&#228; ja k&#228;ytt&#246;tarkoitus</A>
+</H2>
+
+<P>
+Signaalin jakso, jonka aikana ei esiinny m&#228;&#228;r&#228;tty&#228; toimintaa. Annotoijan
+on itse p&#228;&#228;tett&#228;v&#228;, mitk&#228; annotointiyksik&#246;t eiv&#228;t voi sis&#228;lty&#228; taukoon,
+sill&#228; t&#228;m&#228; m&#228;&#228;rittely riippuu taukoyksik&#246;iden k&#228;ytt&#246;tarkoituksesta
+(halutaanko tutkia puhujien vuorovaikutusta vai mitata taustakohinan
+m&#228;&#228;r&#228;&#228;).
+
+<P>
+Yksinkertaisimmillaan tauko on puhunnosten (<I>PhoneticUtterance</I>,
+<A HREF="node15.html#sub:PhoneticUtterance-puhunnos">3</A>) ulkopuolelle j&#228;&#228;v&#228; alue. Esimerkiksi
+paralingvistisi&#228; piirteit&#228; voidaan my&#246;s j&#228;tt&#228;&#228; taukojen ulkopuolelle.
+Joskus on tarpeen rajata puhujakohtaiset tauot, mutta usein tauko
+tarkoittaa jonkinlaista katkosta koko keskustelussa. Haluttaessa voidaan
+m&#228;&#228;ritell&#228; tiukasti, ett&#228; tauko on t&#228;ysin &#228;&#228;net&#246;n kohta puhesignaalissa,
+jolloin mik&#228;&#228;n muu &#228;&#228;nt&#228; kuvaava yksikk&#246; ei voi taukoon sis&#228;lty&#228; (akustinen
+tai hiljaisuuden m&#228;&#228;ritelm&#228;). Tauon sis&#228;ll&#228; voidaan vaihtoehtoisesti
+sallia h&#228;ly&#228;&#228;ni&#228; (<I>Noise</I>, <A HREF="node42.html#sub:Noise-haly">8</A>). 
+
+<P>
+
+<H2><A NAME="SECTION03532000000000000000">
+Paikantaminen ja rajaaminen</A>
+</H2>
+
+<P>
+Puheesta annotoidaan ensin kaikki taukoihin kuulumattomat yksik&#246;t
+(esimerkiksi puhunnokset, <A HREF="node15.html#sub:PhoneticUtterance-puhunnos">3</A>),
+mink&#228; j&#228;lkeen taukoyksik&#246;t voidaan rajata t&#228;ysin automaattisesti.
+Mik&#228;li tauoille ei ole olemassa mit&#228;&#228;n erillist&#228; j&#228;sentely&#228;, niit&#228;
+ei siis tarvitse annotoida k&#228;sin.
+
+<P>
+
+<H2><A NAME="SECTION03533000000000000000">
+Riippuvuudet muista yksik&#246;ist&#228;</A>
+</H2>
+
+<P>
+Tauot rajautuvat kaikkien niiden yksik&#246;iden perusteella, joita ei
+katsota taukoon kuuluviksi.
+
+<P>
+
+<H2><A NAME="SECTION03534000000000000000">
+Kuvauksen valinta</A>
+</H2>
+
+<P>
+Tauolle ei ole m&#228;&#228;ritelty erillist&#228; kuvaustapaa, mutta tauon nimikkeeksi
+voi antaa mit&#228; tahansa teksti&#228;. K&#228;ytt&#228;j&#228; voi halutessaan m&#228;&#228;ritell&#228;
+erilaisia taukotyyppej&#228; ja annotoida n&#228;m&#228; taukojen piirteiksi. 
+
+<P>
+Kun taukoon kuulumattomat yksik&#246;t on m&#228;&#228;ritelty eksplisiittisesti,
+kannattaa <I>Pause</I>-yksik&#246;lle periytt&#228;&#228; aliyksikk&#246;, jonka m&#228;&#228;ritelm&#228;ss&#228;
+kielletyt tai sallitut yksik&#246;t luetellaan.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1335"
+  HREF="node36.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html1329"
+  HREF="node32.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html1325"
+  HREF="node34.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html1331"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A> 
+<A NAME="tex2html1333"
+  HREF="node63.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.png"></A> 
+<BR>
+<B> :</B> <A NAME="tex2html1336"
+  HREF="node36.html">7. Paralingvistiset yksiköt</A>
+<B> :</B> <A NAME="tex2html1330"
+  HREF="node32.html">6. Vuorovaikutusyksiköt</A>
+<B> :</B> <A NAME="tex2html1326"
+  HREF="node34.html">6.2 ProsodicUtterance - lausuma</A>
+ &nbsp <B>  <A NAME="tex2html1332"
+  HREF="node1.html">Sis&auml;lt&ouml;</A></B> 
+ &nbsp <B>  <A NAME="tex2html1334"
+  HREF="node63.html">Hakemisto</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mietta Lennes
+2005-05-11
+</ADDRESS>
+</BODY>
+</HTML>

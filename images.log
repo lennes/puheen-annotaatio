@@ -1,0 +1,297 @@
+This is TeX, Version 3.14159 (Web2C 7.3.1) (format=latex 2003.2.18)  18 NOV 2004 11:40
+**./images.tex
+(./images.tex
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, i
+talian, nohyphenation, loaded.
+
+(/usr/share/texmf/tex/latex/base/book.cls
+Document Class: book 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/bk12.clo
+File: bk12.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2001/06/05 v1.94 Standard LaTeX package
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2001/06/05 v1.94 Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 38.
+)) (/usr/share/texmf/tex/latex/base/inputenc.sty
+Package: inputenc 2001/07/10 v0.99a Input encoding file 
+(/usr/share/texmf/tex/latex/base/latin1.def
+File: latin1.def 2001/07/10 v0.99a Input encoding file 
+)) (/usr/share/texmf/tex/latex/misc/a4wide.sty
+Package: a4wide 1994/08/30
+(/usr/share/texmf/tex/latex/ntgclass/a4.sty
+Package: a4 1999/03/03 v1.2f A4 based page layout
+)) (/usr/share/texmf/tex/latex/tools/array.sty
+Package: array 1998/05/13 v2.3m Tabular extension package (FMi)
+\col@sep=\dimen103
+\extrarowheight=\dimen104
+\NC@list=\toks14
+\extratabsurround=\skip43
+\backup@length=\skip44
+) (/usr/share/texmf/tex/latex/tools/longtable.sty
+Package: longtable 2000/10/22 v4.10 Multi-page Table package (DPC)
+\LTleft=\skip45
+\LTright=\skip46
+\LTpre=\skip47
+\LTpost=\skip48
+\LTchunksize=\count88
+\LTcapwidth=\dimen105
+\LT@head=\box26
+\LT@firsthead=\box27
+\LT@foot=\box28
+\LT@lastfoot=\box29
+\LT@cols=\count89
+\LT@rows=\count90
+\c@LT@tables=\count91
+\c@LT@chunks=\count92
+\LT@p@ftn=\toks15
+) (/usr/share/texmf/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write3
+\openout3 = `images.idx'.
+
+Writing index file images.idx
+(/usr/share/texmf/tex/latex/html/url.sty
+Package: url 1999/03/02  ver 1.4  Verb mode for urls, email addresses, and file
+ names
+) (/usr/share/texmf/tex/latex/natbib/natbib.sty
+Package: natbib 1999/05/28 7.0 (PWD)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 508.
+\c@NAT@ctr=\count93
+) (/usr/share/texmf/tex/latex/ae/ae.sty
+Package: ae 1998/11/17 1.0 Almost European Computer Modern
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2001/06/05 v1.94 Standard LaTeX package
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2001/06/05 v1.94 Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 38.
+)
+LaTeX Font Info:    Try loading font information for T1+aer on input line 95.
+(/usr/share/texmf/tex/latex/ae/t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+))) (/usr/share/texmf/tex/latex/ae/aecompl.sty
+Package: aecompl 1998/07/23 0.9 T1 Complements for AE fonts (D. Roegel)
+) (/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2002/08/04 v6.72v Hypertext links for LaTeX
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+\@linkdim=\dimen106
+\Hy@linkcounter=\count94
+\Hy@pagecounter=\count95
+(/usr/share/texmf/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2002/08/04 v6.72v Hyperref: PDFDocEncoding definition (HO)
+)
+Package hyperref Info: Option `plainpages' set `false' on input line 1739.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 1739.
+Package hyperref Info: Bookmarks ON on input line 1797.
+Package hyperref Info: Hyper figures OFF on input line 1816.
+Package hyperref Info: Link nesting OFF on input line 1821.
+Package hyperref Info: Hyper index ON on input line 1824.
+Package hyperref Info: Plain pages OFF on input line 1831.
+Package hyperref Info: Backreferencing OFF on input line 1836.
+Implicit mode ON; LaTeX internals redefined
+LaTeX Info: Redefining \url on input line 2048.
+\Fld@menulength=\count96
+\Field@Width=\dimen107
+\Fld@charsize=\dimen108
+\Choice@toks=\toks17
+\Field@toks=\toks18
+Package hyperref Info: Hyper figures OFF on input line 2506.
+Package hyperref Info: Link nesting OFF on input line 2511.
+Package hyperref Info: Hyper index ON on input line 2514.
+Package hyperref Info: backreferencing OFF on input line 2521.
+Package hyperref Info: Link coloring OFF on input line 2526.
+\Hy@abspage=\count97
+\c@Item=\count98
+\c@Hfootnote=\count99
+)
+*hyperref using default driver hypertex*
+(/usr/share/texmf/tex/latex/hyperref/hypertex.def
+File: hypertex.def 2002/08/04 v6.72v Hyperref driver for HyperTeX specials
+) (/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (/usr/share/texmf/tex/latex/config/graphics.cfg)
+Package graphics Info: Driver file: pdftex.def on input line 80.
+(/usr/share/texmf/tex/latex/graphics/pdftex.def
+File: pdftex.def 2001/11/29 v0.03i graphics/color for pdftex
+\Gread@gobject=\count100
+
+Package graphics Warning: pdftex option does not work with standard TeX.
+
+))
+\Gin@req@height=\dimen109
+\Gin@req@width=\dimen110
+) (/usr/share/texmf/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+) (/usr/share/texmf/tex/latex/tipa/tipa.sty
+Package: tipa 2002/08/08 TIPA version 1.1
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2001/06/05 v1.94 Standard LaTeX package
+(/usr/share/texmf/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+LaTeX Font Info:    Try loading font information for T1+aess on input line 357.
+
+(/usr/share/texmf/tex/latex/ae/t1aess.fd
+File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
+)) (/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2001/06/05 v1.94 Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 38.
+))) (/usr/share/texmf/tex/latex/tipa/tipx.sty
+Package: tipx 2003/01/01 TIPX version 1.2
+) (/usr/share/texmf/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen111
+) (/usr/share/texmf/tex/generic/babel/babel.sty
+Package: babel 2001/03/01 v3.7h The Babel package
+(/usr/share/texmf/tex/generic/babel/finnish.ldf
+Language: finnish 2001/03/12 v1.3o Finnish support from the babel system
+(/usr/share/texmf/tex/generic/babel/babel.def
+File: babel.def 2001/03/01 v3.7h Babel common definitions
+\babel@savecnt=\count101
+\U@D=\dimen112
+)
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `Finnish'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@finnish = a dialect from \language0
+Package babel Info: Making " an active character on input line 70.
+)) (/usr/share/texmf/tex/latex/graphics/color.sty
+Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
+(/usr/share/texmf/tex/latex/config/color.cfg)
+Package color Info: Driver file: dvips.def on input line 125.
+(/usr/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+) (/usr/share/texmf/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\sizebox=\box30
+\lthtmlwrite=\write4
+(images.aux)
+\openout1 = `images.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 198.
+LaTeX Font Info:    ... okay on input line 198.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 198.
+LaTeX Font Info:    ... okay on input line 198.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 198.
+LaTeX Font Info:    ... okay on input line 198.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 198.
+LaTeX Font Info:    ... okay on input line 198.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 198.
+LaTeX Font Info:    ... okay on input line 198.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 198.
+LaTeX Font Info:    ... okay on input line 198.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 198.
+LaTeX Font Info:    ... okay on input line 198.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 198.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 198.
+(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 198.
+Package hyperref Info: Link coloring OFF on input line 198.
+(/usr/share/texmf/tex/latex/hyperref/nameref.sty
+Package: nameref 2001/01/27 v2.19 Cross-referencing by name of section
+\c@section@level=\count102
+)
+LaTeX Info: Redefining \ref on input line 198.
+LaTeX Info: Redefining \pageref on input line 198.
+(/usr/share/texmf/tex/context/base/supp-pdf.tex (/usr/share/texmf/tex/context/b
+ase/supp-mis.tex
+loading : Context Support Macros / Missing
+\protectiondepth=\count103
+\scratchcounter=\count104
+\scratchtoks=\toks19
+\scratchdimen=\dimen113
+\scratchskip=\skip51
+\scratchmuskip=\muskip10
+\scratchbox=\box31
+\scratchread=\read1
+\scratchwrite=\write5
+\zeropoint=\dimen114
+\nextbox=\box32
+\nextdepth=\dimen115
+\everyline=\toks20
+\!!counta=\count105
+\!!countb=\count106
+\recursecounter=\count107
+)
+loading : Context Support Macros / PDF
+systems : Why not use pdf(e)TeX binaries?
+)
+
+latex2htmlLength hsize=349.0pt
+
+latex2htmlLength vsize=682.8738pt
+
+latex2htmlLength hoffset=0.0pt
+
+latex2htmlLength voffset=0.0pt
+
+latex2htmlLength topmargin=0.0pt
+
+latex2htmlLength topskip=0.00003pt
+
+latex2htmlLength headheight=0.0pt
+
+latex2htmlLength headsep=0.0pt
+
+latex2htmlLength parskip=0.0pt plus 1.0pt
+
+latex2htmlLength oddsidemargin=0.0pt
+
+latex2htmlLength evensidemargin=0.0pt
+
+l2hSize :tex2html_nomath_inline2273:5.15991pt::0.0pt::9.71938pt.
+[1
+
+
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 325.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 325.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 325.
+l2hSize :tex2html_wrap_inline1159:9.51462pt::0.0pt::13.14722pt.
+[2
+
+
+] (images.aux) ) 
+Here is how much of TeX's memory you used:
+ 4518 strings out of 20880
+ 58277 string characters out of 196184
+ 106351 words of memory out of 350001
+ 7406 multiletter control sequences out of 10000+15000
+ 14830 words of font info for 29 fonts, out of 400000 for 1000
+ 44 hyphenation exceptions out of 10000
+ 34i,5n,28p,718b,410s stack positions out of 3000i,100n,1500p,50000b,4000s
+
+Output written on images.dvi (2 pages, 648 bytes).
