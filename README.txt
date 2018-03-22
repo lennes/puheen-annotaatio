@@ -1,33 +1,8 @@
-T‰m‰ on Puheen annotaatio-oppaan suomenkielinen versio, jota ovat
-yhteistyˆn‰ kirjoittaneet Mietta Lennes ja Sanna Ahjoniemi.
+T√§ss√§ arkistossa sijaitsevat "Puheen annotaatio eli nimikointi"¬†-oppaan ty√∂tiedostot. Oppaan ovat yhteisty√∂n√§ kirjoittaneet Mietta Lennes ja Sanna Ahjoniemi. 
 
-Opasta pit‰isi voida lukea sek‰ verkkoversiona (HTML) ett‰
-pdf-dokumenttina. Oppaan pit‰isi sopia sek‰ Puh-editorin ett‰ esim.
-Praatin kanssa k‰ytett‰v‰ksi kuitenkin niin, ett‰ eri ohjelmissa tuetaan
-ja vahvistetaan samoja annotaatiok‰yt‰nteit‰.
+Opasta voi lukea sek√§ html-muotoisena verkkoversiona osoitteessa https://github.com/lennes/puheen-annotaatio/,
+ ett√§ pdf-dokumenttina (https://github.com/lennes/puheen-annotaatio/blob/master/annotation_guide.pdf).
+ 
+Oppaan tuottaminen kuului osana Suomen Akatemian rahoittamaan SA-Puhe-konsortiohankkeeseen (Integrated resources for speech technology and spoken language research, vv. 2002-2004). Oppaan ensimm√§inen versio julkaistiin vuonna 2004 ja viimeisin julkaistu versio on 1.01, joka on ollut verkossa saatavilla vuodesta 2005 alkaen. Materiaali on siirretty l√§hes sellaisenaan GitHubiin 22.3.2018.
 
-Foneettinen aakkosto on t‰ll‰ hetkell‰ viel‰(kin) kesken.
-
-Shell-skripti build.sh luo bibliografian ja hakemiston ja tekee pdf-dokumentin
-pdflatexilla.
-
-Oppaaseen liittyv‰t kuvat tulevat myˆhemmin alihakemistoon figs. Jokaisesta
-kuvasta pit‰isi silloin olla sek‰ pdf- ett‰ eps-versio. (Pdflatex huolii vain
-pdf-muotoisia kuvia, kun taas latex kaipaa eps-versioita.)
-
-TeX-dokumentin sis‰ll‰ olevat labelit ovat toistaiseksi suomenkielisi‰.
-Ne olisi tarkoitus k‰‰nt‰‰ englanniksi ja yhdenmukaistaa+yksinkertaistaa
-niin, ett‰ saman TeXin voisi helposti myˆhemmin k‰‰nt‰‰ englanniksi ja
-linkit toimisivat esim. HTML-versiossa helposti ristiin kummallakin
-kielell‰. (Tosin en viel‰ tied‰, miten TeX-dokumentista saisi HTML:‰‰
-niin, ett‰ nuo labelit k‰‰ntyisiv‰t samannimisiksi ankkureiksi.)
-
-Bib-dokumentissa on joitakin ylim‰‰r‰isi‰ l‰hdeviitteit‰, jotka ovat
-mahdollisesti annotaatio-oppaassa k‰yttˆkelpoisia. Joihinkin l‰hteisiin
-on jo viittaus itse tex-dokumentissa. Muita l‰hteit‰ ja viitteit‰ saa
-mielell‰‰n lis‰t‰ tarpeen mukaan.
-
-Helsingiss‰ 16.11.2004 
-
-Mietta Lennes
-mietta.lennes@helsinki.fi
+Opas j√§√§nyt osittain keskener√§iseksi. Se oli alun perin tarkoitettu k√§ytett√§v√§ksi sek√§ SA-Puhe-hankkeessa kehitetyn Puh-editorin ett√§ esim. Praatin ja muiden vastaavien ohjelmien kanssa. Perusajatuksena on ollut, ett√§ eri ohjelmissa tuetaan ja vahvistetaan samoja annotaatiok√§yt√§nteit√§. Puh-editori poistettiin valitettavasti k√§yt√∂st√§ pari vuotta hankkeen p√§√§ttymisen j√§lkeen, mutta oppaassa esitetyt perusideat lienev√§t edelleen puheaineistojen tutkijoille hy√∂dyllisi√§.
