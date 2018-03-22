@@ -1,5 +1,10 @@
 Tässä arkistossa sijaitsevat "Puheen annotaatio eli nimikointi" -oppaan työtiedostot. Oppaan ovat yhteistyönä kirjoittaneet Mietta Lennes ja Sanna Ahjoniemi. 
 
+Opas on tarkoitettu kaikille, jotka käsittelevät puheaineistoa ja haluavat
+nimikoida eli annotoida sitä. Oppaan ohjeita noudattamalla omat
+annotaatioperiaatteet ja annotaatiossa käytetyt yksiköt ja luokittelut
+tulevat selkeästi määritellyiksi ja dokumentoiduiksi, jolloin puheaineistoa on myös mahdollista jakaa muiden tutkijoiden kanssa.
+
 Opasta voi lukea sekä html-muotoisena verkkoversiona osoitteessa https://lennes.github.io/puheen-annotaatio/,
  että pdf-dokumenttina (https://github.com/lennes/puheen-annotaatio/blob/master/annotation_guide.pdf).
  
